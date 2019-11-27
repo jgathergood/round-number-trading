@@ -1,0 +1,248 @@
+% -*- TeX:UTF-8:Soft -*-
+
+% ********************************************************************
+% Necessary Packages
+% ********************************************************************
+\usepackage{xpatch}% for table line numbers patch
+\usepackage{etoolbox}% for BeforeBeginEnvironment
+\usepackage{xparse}% for \NewDocumentCommand
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{ragged2e}% for justify in fignote
+
+% ********************************************************************
+% siunitx
+% ********************************************************************
+
+% New \sym command. The stars themselves take no space, the box
+% is set at the width of 888 (really only makes sense with T-OSF!
+\NewDocumentCommand{\sym}{m}{\rlap{\text{#1}}\hphantom{888}}
+
+\usepackage{siunitx}
+\sisetup{% normal settings. Space for symbols then hooked in at econtables
+   mode                    = text,
+   group-digits            = false,
+   input-symbols           = ( ) [ ] - +,
+   table-space-text-post   = ,
+   table-align-text-post   = false,
+   input-signs             = ,
+   table-number-alignment  = center
+}
+
+\AtBeginEnvironment{econtable}{\sisetup{table-space-text-post   = \sym{***}}}
+
+
+% ********************************************************************
+% estauto/estwide
+% ********************************************************************
+
+% \supersloppy ignores basically all \hbox errors.
+% Fine for estout tables, but some side-effects possible,
+% so a star version is softer.
+\ProvideDocumentCommand\supersloppy{s}{%
+   \IfBooleanTF#1%
+   {\hfuzz=\maxdimen}%
+   {\hfuzz=\maxdimen\tolerance=10000\hbadness=10000}%
+}
+
+% Create new etabular environments which ignore bad boxes
+% Required to hook-into threeparttable
+\newenvironment{etabular}%
+{\supersloppy\tabular}%
+{\endtabular\fussy}
+\newenvironment{etabular*}%
+{\supersloppy\begin{tabular*}}%
+{\end{tabular*}\fussy}
+
+\NewDocumentCommand{\estauto}{ m D<>{} m }{%
+   \vspace{.75ex}{%
+      \begin{etabular}{#1}%
+         #2% Text before the top rule
+         \toprule%
+         #3%
+         \bottomrule%
+         \addlinespace[.75ex]%
+      \end{etabular}
+   }
+}
+
+\NewDocumentCommand{\estwide}{ O{1\textwidth} m D<>{} m }{%
+   \vspace{.75ex}{%
+      \begin{etabular*}%
+         {#1}{@{\hskip\tabcolsep\extracolsep\fill}#2}%
+         #3% Text before the top rule
+         \toprule%
+         #4%
+         \bottomrule%
+         \addlinespace[.75ex]%
+      \end{etabular*}%
+   }%
+}
+
+
+% ********************************************************************
+% econtable
+% ********************************************************************
+\usepackage[para,flushleft]{threeparttablex}
+\usepackage[export]{adjustbox}
+
+% econtable uses always singlespacing, centering, adjustbox, threeparttable
+\newenvironment{econtable}[1][tbp]%
+{\begin{table}[#1]\begin{spacing}{1}\centering\adjustbox{center}\bgroup\begin{threeparttable}}%
+{\end{threeparttable}\egroup\end{spacing}\end{table}}
+
+\newenvironment{econlongtable}%
+{\begin{ThreePartTable}%
+   \RenewDocumentCommand{\estauto}{ m D<>{} m }{%
+      \vspace{.75ex}{%
+         \begin{longtable}{##1}%
+            ##2% Text before the top rule
+            \toprule%
+            ##3%
+            \bottomrule%
+            \addlinespace[.75ex]%
+         \end{longtable}%
+      }%
+   }%
+   \def\estwide{\typeout{ERROR: command estwide is not defined for longtables}}%
+   \renewcommand{\caption}[1]{\captionof{table}{##1}\vspace{-1\baselineskip}}%
+   \setlength{\LTleft}{-20cm plus -1fill}\setlength{\LTright}{\LTleft}\begin{spacing}{1}}%
+{\end{spacing}\end{ThreePartTable}}
+
+\newcommand{\tabheader}[1]{#1}% command for the header that should be repeated of a longtable
+
+%% Need to hook in etabular to threeparttable, otherwise \supersloppy has no effect
+\makeatletter
+\catcode`\*=11
+\xpatchcmd{\threeparttable}
+{\TPT@hookarg{tabularx}}
+{\TPT@hookarg{tabularx}\TPT@hookin{etabular}\TPT@hookarg{etabular*}\supersloppy}
+{}{}
+\catcode`\*=12
+\makeatother
+
+% - To be on the safe side: renew \input{} to be primitive input (can't use \input #1 then}
+\makeatletter
+\AtBeginEnvironment{econtable}{\def\input#1{\@@input #1 }}
+% \AtBeginEnvironment{sidewaystable}{\def\input#1{\@@input #1 }}
+\AtBeginEnvironment{econlongtable}{\def\input#1{\@@input #1 }}
+\makeatother
+
+% ********************************************************************
+% Figure/Table notes
+% ********************************************************************
+% fix fontsize to footnotesize
+\makeatletter
+\g@addto@macro\TPT@defaults{\footnotesize}
+\makeatother
+
+% create \figtext & \fignote
+% If in econ(long)table we use the threeparttable tablenotes, otherwise just normal text
+\NewDocumentCommand\figtext{m}{%
+   \begin{singlespacing}%
+      \begin{center}%
+         \justify%
+         \vspace{.75ex}%
+         \vspace{-1\baselineskip}%
+         \footnotesize%
+         \hspace{1ex}%
+         \hangindent=1ex%
+         #1%
+      \end{center}%
+   \end{singlespacing}%
+}%
+
+\NewDocumentCommand\figtextt{m}{%
+   \begin{tablenotes}[para,flushleft]%
+      \hspace{1ex}%
+      \hangindent=1ex%
+      #1%
+   \end{tablenotes}%
+}
+
+\AtBeginEnvironment{threeparttable}{\let\figtext\figtextt}
+% need to adapt fignotes for longtable
+
+
+\NewDocumentCommand\fignote{m}{{\figtext{\emph{Note: }#1}}}
+
+%Create starnote* (normal inline text) of normal to be on seperate line. Optional to write text after.
+\NewDocumentCommand\starnote{s O{}}{%
+   \IfBooleanTF#1%
+   {* p < 0.1, ** p < 0.05, *** p < 0.01. Standard errors in parentheses.}%
+   {\figtext{* p < 0.1, ** p < 0.05, *** p < 0.01. Standard errors in parentheses. #2}}%
+}	
+
+
+% ********************************************************************
+% Columns & Table Content
+% ********************************************************************
+
+% Define a few columntypes which are generally useful
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{N}[1]{>{\centering\arraybackslash}m{#1}}
+
+\newlength{\tc}
+\newcommand{\n}[1]{\multicolumn{1}{N{\tc}}{#1}}
+
+% hide columns with H
+\newcolumntype{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}}%
+
+% Allow line breaks with \\ in scells
+% where c is either t, c, or b to force the desired vertical alignment.
+% http://tex.stackexchange.com/a/19678/11984
+\newcommand{\s}[2][c]{%
+   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}
+}
+
+% Allow \tnote in S columns
+\robustify\tnote
+
+% Allow \bfseries
+\robustify\bfseries
+\robustify\mdseries
+
+
+% ********************************************************************
+% Option 'centertables'
+% ********************************************************************
+\makeatletter
+
+\newif\if@centertables
+\newif\if@option@centertables
+\DeclareOption{centertables}{%
+   \@centertablestrue
+   \@option@centertablestrue
+}
+\ProcessOptions*\relax
+\newcommand*{\ifcentertables}{%
+   \if@centertables
+   \expandafter\@firstoftwo
+   \else
+   \expandafter\@secondoftwo
+   \fi
+}
+\newcommand*{\ifoptioncentertables}{%
+   \if@option@centertables
+   \expandafter\@firstoftwo
+   \else
+   \expandafter\@secondoftwo
+   \fi
+}
+
+\ifcentertables{%
+   \AtBeginDocument{%
+      \newtoks\mytoks
+      \mytoks\expandafter{\the\NC@list}
+      \newcolumntype{S}{}
+      \NC@list\expandafter{\the\mytoks \NC@do S}
+      \expandafter\renewcommand\expandafter*\csname NC@rewrite@S\endcsname[1][]%
+      {\@temptokena\expandafter{\the\@temptokena c}\NC@find}
+      % 	\sisetup{table-parse-only}
+      \RenewDocumentCommand{\sym}{m}{\rlap{\text{#1}}}
+   }
+   }{\relax}
+\makeatother
