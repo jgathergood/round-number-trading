@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.5)  2 DEC 2019 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.5)  2 DEC 2019 16:31
 entering extended mode
 **./left_digit_attention_paper.tex
 (left_digit_attention_paper.tex
@@ -1686,108 +1686,145 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <10> no
+t available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
+tead on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <7.3> n
+ot available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
+tead on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <5.5> n
+ot available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
+tead on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 5.5pt on input line 5.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 5.
  [1
 
-{C:/Users/lizjg1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-<figures/Left2increase_probCI.pdf, id=22, 426.59375pt x 284.06125pt>
+{C:/Users/lizjg1/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 16.
+ [2]
+<figures/Left2increase_probCI.pdf, id=28, 426.59375pt x 284.06125pt>
 File: figures/Left2increase_probCI.pdf Graphic file (type pdf)
 <use figures/Left2increase_probCI.pdf>
-Package pdftex.def Info: figures/Left2increase_probCI.pdf  used on input line 2
-3.
+Package pdftex.def Info: figures/Left2increase_probCI.pdf  used on input line 3
+1.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase.pdf, id=23, 426.59375pt x 284.06125pt>
+<figures/2left_increase.pdf, id=29, 426.59375pt x 284.06125pt>
 File: figures/2left_increase.pdf Graphic file (type pdf)
 <use figures/2left_increase.pdf>
-Package pdftex.def Info: figures/2left_increase.pdf  used on input line 23.
+Package pdftex.def Info: figures/2left_increase.pdf  used on input line 31.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 23.
-<figures/Left2decrease_probCI.pdf, id=24, 426.59375pt x 284.06125pt>
+<figures/Left2decrease_probCI.pdf, id=30, 426.59375pt x 284.06125pt>
 File: figures/Left2decrease_probCI.pdf Graphic file (type pdf)
 <use figures/Left2decrease_probCI.pdf>
-Package pdftex.def Info: figures/Left2decrease_probCI.pdf  used on input line 2
-7.
+Package pdftex.def Info: figures/Left2decrease_probCI.pdf  used on input line 3
+5.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease.pdf, id=25, 426.59375pt x 284.06125pt>
+<figures/2left_decrease.pdf, id=31, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease.pdf Graphic file (type pdf)
 <use figures/2left_decrease.pdf>
-Package pdftex.def Info: figures/2left_decrease.pdf  used on input line 27.
+Package pdftex.def Info: figures/2left_decrease.pdf  used on input line 35.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
  [3
 
  <./figures/Left2increase_probCI.pdf> <./figures/2left_increase.pdf> <./figures
 /Left2decrease_probCI.pdf> <./figures/2left_decrease.pdf>]
-<figures/Left2increases_1pbin_CI.pdf, id=54, 426.59375pt x 284.06125pt>
+<figures/Left2increases_1pbin_CI.pdf, id=60, 426.59375pt x 284.06125pt>
 File: figures/Left2increases_1pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2increases_1pbin_CI.pdf>
 Package pdftex.def Info: figures/Left2increases_1pbin_CI.pdf  used on input lin
-e 40.
+e 48.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin1p.pdf, id=55, 426.59375pt x 284.06125pt>
+<figures/2left_increase_bin1p.pdf, id=61, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_bin1p.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin1p.pdf>
 Package pdftex.def Info: figures/2left_increase_bin1p.pdf  used on input line 4
-0.
+8.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2increases_10pbin_CI.pdf, id=56, 426.59375pt x 284.06125pt>
+<figures/Left2increases_10pbin_CI.pdf, id=62, 426.59375pt x 284.06125pt>
 File: figures/Left2increases_10pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2increases_10pbin_CI.pdf>
 Package pdftex.def Info: figures/Left2increases_10pbin_CI.pdf  used on input li
-ne 44.
+ne 52.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin10p.pdf, id=57, 426.59375pt x 284.06125pt>
+<figures/2left_increase_bin10p.pdf, id=63, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_bin10p.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin10p.pdf>
 Package pdftex.def Info: figures/2left_increase_bin10p.pdf  used on input line 
-44.
+52.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2increases_1poundbin_CI.pdf, id=58, 426.59375pt x 284.06125pt>
+<figures/Left2increases_1poundbin_CI.pdf, id=64, 426.59375pt x 284.06125pt>
 File: figures/Left2increases_1poundbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2increases_1poundbin_CI.pdf>
 Package pdftex.def Info: figures/Left2increases_1poundbin_CI.pdf  used on input
- line 48.
+ line 56.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin1pound.pdf, id=59, 426.59375pt x 284.06125pt>
+<figures/2left_increase_bin1pound.pdf, id=65, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_bin1pound.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin1pound.pdf>
 Package pdftex.def Info: figures/2left_increase_bin1pound.pdf  used on input li
-ne 48.
+ne 56.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decreases_1pbin_CI.pdf, id=60, 426.59375pt x 284.06125pt>
+<figures/Left2decreases_1pbin_CI.pdf, id=66, 426.59375pt x 284.06125pt>
 File: figures/Left2decreases_1pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2decreases_1pbin_CI.pdf>
 Package pdftex.def Info: figures/Left2decreases_1pbin_CI.pdf  used on input lin
-e 59.
+e 67.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin1p.pdf, id=61, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_bin1p.pdf, id=67, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_bin1p.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin1p.pdf>
-Package pdftex.def Info: figures/2left_decrease_bin1p.pdf  used on input line 5
-9.
+Package pdftex.def Info: figures/2left_decrease_bin1p.pdf  used on input line 6
+7.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decreases_10pbin_CI.pdf, id=62, 426.59375pt x 284.06125pt>
+<figures/Left2decreases_10pbin_CI.pdf, id=68, 426.59375pt x 284.06125pt>
 File: figures/Left2decreases_10pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2decreases_10pbin_CI.pdf>
 Package pdftex.def Info: figures/Left2decreases_10pbin_CI.pdf  used on input li
-ne 63.
+ne 71.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin10p.pdf, id=63, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_bin10p.pdf, id=69, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_bin10p.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin10p.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin10p.pdf  used on input line 
-63.
+71.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decreases_1poundbin_CI.pdf, id=64, 426.59375pt x 284.06125pt>
+<figures/Left2decreases_1poundbin_CI.pdf, id=70, 426.59375pt x 284.06125pt>
 File: figures/Left2decreases_1poundbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2decreases_1poundbin_CI.pdf>
 Package pdftex.def Info: figures/Left2decreases_1poundbin_CI.pdf  used on input
- line 67.
+ line 75.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin1pound.pdf, id=65, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_bin1pound.pdf, id=71, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_bin1pound.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin1pound.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin1pound.pdf  used on input li
-ne 67.
+ne 75.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
  [4
 
@@ -1797,128 +1834,83 @@ ne 67.
 pdf>] [5 <./figures/Left2decreases_1pbin_CI.pdf> <./figures/2left_decrease_bin1
 p.pdf> <./figures/Left2decreases_10pbin_CI.pdf> <./figures/2left_decrease_bin10
 p.pdf> <./figures/Left2decreases_1poundbin_CI.pdf> <./figures/2left_decrease_bi
-n1pound.pdf>]
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 82.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 82.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <10> no
-t available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <7.3> n
-ot available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 7.3pt on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <5.5> n
-ot available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 82.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 5.5pt on input line 82.
- (tables/reg_sample_increase_all.tex)
+n1pound.pdf>] (tables/reg_sample_increase_all.tex)
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 83.
+(Font)              scaled to size 10.0pt on input line 91.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 83.
+(Font)              scaled to size 10.0pt on input line 91.
 
 
-LaTeX Warning: Reference `fig:prob_all_inc' on page 1 undefined on input line 8
-3.
+LaTeX Warning: Reference `fig:prob_all_inc' on page 1 undefined on input line 9
+1.
 
 [6
 
 ] (tables/reg_sample_decrease_all.tex)
 
-LaTeX Warning: Reference `fig:prob_all_dec' on page 1 undefined on input line 9
-9.
+LaTeX Warning: Reference `fig:prob_all_dec' on page 1 undefined on input line 1
+07.
 
 [7
 
 ]
-<figures/prices_hist_login_days.pdf, id=165, 361.35pt x 361.35pt>
+<figures/prices_hist_login_days.pdf, id=170, 361.35pt x 361.35pt>
 File: figures/prices_hist_login_days.pdf Graphic file (type pdf)
 <use figures/prices_hist_login_days.pdf>
 Package pdftex.def Info: figures/prices_hist_login_days.pdf  used on input line
- 110.
+ 118.
 (pdftex.def)             Requested size: 273.14923pt x 273.15117pt.
  [8 <./figures/prices_hist_login_days.pdf>]
-<figures/left2_second_increase_count.pdf, id=177, 426.59375pt x 284.06125pt>
+<figures/left2_second_increase_count.pdf, id=182, 426.59375pt x 284.06125pt>
 File: figures/left2_second_increase_count.pdf Graphic file (type pdf)
 <use figures/left2_second_increase_count.pdf>
 Package pdftex.def Info: figures/left2_second_increase_count.pdf  used on input
- line 124.
+ line 132.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2increase_probCI_random_sell.pdf, id=178, 426.59375pt x 284.06125p
+<figures/Left2increase_probCI_random_sell.pdf, id=183, 426.59375pt x 284.06125p
 t>
 File: figures/Left2increase_probCI_random_sell.pdf Graphic file (type pdf)
 <use figures/Left2increase_probCI_random_sell.pdf>
 Package pdftex.def Info: figures/Left2increase_probCI_random_sell.pdf  used on 
-input line 124.
-(pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/left2_second_decrease_count.pdf, id=179, 426.59375pt x 284.06125pt>
-File: figures/left2_second_decrease_count.pdf Graphic file (type pdf)
-<use figures/left2_second_decrease_count.pdf>
-Package pdftex.def Info: figures/left2_second_decrease_count.pdf  used on input
- line 128.
-(pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decrease_probCI_random_sell.pdf, id=180, 426.59375pt x 284.06125p
-t>
-File: figures/Left2decrease_probCI_random_sell.pdf Graphic file (type pdf)
-<use figures/Left2decrease_probCI_random_sell.pdf>
-Package pdftex.def Info: figures/Left2decrease_probCI_random_sell.pdf  used on 
-input line 128.
+input line 132.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
  [9
 
 
  <./figures/left2_second_increase_count.pdf> <./figures/Left2increase_probCI_ra
-ndom_sell.pdf> <./figures/left2_second_decrease_count.pdf> <./figures/Left2decr
-ease_probCI_random_sell.pdf>]
+ndom_sell.pdf>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 133.
+(Font)              scaled to size 10.95pt on input line 137.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 141.
+(Font)              scaled to size 10.95pt on input line 145.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 141.
+(Font)              scaled to size 8.0pt on input line 145.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.1pt on input line 141.
+(Font)              scaled to size 6.1pt on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 141.
+(Font)              scaled to size 10.95pt on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 141.
+(Font)              scaled to size 8.0pt on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 6.1pt on input line 141.
+(Font)              scaled to size 6.1pt on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <10.95>
  not available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 141.
+tead on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 141.
+(Font)              scaled to size 10.95pt on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <8> not
  available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 141.
+tead on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 141.
+(Font)              scaled to size 8.0pt on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <6.1> n
 ot available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 141.
+tead on input line 145.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 6.1pt on input line 141.
+(Font)              scaled to size 6.1pt on input line 145.
 
 (tables/prices_stats.tex) (tables/prices_samples_stats.tex)
 (tables/prices_samples_stats_down.tex)) [10]
@@ -1936,18 +1928,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 32976 strings out of 492895
- 624590 string characters out of 3123269
+ 32985 strings out of 492895
+ 624651 string characters out of 3123269
  808820 words of memory out of 3000000
- 36232 multiletter control sequences out of 15000+200000
- 673565 words of font info for 234 fonts, out of 3000000 for 9000
+ 36231 multiletter control sequences out of 15000+200000
+ 690411 words of font info for 245 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,100p,9107b,1040s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/
-lbtn_7grukw.enc}{C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dv
-ips/libertine/lbtn_oexx6f.enc}{C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.
-9/fonts/enc/dvips/newtx/libertinealt.enc}{C:/Users/lizjg1/AppData/Local/Program
-s/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/lizjg1/AppData/Local/Program
+lbtn_oexx6f.enc}{C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dv
+ips/newtx/libertinealt.enc}{C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/f
+onts/enc/dvips/base/8r.enc}{C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/f
+onts/enc/dvips/libertine/lbtn_7grukw.enc}{C:/Users/lizjg1/AppData/Local/Program
 s/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{C:/Users/lizjg1/AppData
 /Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}<C:/Users/
 lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibert
@@ -1959,9 +1951,9 @@ g1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Us
 ers/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb
 ><C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/zx
 lri.pfb>
-Output written on left_digit_attention_paper.pdf (10 pages, 437531 bytes).
+Output written on left_digit_attention_paper.pdf (10 pages, 432088 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
+ 245 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)
- 43114 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 48224 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -1,14 +1,22 @@
-\subsection*{The Left-Digit Effect and Stock Trading Behavior}
+\subsection*{The Left-Digit Effect and Stock Selling Behavior}
 
-Investors are more likely to sell stocks after a change in the left-digit. This occurs for both price increases and decreases. The likelihood of a stock being sold jumps when the price crosses the left-digit from below, e.g. a stock increasing from \pounds9 to \pounds10, and also increases when the price crosses the left-digit from above, e.g. a stock decreasing from \pounds10 to \pounds9. We interpret this as showing that investor attention is drawn to stocks that change their leftmost digit. Left-digit changes are attention grabbing, causing sale activity. This is similar to the rank effect finding of Hartzmark (2012), whereby either top-ranked or bottom-ranked stocks by return since purchase are those most likely to be sold.
+Investors are more likely to sell stocks after a change in the left-digit. This occurs for both price increases and decreases. The likelihood of a stock being sold jumps when the price crosses the left-digit from below, e.g. a stock increasing from \pounds9 to \pounds10, and also increases when the price crosses the left-digit from above, e.g. a stock decreasing from \pounds10 to \pounds9. We interpret this as showing that investor attention is drawn to stocks that change their leftmost digit. Left-digit changes are attention grabbing, causing sale activity. This is similar to the rank effect finding of Hartzmark (2015), whereby either top-ranked or bottom-ranked stocks by return since purchase are those most likely to be sold.
 
-To show our result, we draw a sample of stock $\times$ quarters that have increased in value through a left-digit in a calendar quarter (e.g. Jan - Mar), which we call the Price Increasing Sample. We then draw a sample of stocks that have decreased in value through a left-digit in a calendar quarter, which we call the Price Decreasing Sample. Note, this sample restriction is at the stock $\times$ quarter level.
+To show our result, we draw a sample of stock $\times$ quarters that have increased in value and have gone through a left-digit in a calendar quarter (e.g. Jan - Mar), which we call the Price Increasing Sample. We then draw a sample of stocks that have decreased in value through a left-digit in a calendar quarter, which we call the Price Decreasing Sample.\footnote{We have implemented this sample restriction approximately in this version. In a future version we will implement the sample restriction precisely. We do not expect the results to change when we do this.} Note, this sample restriction is at the stock $\times$ quarter level.
 
 We then draw all investor $\times$ stock $\times$ days within the Price Increasing Sample and the Price Decreasing Sample, i.e. all observations for investors $\times$ days on which the investor held the stock at the beginning of the day. We look at the probability of sale when the stock is just below a left-digit change, e.g. \pounds9, compared with above the left-digit change, e.g. \pounds10. This exercise might compare investor $\times$ stock $\times$ days drawn from different investors. Therefore, we also conduct estimates that include individual fixed effects, thereby exploiting within-investor variation in the probability of sale either side of the left-digit change.
 
 \ref{fig:left_digit_sell} illustrates the main result. Each panel shows the probability of a stock sale by the leftmost two digits of the stock price. Note, this pools over leftmost digits that are in pence, pounds, hundreds of pounds, and so on. The only information used in the analysis is the leftmost two digits, in integer values. The left-side plots pool all observations by the leftmost two digits and the probability of sale together with a 95\% confidence interval. The right-side plots show the probability of sale by leftmost two digits. Panel A shows an increase in the probability of sale when the price crosses the left-digit from below, Panel B shows an increase in the probability of sale when the price crosses the left-digit from above. \ref{fig:left_digit_sell_increase} and \ref{fig:left_digit_sell_decrease} reproduce these plots for subsamples by the price range of the stock, in Panel A up to \pounds1, in Panel B between \pounds1 and \pounds10, and in Panel C between \pounds10 and \pounds100.
 
-We are confident that this pattern is not due to limit orders, because limit orders placed at left-digit thresholds would execute at that exact digit, thereby generating a spike only at X0. Instead, we see increased probability of sale at a range of digits above XO. This reflects the fact that investors do not continually monitor their accounts, so may only see a movement above X0 at the point in time the digit has increased to X1, X2, or so on. 
+Possible queries:
+\begin{itemize}
+	\item [1] Limit orders. We have previously discussed the possibility that the patterns we see might be created by limit orders set at left-digit thresholds, i.e., round numbers. We think this is not the general mechanism at work, because limit orders would create a spike in the probability of sale at the left-digit alone. It would not explain the increased probability of sale at X1, X2, etc.. We think we see higher probability at X1, X2, etc.. because there is a delay between the stock crossing the left-digit and investors logging-in to their accounts. We could examine the role of limit orders more precisely by looking into very fine price data at the penny level.
+	\item [2] Sample selection. We have previously discussed the possibility that the results might in some way be an artefact of sample selection, given that we are selecting on stock $\times$ quarters that pass through a left digit change. We can clarify any concerns around sample selection in two ways. 
+	\begin{itemize}
+		\item [A] It is true that our sample selection criteria mean that our sample does not uniformly comprise observations across XO - X9. For example, in the price increasing sample the requirement is that the stock has increased in value up to at least X0, but there is no further requirement. This will give us an excess of observations at X0 compared with X1, X2, and so on. We see this is indeed the case in \ref{fig:sample_selection_test} in the histogram. However, this does not bias our results as the y-variable in our analysis is the \textit{probability} of sale. Hence, the XO bin has a larger denominator in the y-variable compared with the other variables. Moreover, our results is that the probability of sales increases between X9 and X0, for which there is only a small increase in density in the histogram.
+		\item [B] To double-check, we conducted a simulation analysis in which we input the same data but choose stocks to be sold at random. The result in \ref{fig:sample_selection_test} in the right-side plot confirms that this delivers a uniform probability of sale. 
+	\end{itemize}
+\end{itemize}
 
 \clearpage
 
@@ -120,11 +128,7 @@ We are confident that this pattern is not due to limit orders, because limit ord
 	\bigskip
 	\subfigure[Price Increasing Sample]{
 		\includegraphics[width=0.45\textwidth]{figures/left2_second_increase_count.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI_random_sell.pdfLeft2decrease_probCI_random_sell}
-	}
-	\subfigure[Price Decreasing Sample]{
-		\includegraphics[width=0.45\textwidth]{figures/left2_second_decrease_count.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI_random_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI_random_sell.pdf}
 	}
 \end{figure}
 
