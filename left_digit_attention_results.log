@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.17)  3 DEC 2019 08:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.17)  3 DEC 2019 14:19
 entering extended mode
 **./left_digit_attention_results.tex
 (left_digit_attention_results.tex
@@ -2528,7 +2528,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
  [2
 
 ]
-<figures/prices_hist_login_days.pdf, id=22, 361.35pt x 361.35pt>
+<figures/prices_hist_login_days.pdf, id=145, 361.35pt x 361.35pt>
 File: figures/prices_hist_login_days.pdf Graphic file (type pdf)
 <use figures/prices_hist_login_days.pdf>
 Package pdftex.def Info: figures/prices_hist_login_days.pdf  used on input line
@@ -2562,24 +2562,24 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 97.
-<figures/2left_increase.pdf, id=45, 426.59375pt x 284.06125pt>
+<figures/2left_increase.pdf, id=167, 426.59375pt x 284.06125pt>
 File: figures/2left_increase.pdf Graphic file (type pdf)
 <use figures/2left_increase.pdf>
 Package pdftex.def Info: figures/2left_increase.pdf  used on input line 104.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/2left_increase_bin1p.pdf, id=46, 426.59375pt x 284.06125pt>
+<figures/2left_increase_bin1p.pdf, id=168, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_bin1p.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin1p.pdf>
 Package pdftex.def Info: figures/2left_increase_bin1p.pdf  used on input line 1
 16.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/2left_increase_bin10p.pdf, id=47, 426.59375pt x 284.06125pt>
+<figures/2left_increase_bin10p.pdf, id=169, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_bin10p.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin10p.pdf>
 Package pdftex.def Info: figures/2left_increase_bin10p.pdf  used on input line 
 119.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/2left_increase_bin1pound.pdf, id=48, 426.59375pt x 284.06125pt>
+<figures/2left_increase_bin1pound.pdf, id=170, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_bin1pound.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin1pound.pdf>
 Package pdftex.def Info: figures/2left_increase_bin1pound.pdf  used on input li
@@ -2590,25 +2590,25 @@ ne 123.
  <./figures/2left_increase.pdf>]
 [6 <./figures/2left_increase_bin1p.pdf> <./figures/2left_increase_bin10p.pdf> <
 ./figures/2left_increase_bin1pound.pdf>]
-<figures/Left2increase_probCI.pdf, id=84, 426.59375pt x 284.06125pt>
+<figures/Left2increase_probCI.pdf, id=204, 426.59375pt x 284.06125pt>
 File: figures/Left2increase_probCI.pdf Graphic file (type pdf)
 <use figures/Left2increase_probCI.pdf>
 Package pdftex.def Info: figures/Left2increase_probCI.pdf  used on input line 1
 35.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2increases_1pbin_CI.pdf, id=85, 426.59375pt x 284.06125pt>
+<figures/Left2increases_1pbin_CI.pdf, id=205, 426.59375pt x 284.06125pt>
 File: figures/Left2increases_1pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2increases_1pbin_CI.pdf>
 Package pdftex.def Info: figures/Left2increases_1pbin_CI.pdf  used on input lin
 e 146.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2increases_10pbin_CI.pdf, id=86, 426.59375pt x 284.06125pt>
+<figures/Left2increases_10pbin_CI.pdf, id=206, 426.59375pt x 284.06125pt>
 File: figures/Left2increases_10pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2increases_10pbin_CI.pdf>
 Package pdftex.def Info: figures/Left2increases_10pbin_CI.pdf  used on input li
 ne 149.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2increases_1poundbin_CI.pdf, id=87, 426.59375pt x 284.06125pt>
+<figures/Left2increases_1poundbin_CI.pdf, id=207, 426.59375pt x 284.06125pt>
 File: figures/Left2increases_1poundbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2increases_1poundbin_CI.pdf>
 Package pdftex.def Info: figures/Left2increases_1poundbin_CI.pdf  used on input
@@ -2619,13 +2619,13 @@ Package pdftex.def Info: figures/Left2increases_1poundbin_CI.pdf  used on input
  <./figures/Left2increase_probCI.pdf>] [8 <./figures/Left2increases_1pbin_CI.pd
 f> <./figures/Left2increases_10pbin_CI.pdf> <./figures/Left2increases_1poundbin
 _CI.pdf>]
-<figures/Left2increase_probCI_random.pdf, id=127, 426.59375pt x 284.06125pt>
+<figures/Left2increase_probCI_random.pdf, id=246, 426.59375pt x 284.06125pt>
 File: figures/Left2increase_probCI_random.pdf Graphic file (type pdf)
 <use figures/Left2increase_probCI_random.pdf>
 Package pdftex.def Info: figures/Left2increase_probCI_random.pdf  used on input
  line 169.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2decrease_probCI_random.pdf, id=128, 426.59375pt x 284.06125pt>
+<figures/Left2decrease_probCI_random.pdf, id=247, 426.59375pt x 284.06125pt>
 File: figures/Left2decrease_probCI_random.pdf Graphic file (type pdf)
 <use figures/Left2decrease_probCI_random.pdf>
 Package pdftex.def Info: figures/Left2decrease_probCI_random.pdf  used on input
@@ -2680,33 +2680,33 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [16
 
 ] [17] [18]
-<figures/left2_second_count.pdf, id=239, 426.59375pt x 284.06125pt>
+<figures/left2_second_count.pdf, id=354, 426.59375pt x 284.06125pt>
 File: figures/left2_second_count.pdf Graphic file (type pdf)
 <use figures/left2_second_count.pdf>
 Package pdftex.def Info: figures/left2_second_count.pdf  used on input line 407
 .
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/left2_second_increase_count.pdf, id=240, 426.59375pt x 284.06125pt>
+<figures/left2_second_increase_count.pdf, id=355, 426.59375pt x 284.06125pt>
 File: figures/left2_second_increase_count.pdf Graphic file (type pdf)
 <use figures/left2_second_increase_count.pdf>
 Package pdftex.def Info: figures/left2_second_increase_count.pdf  used on input
  line 415.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2_second_increases_1pbin_count.pdf, id=241, 426.59375pt x 284.0612
+<figures/Left2_second_increases_1pbin_count.pdf, id=356, 426.59375pt x 284.0612
 5pt>
 File: figures/Left2_second_increases_1pbin_count.pdf Graphic file (type pdf)
 <use figures/Left2_second_increases_1pbin_count.pdf>
 Package pdftex.def Info: figures/Left2_second_increases_1pbin_count.pdf  used o
 n input line 429.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2_second_increases_10pbin_count.pdf, id=242, 426.59375pt x 284.061
+<figures/Left2_second_increases_10pbin_count.pdf, id=357, 426.59375pt x 284.061
 25pt>
 File: figures/Left2_second_increases_10pbin_count.pdf Graphic file (type pdf)
 <use figures/Left2_second_increases_10pbin_count.pdf>
 Package pdftex.def Info: figures/Left2_second_increases_10pbin_count.pdf  used 
 on input line 432.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2_second_increases_1poundbin_count.pdf, id=243, 426.59375pt x 284.
+<figures/Left2_second_increases_1poundbin_count.pdf, id=358, 426.59375pt x 284.
 06125pt>
 File: figures/Left2_second_increases_1poundbin_count.pdf Graphic file (type pdf
 )
@@ -2720,24 +2720,24 @@ ed on input line 436.
 .pdf>] [21 <./figures/Left2_second_increases_1pbin_count.pdf> <./figures/Left2_
 second_increases_10pbin_count.pdf> <./figures/Left2_second_increases_1poundbin_
 count.pdf>]
-<figures/2left_decrease.pdf, id=289, 426.59375pt x 284.06125pt>
+<figures/2left_decrease.pdf, id=403, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease.pdf Graphic file (type pdf)
 <use figures/2left_decrease.pdf>
 Package pdftex.def Info: figures/2left_decrease.pdf  used on input line 455.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/2left_decrease_bin1p.pdf, id=290, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_bin1p.pdf, id=404, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_bin1p.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin1p.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin1p.pdf  used on input line 4
 69.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/2left_decrease_bin10p.pdf, id=291, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_bin10p.pdf, id=405, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_bin10p.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin10p.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin10p.pdf  used on input line 
 472.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/2left_decrease_bin1pound.pdf, id=292, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_bin1pound.pdf, id=406, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_bin1pound.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin1pound.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin1pound.pdf  used on input li
@@ -2747,25 +2747,25 @@ ne 476.
 
  <./figures/2left_decrease.pdf>] [23 <./figures/2left_decrease_bin1p.pdf> <./fi
 gures/2left_decrease_bin10p.pdf> <./figures/2left_decrease_bin1pound.pdf>]
-<figures/Left2decrease_probCI.pdf, id=328, 426.59375pt x 284.06125pt>
+<figures/Left2decrease_probCI.pdf, id=440, 426.59375pt x 284.06125pt>
 File: figures/Left2decrease_probCI.pdf Graphic file (type pdf)
 <use figures/Left2decrease_probCI.pdf>
 Package pdftex.def Info: figures/Left2decrease_probCI.pdf  used on input line 4
 87.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2decreases_1pbin_CI.pdf, id=329, 426.59375pt x 284.06125pt>
+<figures/Left2decreases_1pbin_CI.pdf, id=441, 426.59375pt x 284.06125pt>
 File: figures/Left2decreases_1pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2decreases_1pbin_CI.pdf>
 Package pdftex.def Info: figures/Left2decreases_1pbin_CI.pdf  used on input lin
 e 498.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2decreases_10pbin_CI.pdf, id=330, 426.59375pt x 284.06125pt>
+<figures/Left2decreases_10pbin_CI.pdf, id=442, 426.59375pt x 284.06125pt>
 File: figures/Left2decreases_10pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2decreases_10pbin_CI.pdf>
 Package pdftex.def Info: figures/Left2decreases_10pbin_CI.pdf  used on input li
 ne 501.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2decreases_1poundbin_CI.pdf, id=331, 426.59375pt x 284.06125pt>
+<figures/Left2decreases_1poundbin_CI.pdf, id=443, 426.59375pt x 284.06125pt>
 File: figures/Left2decreases_1poundbin_CI.pdf Graphic file (type pdf)
 <use figures/Left2decreases_1poundbin_CI.pdf>
 Package pdftex.def Info: figures/Left2decreases_1poundbin_CI.pdf  used on input
@@ -2792,27 +2792,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ] [27] [28]
-<figures/left2_second_decrease_count.pdf, id=396, 426.59375pt x 284.06125pt>
+<figures/left2_second_decrease_count.pdf, id=506, 426.59375pt x 284.06125pt>
 File: figures/left2_second_decrease_count.pdf Graphic file (type pdf)
 <use figures/left2_second_decrease_count.pdf>
 Package pdftex.def Info: figures/left2_second_decrease_count.pdf  used on input
  line 583.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2_second_decreases_1pbin_count.pdf, id=397, 426.59375pt x 284.0612
+<figures/Left2_second_decreases_1pbin_count.pdf, id=507, 426.59375pt x 284.0612
 5pt>
 File: figures/Left2_second_decreases_1pbin_count.pdf Graphic file (type pdf)
 <use figures/Left2_second_decreases_1pbin_count.pdf>
 Package pdftex.def Info: figures/Left2_second_decreases_1pbin_count.pdf  used o
 n input line 597.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2_second_decreases_10pbin_count.pdf, id=398, 426.59375pt x 284.061
+<figures/Left2_second_decreases_10pbin_count.pdf, id=508, 426.59375pt x 284.061
 25pt>
 File: figures/Left2_second_decreases_10pbin_count.pdf Graphic file (type pdf)
 <use figures/Left2_second_decreases_10pbin_count.pdf>
 Package pdftex.def Info: figures/Left2_second_decreases_10pbin_count.pdf  used 
 on input line 600.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2_second_decreases_1poundbin_count.pdf, id=399, 426.59375pt x 284.
+<figures/Left2_second_decreases_1poundbin_count.pdf, id=509, 426.59375pt x 284.
 06125pt>
 File: figures/Left2_second_decreases_1poundbin_count.pdf Graphic file (type pdf
 )
@@ -2825,13 +2825,13 @@ ed on input line 604.
  <./figures/left2_second_decrease_count.pdf>] [30 <./figures/Left2_second_decre
 ases_1pbin_count.pdf> <./figures/Left2_second_decreases_10pbin_count.pdf> <./fi
 gures/Left2_second_decreases_1poundbin_count.pdf>]
-<figures/Left2increase_sell_no_login.pdf, id=434, 426.59375pt x 284.06125pt>
+<figures/Left2increase_sell_no_login.pdf, id=543, 426.59375pt x 284.06125pt>
 File: figures/Left2increase_sell_no_login.pdf Graphic file (type pdf)
 <use figures/Left2increase_sell_no_login.pdf>
 Package pdftex.def Info: figures/Left2increase_sell_no_login.pdf  used on input
  line 634.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left2decrease_sell_no_login.pdf, id=435, 426.59375pt x 284.06125pt>
+<figures/Left2decrease_sell_no_login.pdf, id=544, 426.59375pt x 284.06125pt>
 File: figures/Left2decrease_sell_no_login.pdf Graphic file (type pdf)
 <use figures/Left2decrease_sell_no_login.pdf>
 Package pdftex.def Info: figures/Left2decrease_sell_no_login.pdf  used on input
@@ -2844,7 +2844,7 @@ Package pdftex.def Info: figures/Left2decrease_sell_no_login.pdf  used on input
 o_login.pdf>] [33
 
 ]
-<figures/3left_increase.pdf, id=468, 1279.78125pt x 284.06125pt>
+<figures/3left_increase.pdf, id=575, 1279.78125pt x 284.06125pt>
 File: figures/3left_increase.pdf Graphic file (type pdf)
 <use figures/3left_increase.pdf>
 Package pdftex.def Info: figures/3left_increase.pdf  used on input line 659.
@@ -2857,19 +2857,19 @@ Overfull \hbox (25.61026pt too wide) in paragraph at lines 659--660
 [34
 
  <./figures/3left_increase.pdf>]
-<figures/Left3increase_probCI.pdf, id=479, 426.59375pt x 284.06125pt>
+<figures/Left3increase_probCI.pdf, id=585, 426.59375pt x 284.06125pt>
 File: figures/Left3increase_probCI.pdf Graphic file (type pdf)
 <use figures/Left3increase_probCI.pdf>
 Package pdftex.def Info: figures/Left3increase_probCI.pdf  used on input line 6
 71.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left3increases_1pbin_CI.pdf, id=480, 426.59375pt x 284.06125pt>
+<figures/Left3increases_1pbin_CI.pdf, id=586, 426.59375pt x 284.06125pt>
 File: figures/Left3increases_1pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left3increases_1pbin_CI.pdf>
 Package pdftex.def Info: figures/Left3increases_1pbin_CI.pdf  used on input lin
 e 682.
 (pdftex.def)             Requested size: 295.90588pt x 197.05138pt.
-<figures/Left3increases_10pbin_CI.pdf, id=481, 426.59375pt x 284.06125pt>
+<figures/Left3increases_10pbin_CI.pdf, id=587, 426.59375pt x 284.06125pt>
 File: figures/Left3increases_10pbin_CI.pdf Graphic file (type pdf)
 <use figures/Left3increases_10pbin_CI.pdf>
 Package pdftex.def Info: figures/Left3increases_10pbin_CI.pdf  used on input li
@@ -2883,19 +2883,19 @@ ne 685.
 .pdf>] [37
 
 ]
-<figures/example_restriction_peaks_MAX.pdf, id=528, 722.7pt x 361.35pt>
+<figures/example_restriction_peaks_MAX.pdf, id=629, 722.7pt x 361.35pt>
 File: figures/example_restriction_peaks_MAX.pdf Graphic file (type pdf)
 <use figures/example_restriction_peaks_MAX.pdf>
 Package pdftex.def Info: figures/example_restriction_peaks_MAX.pdf  used on inp
 ut line 751.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
-<figures/example_restriction_peaks_MAX20.pdf, id=529, 722.7pt x 361.35pt>
+<figures/example_restriction_peaks_MAX20.pdf, id=630, 722.7pt x 361.35pt>
 File: figures/example_restriction_peaks_MAX20.pdf Graphic file (type pdf)
 <use figures/example_restriction_peaks_MAX20.pdf>
 Package pdftex.def Info: figures/example_restriction_peaks_MAX20.pdf  used on i
 nput line 754.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
-<figures/example_restriction_peaks_MAX60.pdf, id=530, 722.7pt x 361.35pt>
+<figures/example_restriction_peaks_MAX60.pdf, id=631, 722.7pt x 361.35pt>
 File: figures/example_restriction_peaks_MAX60.pdf Graphic file (type pdf)
 <use figures/example_restriction_peaks_MAX60.pdf>
 Package pdftex.def Info: figures/example_restriction_peaks_MAX60.pdf  used on i
@@ -2903,7 +2903,7 @@ nput line 757.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
  [38] [39 <./figures/example_restriction_peaks_MAX.pdf> <./figures/example_rest
 riction_peaks_MAX20.pdf> <./figures/example_restriction_peaks_MAX60.pdf>]
-<figures/patter_DE_since_peak_window_year_login_sample2.pdf, id=562, 722.7pt x 
+<figures/patter_DE_since_peak_window_year_login_sample2.pdf, id=662, 722.7pt x 
 361.35pt>
 File: figures/patter_DE_since_peak_window_year_login_sample2.pdf Graphic file (
 type pdf)
@@ -2911,7 +2911,7 @@ type pdf)
 Package pdftex.def Info: figures/patter_DE_since_peak_window_year_login_sample2
 .pdf  used on input line 771.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/patter_DE_since_peak_window_year_login_sample_update_week2.pdf, id=563
+<figures/patter_DE_since_peak_window_year_login_sample_update_week2.pdf, id=663
 , 722.7pt x 361.35pt>
 File: figures/patter_DE_since_peak_window_year_login_sample_update_week2.pdf Gr
 aphic file (type pdf)
@@ -2919,7 +2919,7 @@ aphic file (type pdf)
 Package pdftex.def Info: figures/patter_DE_since_peak_window_year_login_sample_
 update_week2.pdf  used on input line 774.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/patter_DE_since_peak_window_year_login_sample_update_month2.pdf, id=56
+<figures/patter_DE_since_peak_window_year_login_sample_update_month2.pdf, id=66
 4, 722.7pt x 361.35pt>
 File: figures/patter_DE_since_peak_window_year_login_sample_update_month2.pdf G
 raphic file (type pdf)
@@ -2928,7 +2928,7 @@ Package pdftex.def Info: figures/patter_DE_since_peak_window_year_login_sample_
 update_month2.pdf  used on input line 777.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
 <figures/patter_DE_since_peak_window_year_login_sample_update_quarter2.pdf, id=
-565, 722.7pt x 361.35pt>
+665, 722.7pt x 361.35pt>
 File: figures/patter_DE_since_peak_window_year_login_sample_update_quarter2.pdf
  Graphic file (type pdf)
 <use figures/patter_DE_since_peak_window_year_login_sample_update_quarter2.pdf>
@@ -2941,7 +2941,7 @@ patter_DE_since_peak_window_year_login_sample_update_week2.pdf> <./figures/patt
 er_DE_since_peak_window_year_login_sample_update_month2.pdf> <./figures/patter_
 DE_since_peak_window_year_login_sample_update_quarter2.pdf>]
 <figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample2_2.pdf, id
-=598, 722.7pt x 361.35pt>
+=698, 722.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample2_2.pd
 f Graphic file (type pdf)
 <use figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample2_2.pdf
@@ -2950,7 +2950,7 @@ Package pdftex.def Info: figures/patter_DE_HOLDING_since_purch_peak_window_year
 _login_sample2_2.pdf  used on input line 794.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
 <figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_update_wee
-k2_2.pdf, id=599, 722.7pt x 361.35pt>
+k2_2.pdf, id=699, 722.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_updat
 e_week2_2.pdf Graphic file (type pdf)
 <use figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_update
@@ -2959,7 +2959,7 @@ Package pdftex.def Info: figures/patter_DE_HOLDING_since_purch_peak_window_year
 _login_sample_update_week2_2.pdf  used on input line 797.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
 <figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_update_mon
-th2_2.pdf, id=600, 722.7pt x 361.35pt>
+th2_2.pdf, id=700, 722.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_updat
 e_month2_2.pdf Graphic file (type pdf)
 <use figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_update
@@ -2968,7 +2968,7 @@ Package pdftex.def Info: figures/patter_DE_HOLDING_since_purch_peak_window_year
 _login_sample_update_month2_2.pdf  used on input line 800.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
 <figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_update_qua
-rter2_2.pdf, id=601, 722.7pt x 361.35pt>
+rter2_2.pdf, id=701, 722.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_updat
 e_quarter2_2.pdf Graphic file (type pdf)
 <use figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_update
@@ -2981,7 +2981,7 @@ pdf> <./figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_upd
 ate_week2_2.pdf> <./figures/patter_DE_HOLDING_since_purch_peak_window_year_logi
 n_sample_update_month2_2.pdf> <./figures/patter_DE_HOLDING_since_purch_peak_win
 dow_year_login_sample_update_quarter2_2.pdf>]
-<figures/return_since_peak_MAX_inmediate_updated.pdf, id=634, 361.35pt x 361.35
+<figures/return_since_peak_MAX_inmediate_updated.pdf, id=734, 361.35pt x 361.35
 pt>
 File: figures/return_since_peak_MAX_inmediate_updated.pdf Graphic file (type pd
 f)
@@ -2989,7 +2989,7 @@ f)
 Package pdftex.def Info: figures/return_since_peak_MAX_inmediate_updated.pdf  u
 sed on input line 818.
 (pdftex.def)             Requested size: 273.14923pt x 273.15117pt.
-<figures/return_since_peak_MAX_inmediate_quarter_updated.pdf, id=635, 361.35pt 
+<figures/return_since_peak_MAX_inmediate_quarter_updated.pdf, id=735, 361.35pt 
 x 361.35pt>
 File: figures/return_since_peak_MAX_inmediate_quarter_updated.pdf Graphic file 
 (type pdf)
@@ -2999,7 +2999,7 @@ d.pdf  used on input line 821.
 (pdftex.def)             Requested size: 273.14923pt x 273.15117pt.
  [42 <./figures/return_since_peak_MAX_inmediate_updated.pdf> <./figures/return_
 since_peak_MAX_inmediate_quarter_updated.pdf>]
-<figures/example_restriction_peaks.pdf, id=653, 722.7pt x 361.35pt>
+<figures/example_restriction_peaks.pdf, id=753, 722.7pt x 361.35pt>
 File: figures/example_restriction_peaks.pdf Graphic file (type pdf)
 <use figures/example_restriction_peaks.pdf>
 Package pdftex.def Info: figures/example_restriction_peaks.pdf  used on input l
@@ -3013,7 +3013,7 @@ ine 853.
 
 
  <./figures/example_restriction_peaks.pdf>]
-<figures/patter_DE_since_peak_window_year_login_sample.pdf, id=680, 722.7pt x 3
+<figures/patter_DE_since_peak_window_year_login_sample.pdf, id=777, 722.7pt x 3
 61.35pt>
 File: figures/patter_DE_since_peak_window_year_login_sample.pdf Graphic file (t
 ype pdf)
@@ -3021,7 +3021,7 @@ ype pdf)
 Package pdftex.def Info: figures/patter_DE_since_peak_window_year_login_sample.
 pdf  used on input line 885.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
-<figures/patter_DE_since_peak_window_year_login_sample_update_week.pdf, id=681,
+<figures/patter_DE_since_peak_window_year_login_sample_update_week.pdf, id=778,
  722.7pt x 361.35pt>
 File: figures/patter_DE_since_peak_window_year_login_sample_update_week.pdf Gra
 phic file (type pdf)
@@ -3029,7 +3029,7 @@ phic file (type pdf)
 Package pdftex.def Info: figures/patter_DE_since_peak_window_year_login_sample_
 update_week.pdf  used on input line 888.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
-<figures/patter_DE_HOLDING_since_peak_window_year_login_sample.pdf, id=682, 722
+<figures/patter_DE_HOLDING_since_peak_window_year_login_sample.pdf, id=779, 722
 .7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_peak_window_year_login_sample.pdf Graphic
  file (type pdf)
@@ -3038,7 +3038,7 @@ Package pdftex.def Info: figures/patter_DE_HOLDING_since_peak_window_year_login
 _sample.pdf  used on input line 898.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
 <figures/patter_DE_HOLDING_since_peak_window_year_login_sample_update_week.pdf,
- id=683, 722.7pt x 361.35pt>
+ id=780, 722.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_peak_window_year_login_sample_update_week
 .pdf Graphic file (type pdf)
 <use figures/patter_DE_HOLDING_since_peak_window_year_login_sample_update_week.
@@ -3046,19 +3046,19 @@ pdf>
 Package pdftex.def Info: figures/patter_DE_HOLDING_since_peak_window_year_login
 _sample_update_week.pdf  used on input line 901.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
-<figures/hold_gainpeak_losspurch.pdf, id=684, 722.7pt x 361.35pt>
+<figures/hold_gainpeak_losspurch.pdf, id=781, 722.7pt x 361.35pt>
 File: figures/hold_gainpeak_losspurch.pdf Graphic file (type pdf)
 <use figures/hold_gainpeak_losspurch.pdf>
 Package pdftex.def Info: figures/hold_gainpeak_losspurch.pdf  used on input lin
 e 912.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
-<figures/hold_gainpeak_gainpurch.pdf, id=685, 722.7pt x 361.35pt>
+<figures/hold_gainpeak_gainpurch.pdf, id=782, 722.7pt x 361.35pt>
 File: figures/hold_gainpeak_gainpurch.pdf Graphic file (type pdf)
 <use figures/hold_gainpeak_gainpurch.pdf>
 Package pdftex.def Info: figures/hold_gainpeak_gainpurch.pdf  used on input lin
 e 915.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
-<figures/nohold_gainpeak_losspurch_update_week.pdf, id=686, 722.7pt x 361.35pt>
+<figures/nohold_gainpeak_losspurch_update_week.pdf, id=783, 722.7pt x 361.35pt>
 
 File: figures/nohold_gainpeak_losspurch_update_week.pdf Graphic file (type pdf)
 
@@ -3066,7 +3066,7 @@ File: figures/nohold_gainpeak_losspurch_update_week.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/nohold_gainpeak_losspurch_update_week.pdf  use
 d on input line 918.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
-<figures/nohold_gainpeak_gainpurch.pdf, id=687, 722.7pt x 361.35pt>
+<figures/nohold_gainpeak_gainpurch.pdf, id=784, 722.7pt x 361.35pt>
 File: figures/nohold_gainpeak_gainpurch.pdf Graphic file (type pdf)
 <use figures/nohold_gainpeak_gainpurch.pdf>
 Package pdftex.def Info: figures/nohold_gainpeak_gainpurch.pdf  used on input l
@@ -3083,7 +3083,7 @@ _DE_HOLDING_since_peak_window_year_login_sample_update_week.pdf>] [47 <./figure
 s/hold_gainpeak_losspurch.pdf> <./figures/hold_gainpeak_gainpurch.pdf> <./figur
 es/nohold_gainpeak_losspurch_update_week.pdf> <./figures/nohold_gainpeak_gainpu
 rch.pdf>]
-<figures/patter_DE_HOLDING_since_purch_window_year_login_sample.pdf, id=764, 72
+<figures/patter_DE_HOLDING_since_purch_window_year_login_sample.pdf, id=859, 72
 2.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_purch_window_year_login_sample.pdf Graphi
 c file (type pdf)
@@ -3092,7 +3092,7 @@ Package pdftex.def Info: figures/patter_DE_HOLDING_since_purch_window_year_logi
 n_sample.pdf  used on input line 940.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
 <figures/patter_DE_HOLDING_since_purch_window_year_login_sample_update_week.pdf
-, id=765, 722.7pt x 361.35pt>
+, id=860, 722.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_purch_window_year_login_sample_update_wee
 k.pdf Graphic file (type pdf)
 <use figures/patter_DE_HOLDING_since_purch_window_year_login_sample_update_week
@@ -3109,8 +3109,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 951--952
 
  <./figures/patter_DE_HOLDING_since_purch_window_year_login_sample.pdf> <./figu
 res/patter_DE_HOLDING_since_purch_window_year_login_sample_update_week.pdf>]
-<figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample2.pdf, id=7
-89, 722.7pt x 361.35pt>
+<figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample2.pdf, id=8
+83, 722.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample2.pdf 
 Graphic file (type pdf)
 <use figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample2.pdf>
@@ -3118,7 +3118,7 @@ Package pdftex.def Info: figures/patter_DE_HOLDING_since_purch_peak_window_year
 _login_sample2.pdf  used on input line 961.
 (pdftex.def)             Requested size: 318.66948pt x 159.33633pt.
 <figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_update_wee
-k2.pdf, id=790, 722.7pt x 361.35pt>
+k2.pdf, id=884, 722.7pt x 361.35pt>
 File: figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_updat
 e_week2.pdf Graphic file (type pdf)
 <use figures/patter_DE_HOLDING_since_purch_peak_window_year_login_sample_update
@@ -3155,61 +3155,61 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [54
 
 ] [55]
-<figures/DE_recent_gain_week.pdf, id=852, 722.7pt x 361.35pt>
+<figures/DE_recent_gain_week.pdf, id=946, 722.7pt x 361.35pt>
 File: figures/DE_recent_gain_week.pdf Graphic file (type pdf)
 <use figures/DE_recent_gain_week.pdf>
 Package pdftex.def Info: figures/DE_recent_gain_week.pdf  used on input line 11
 10.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_recent_gain_month.pdf, id=853, 722.7pt x 361.35pt>
+<figures/DE_recent_gain_month.pdf, id=947, 722.7pt x 361.35pt>
 File: figures/DE_recent_gain_month.pdf Graphic file (type pdf)
 <use figures/DE_recent_gain_month.pdf>
 Package pdftex.def Info: figures/DE_recent_gain_month.pdf  used on input line 1
 113.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_recent_gain_quarter.pdf, id=854, 722.7pt x 361.35pt>
+<figures/DE_recent_gain_quarter.pdf, id=948, 722.7pt x 361.35pt>
 File: figures/DE_recent_gain_quarter.pdf Graphic file (type pdf)
 <use figures/DE_recent_gain_quarter.pdf>
 Package pdftex.def Info: figures/DE_recent_gain_quarter.pdf  used on input line
  1116.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_login_recent_gain_week.pdf, id=855, 722.7pt x 361.35pt>
+<figures/DE_login_recent_gain_week.pdf, id=949, 722.7pt x 361.35pt>
 File: figures/DE_login_recent_gain_week.pdf Graphic file (type pdf)
 <use figures/DE_login_recent_gain_week.pdf>
 Package pdftex.def Info: figures/DE_login_recent_gain_week.pdf  used on input l
 ine 1129.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_login_recent_gain_month.pdf, id=856, 722.7pt x 361.35pt>
+<figures/DE_login_recent_gain_month.pdf, id=950, 722.7pt x 361.35pt>
 File: figures/DE_login_recent_gain_month.pdf Graphic file (type pdf)
 <use figures/DE_login_recent_gain_month.pdf>
 Package pdftex.def Info: figures/DE_login_recent_gain_month.pdf  used on input 
 line 1132.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_login_recent_gain_quarter.pdf, id=857, 722.7pt x 361.35pt>
+<figures/DE_login_recent_gain_quarter.pdf, id=951, 722.7pt x 361.35pt>
 File: figures/DE_login_recent_gain_quarter.pdf Graphic file (type pdf)
 <use figures/DE_login_recent_gain_quarter.pdf>
 Package pdftex.def Info: figures/DE_login_recent_gain_quarter.pdf  used on inpu
 t line 1135.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_recent_gain_week_sell_sample.pdf, id=858, 722.7pt x 361.35pt>
+<figures/DE_recent_gain_week_sell_sample.pdf, id=952, 722.7pt x 361.35pt>
 File: figures/DE_recent_gain_week_sell_sample.pdf Graphic file (type pdf)
 <use figures/DE_recent_gain_week_sell_sample.pdf>
 Package pdftex.def Info: figures/DE_recent_gain_week_sell_sample.pdf  used on i
 nput line 1148.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_recent_gain_month_sell_sample.pdf, id=859, 722.7pt x 361.35pt>
+<figures/DE_recent_gain_month_sell_sample.pdf, id=953, 722.7pt x 361.35pt>
 File: figures/DE_recent_gain_month_sell_sample.pdf Graphic file (type pdf)
 <use figures/DE_recent_gain_month_sell_sample.pdf>
 Package pdftex.def Info: figures/DE_recent_gain_month_sell_sample.pdf  used on 
 input line 1151.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_recent_gain_quarter_sell_sample.pdf, id=860, 722.7pt x 361.35pt>
+<figures/DE_recent_gain_quarter_sell_sample.pdf, id=954, 722.7pt x 361.35pt>
 File: figures/DE_recent_gain_quarter_sell_sample.pdf Graphic file (type pdf)
 <use figures/DE_recent_gain_quarter_sell_sample.pdf>
 Package pdftex.def Info: figures/DE_recent_gain_quarter_sell_sample.pdf  used o
 n input line 1154.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_login_recent_gain_week_sell_sample.pdf, id=861, 722.7pt x 361.35pt>
+<figures/DE_login_recent_gain_week_sell_sample.pdf, id=955, 722.7pt x 361.35pt>
 
 File: figures/DE_login_recent_gain_week_sell_sample.pdf Graphic file (type pdf)
 
@@ -3217,7 +3217,7 @@ File: figures/DE_login_recent_gain_week_sell_sample.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/DE_login_recent_gain_week_sell_sample.pdf  use
 d on input line 1167.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_login_recent_gain_month_sell_sample.pdf, id=862, 722.7pt x 361.35pt
+<figures/DE_login_recent_gain_month_sell_sample.pdf, id=956, 722.7pt x 361.35pt
 >
 File: figures/DE_login_recent_gain_month_sell_sample.pdf Graphic file (type pdf
 )
@@ -3225,7 +3225,7 @@ File: figures/DE_login_recent_gain_month_sell_sample.pdf Graphic file (type pdf
 Package pdftex.def Info: figures/DE_login_recent_gain_month_sell_sample.pdf  us
 ed on input line 1170.
 (pdftex.def)             Requested size: 273.14923pt x 136.57558pt.
-<figures/DE_login_recent_gain_quarter_sell_sample.pdf, id=863, 722.7pt x 361.35
+<figures/DE_login_recent_gain_quarter_sell_sample.pdf, id=957, 722.7pt x 361.35
 pt>
 File: figures/DE_login_recent_gain_quarter_sell_sample.pdf Graphic file (type p
 df)
@@ -3248,25 +3248,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (left_digit_attention_results.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `left_digit_attention_results.out' has not ch
+anged.
+(rerunfilecheck)             Checksum: EBD288A50D2ECEDD864AC119ADF9314D;3063.
 
-
-Package rerunfilecheck Warning: File `left_digit_attention_results.out' has cha
-nged.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `left_digit_attention_results.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  EBD288A50D2ECEDD864AC119ADF9314D;3063.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32223 strings out of 493305
- 625324 string characters out of 3129802
- 775284 words of memory out of 3000000
- 34603 multiletter control sequences out of 15000+200000
+ 32253 strings out of 493305
+ 625846 string characters out of 3129802
+ 775317 words of memory out of 3000000
+ 34633 multiletter control sequences out of 15000+200000
  770693 words of font info for 401 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,100p,10424b,1039s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3289,9 +3283,9 @@ tx/fxlri-7letters.pfb><C:/Users/edika/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/txfonts/rtxr.pfb><C:/Users/edika/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/newtx/txsys.pfb><C:/Users/edika/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/newtx/zxlri.pfb>
-Output written on left_digit_attention_results.pdf (60 pages, 925323 bytes).
+Output written on left_digit_attention_results.pdf (60 pages, 934274 bytes).
 PDF statistics:
- 1062 PDF objects out of 1200 (max. 8388607)
+ 1156 PDF objects out of 1200 (max. 8388607)
  233 named destinations out of 1000 (max. 500000)
- 67945 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 68193 words of extra memory for PDF output out of 74296 (max. 10000000)
 
