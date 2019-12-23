@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.17)  23 DEC 2019 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.17)  23 DEC 2019 19:35
 entering extended mode
 **./left_digit_attention_paper.tex
 (left_digit_attention_paper.tex
@@ -2509,21 +2509,9 @@ pdf>] [9 <./figures/Left2decreases_1pbin_CI.pdf> <./figures/2left_decrease_bin1
 p.pdf> <./figures/Left2decreases_10pbin_CI.pdf> <./figures/2left_decrease_bin10
 p.pdf> <./figures/Left2decreases_1poundbin_CI.pdf> <./figures/2left_decrease_bi
 n1pound.pdf>]
-(tables/reg_sample_increase_all.tex)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 149.
-
-
-LaTeX Warning: Reference `fig:prob_all_inc' on page 1 undefined on input line 1
-49.
-
-[10
+(tables/reg_sample_increase_all.tex) [10
 
 ] (tables/reg_sample_decrease_all.tex)
-
-LaTeX Warning: Reference `fig:prob_all_dec' on page 1 undefined on input line 1
-65.
-
 [11
 
 ] (tables/reg_sample_age.tex) (tables/reg_sample_gender.tex)
@@ -2638,18 +2626,15 @@ ged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 31556 strings out of 493305
- 602707 string characters out of 3129802
+ 31557 strings out of 493305
+ 602711 string characters out of 3129802
  783534 words of memory out of 3000000
- 34288 multiletter control sequences out of 15000+200000
- 695441 words of font info for 290 fonts, out of 3000000 for 9000
+ 34284 multiletter control sequences out of 15000+200000
+ 690732 words of font info for 292 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,100p,10422b,1035s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/edika/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/l
@@ -2667,9 +2652,9 @@ MiKTeX 2.9/fonts/type1/public/newtx/fxlri-7letters.pfb><C:/Users/edika/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/edika/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb><C:/Users/e
 dika/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/zxlri.pfb>
-Output written on left_digit_attention_paper.pdf (20 pages, 526801 bytes).
+Output written on left_digit_attention_paper.pdf (20 pages, 526791 bytes).
 PDF statistics:
  406 PDF objects out of 1000 (max. 8388607)
  67 named destinations out of 1000 (max. 500000)
- 48289 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 47777 words of extra memory for PDF output out of 51595 (max. 10000000)
 
