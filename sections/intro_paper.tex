@@ -37,24 +37,7 @@ THE PROBLEM IS THAT USING PRICES WITHOUT CONDITIONING ON LOGIN DAYS TO DEFINE TH
 \clearpage
 
 \begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale \textcolor{blue}{[EQ: Old samples]} }%
-	\label{fig:left_digit_sell}%
-	\centering%	
-	\bigskip
-	\subfigure[Price Increasing]{
-			\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI.pdf}
-			\includegraphics[width=0.45\textwidth]{figures/2left_increase.pdf}	
-	}
-	\subfigure[Price Decreasing]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease.pdf}	
-	}
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc., ).}
-\end{figure}
-
-
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale \textcolor{blue}{[EQ: New samples, defining patterns based on prices on login days]} }%
+	\caption{Leftmost Stock Price Digit and Probability of Sale}%
 	\label{fig:left_digit_sell}%
 	\centering%	
 	\bigskip
@@ -66,74 +49,45 @@ THE PROBLEM IS THAT USING PRICES WITHOUT CONDITIONING ON LOGIN DAYS TO DEFINE TH
 		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI2.pdf}
 		\includegraphics[width=0.45\textwidth]{figures/2left_decrease2.pdf}	
 	}
-	\subfigure[Remaining]{
-\includegraphics[width=0.45\textwidth]{figures/Left2remaining_probCI2.pdf}
-\includegraphics[width=0.45\textwidth]{figures/2left_remaning2.pdf}	
-	}
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc., ).}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
 \end{figure}
 
 
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale \textcolor{blue}{[EQ: Samples based on market prices not restricted to login days. These samples show no effects. This is the only plot using these samples, it is here just for reference.]} }%
-	\label{fig:left_digit_sell}%
-	\centering%	
-	\bigskip
-	\subfigure[Price Increasing]{
-		\includegraphics[width=0.55\textwidth]{figures/Left2increase_probCI2market.pdf}	
-	}
-	\subfigure[Price Decreasing]{
-		\includegraphics[width=0.55\textwidth]{figures/Left2decrease_probCI2market.pdf}	
-	}
-	\subfigure[Remaining]{
-		\includegraphics[width=0.55\textwidth]{figures/Left2remaining_probCI2market.pdf}	
-	}
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc., ). \textcolor{blue}{[EQ: there is some overlap between the remaining sample here and in the one in Figure 2.]}}
-\end{figure}
-\clearpage
-\textcolor{blue}{[EQ: From here, everything else is showing results with the new samples using prices on login days!]}
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Increasing Sample by Price Range}%
-	\label{fig:left_digit_sell_increase}%
-	\centering%	
-	\bigskip
-		\subfigure[Price = \pounds0.11 to \pounds1.01]{
-			\includegraphics[width=0.45\textwidth]{figures/Left2increases_1pbin_CI.pdf}
-			\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin1p.pdf}
-		}
-		\subfigure[Price = \pounds1.01 to \pounds10.1]{
-			\includegraphics[width=0.45\textwidth]{figures/Left2increases_10pbin_CI.pdf}
-			\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin10p.pdf}
-		}
-		\subfigure[Price = \pounds11 to \pounds101]{
-			\includegraphics[width=0.45\textwidth]{figures/Left2increases_1poundbin_CI.pdf}
-			\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin1pound.pdf}
-		}
-		\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc., ).}
-\end{figure}
 
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Decreasing Sample by Price Range}%
-	\label{fig:left_digit_sell_decrease}%
-	\centering%	
-	\bigskip
-	\subfigure[Price = \pounds0.10 to \pounds1.00]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_1pbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin1p.pdf}
-	}
-	\subfigure[Price = \pounds1.00 to \pounds10.0]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_10pbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin10p.pdf}
-	}
-	\subfigure[Price = \pounds10 to \pounds100]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_1poundbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin1pound.pdf}
-	}
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc., ).}
-\end{figure}
 
 \clearpage
 
+\begin{table}\small
+	\caption{Summary Stats}
+	\label{tab:price_summary_stats}
+	\bigskip
+	\begin{adjustbox}{center}
+		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (A): Baseline Sample} \\>{
+			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
+			\input{tables/prices_stats.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (B): Price Increasing Sample} \\>{
+			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
+			\input{tables/prices_samples_stats.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (C): Price Decreasing Sample} \\>{
+			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
+			\input{tables/prices_samples_stats_down.tex} 
+		}
+	\end{adjustbox}
+\end{table}
+
+\clearpage
 
 \begin{econtable}[h]\footnotesize
 	\caption{Probability of Sale and Left Digit, Price Increasing Sample}
@@ -253,6 +207,48 @@ THE PROBLEM IS THAT USING PRICES WITHOUT CONDITIONING ON LOGIN DAYS TO DEFINE TH
 \clearpage
 
 \begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Increasing Sample by Price Range}%
+	\label{fig:left_digit_sell_increase}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.11 to \pounds1.01]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increases_1pbin_CI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin1p.pdf}
+	}
+	\subfigure[Price = \pounds1.01 to \pounds10.1]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increases_10pbin_CI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin10p.pdf}
+	}
+	\subfigure[Price = \pounds11 to \pounds101]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increases_1poundbin_CI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin1pound.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 26.22\% of the observations in the prices increasing sample; Panel B, to 49.28\%; and Panel C, to 8.03\%.}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Decreasing Sample by Price Range}%
+	\label{fig:left_digit_sell_decrease}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.10 to \pounds1.00]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_1pbin_CI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin1p.pdf}
+	}
+	\subfigure[Price = \pounds1.00 to \pounds10.0]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_10pbin_CI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin10p.pdf}
+	}
+	\subfigure[Price = \pounds10 to \pounds100]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_1poundbin_CI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin1pound.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 25.89\% of the observations in the prices decreasing sample; Panel B, to 41.15\%; and Panel C, to 6.74\%.}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[hbt!]
 	\caption{Sample Selection and Simulation Exercise}%
 	\label{fig:sample_selection_test}%
 	\centering%	
@@ -268,11 +264,26 @@ THE PROBLEM IS THAT USING PRICES WITHOUT CONDITIONING ON LOGIN DAYS TO DEFINE TH
 \end{figure}
 
 
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Sell Days \textcolor{blue}{[EQ: sell days results at here the end of the Appendix. But perhaps they should go before Figure A4?]}}%
+	\label{fig:left_digit_sell}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI2_sell_sample.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase2_sell_sample.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI2_sell_sample.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease2_sell_sample.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
 
 
 
 \begin{figure}[hbt!]
-	\caption{Probability of Topping-up \textcolor{blue}{[EQ: With the new samples, the pattern for the decreasing price sample is completely different. There is no clear pattern! The old pattern was driven by stocks in the old remaining sample, i.e., stocks that have not changed the first left digit during the quarter. I will delete these plots. But in case you want to see how they look like, they are here for now]}}%
+	\caption{Probability of Topping-up \textcolor{blue}{[EQ: I remember we talked with George about doing the topping up analysis. Perhaps we could just tell him that the analysis did not work and drop this plot? What do you think? Just in case, I am leaving the plots here for now. ]}}%
 	\label{fig:topup}%
 	\centering%	
 	\bigskip
@@ -290,37 +301,36 @@ THE PROBLEM IS THAT USING PRICES WITHOUT CONDITIONING ON LOGIN DAYS TO DEFINE TH
 
 \clearpage
 
-\begin{table}\small
-	\caption{Summary Stats}
-	\label{tab:price_summary_stats}
-	\bigskip
-	\begin{adjustbox}{center}
-		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (A): Baseline Sample} \\>{
-		& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
-		\input{tables/prices_stats.tex} 
-	}
-	\end{adjustbox}
-	
-	\bigskip
-		
-	\begin{adjustbox}{center}
-		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (B): Price Increasing Sample} \\>{
-			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
-			\input{tables/prices_samples_stats.tex} 
-		}
-	\end{adjustbox}
-	
-	\bigskip
-		
-	\begin{adjustbox}{center}
-		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (C): Price Decreasing Sample} \\>{
-			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
-			\input{tables/prices_samples_stats_down.tex} 
-		}
-	\end{adjustbox}
-\end{table}
 
-
+\begin{econtable}\footnotesize
+	\caption{Sample Selection \textcolor{blue}{[EQ: we used the sample from our DE paper. So these are new accounts. We can control for returns with this sample in a reviewer suggests us to do so. But the table is a preliminary table. Do you think the sub samples are clear? We need to discuss about how to present the sample exclusions]}}
+\estauto{l c c c }{
+	& \multicolumn{1}{c}{Remaining Accounts} &   \\ 
+	\midrule
+		\textbf{All potential new accounts}                                                                                                                                             & 33285              \\
+	Excluding  accounts:                                                                                                                                                 &                    \\
+		 \quad~ Accounts with transfers-in                                                                                                                                                               & 29440              \\
+		 \quad~ Accounts with no single sell  record                                                                                                                                                     & 13785              \\
+		 \quad~ Accounts with no single login  record                                                                                                                                                    & 13681              \\
+	Excluding  observations (account $\times$ stock $\times$ day):                                                                                                 &                    \\
+		 \quad~ Days with fewer than 2 stocks                                                                                                                                                   & 11104              \\
+		 \quad~ Outliers in returns (1 and 99  percentiles)                                                                                                                                     & 11083              \\
+		 \quad~ Days with unknown prices                                                                                                                                               & 10415              \\  
+	 \quad~ Accounts with an average portfolio value of 0                                                                                                                                   & 10367              \\
+		 \quad~ Accounts with no remaining selling days after the earlier exclusions                                                                                                             & 8242              \\
+		 	\midrule
+		\textbf{Number of Accounts}                                                                                                                                                     & \textbf{8242}      \\
+		\textbf{Number of Observations}                                                                                                                                                 & \textbf{5894175}   \\ \\
+		\textbf{Sub-samples}   &                    \\
+		\textit{Price Increasing Stocks Sample}   &                    \\
+	 \quad~	Quarters in which stock prices $>$  first price of the quarter & 316242             \\
+	 \quad~	  and the price changed the leftmost digit at  least once  & \\
+		\textit{Price Decreasing Stocks Sample}   &                    \\
+	 \quad~	Quarters in which stock prices $<$   first price of the quarter   & 440850      \\   
+	 \quad~	 and the price changed the leftmost digit at   least once  \\
+}
+	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. Only days in which the investor made a login to their account are included. Sub-samples include stocks and quarters in which prices were increasing (or decreasing) and there was a change in the left most digit of the price of the stock at least once during the quarter. All login days in these quarters are included. }
+\end{econtable}
 
 \begin{table}\footnotesize
 	\caption{Price Increasing Subsamples with Equal Prices Bins}
@@ -407,4 +417,37 @@ THE PROBLEM IS THAT USING PRICES WITHOUT CONDITIONING ON LOGIN DAYS TO DEFINE TH
 		}
 	\end{adjustbox}
 \end{table}
+
+\clearpage
+\textcolor{blue}{[EQ: new results using the sell day sample. We use the same quarters but we only include sell days. We replicate the main regressions. Do you think we need to replicate some other tables presented with the login sample?  ]}.
+
+\begin{econtable}[h]\footnotesize
+	\caption{Probability of Sale and Left Digit, Price Increasing Sample, Sell Days}
+	\label{tab:regressions_increase}
+	\estauto{l c c c c c c  }{
+		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+		%	\cmidrule(rr){2-7}
+		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+		\multicolumn{1}{c}{(5)} & \\ 
+		\midrule
+		\input{tables/reg_sample_increase_all_sell_sample.tex} 
+	}
+	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to sell days. We include only quarters in which the stocks increased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (X0). SE are clustered by account.}
+\end{econtable}
+
+\clearpage
+
+\begin{econtable}[h]\footnotesize
+	\caption{Probability of Sale and Left Digit, Price Decreasing Sample, Sell Days}
+	\label{tab:regressions_decrease}
+	\estauto{l c c c c c c  }{
+		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+		%	\cmidrule(rr){2-7}
+		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+		\multicolumn{1}{c}{(5)} & \\ 
+		\midrule
+		\input{tables/reg_sample_decrease_all_sell_sample.tex} 
+	}
+	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to sell days. We include only quarters in which the stocks have not increased in price (regarding the first observation of the quarter) and have not changed the left most digit at least once during the quarter. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (X0). SE are clustered by account.}
+\end{econtable}
 
