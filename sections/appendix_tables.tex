@@ -1,0 +1,149 @@
+\begin{econtable}\footnotesize
+	\caption{Sample Selection \textcolor{blue}{[EQ: we used the sample from our DE paper. So these are new accounts. We can control for returns with this sample in a reviewer suggests us to do so. But the table is a preliminary table. Do you think the sub samples are clear? We need to discuss about how to present the sample exclusions]}}
+\estauto{l c c c }{
+	& \multicolumn{1}{c}{Remaining Accounts} &   \\ 
+	\midrule
+		\textbf{All potential new accounts}                                                                                                                                             & 33285              \\
+	Excluding  accounts:                                                                                                                                                 &                    \\
+		 \quad~ Accounts with transfers-in                                                                                                                                                               & 29440              \\
+		 \quad~ Accounts with no single sell  record                                                                                                                                                     & 13785              \\
+		 \quad~ Accounts with no single login  record                                                                                                                                                    & 13681              \\
+	Excluding  observations (account $\times$ stock $\times$ day):                                                                                                 &                    \\
+		 \quad~ Days with fewer than 2 stocks                                                                                                                                                   & 11104              \\
+		 \quad~ Outliers in returns (1 and 99  percentiles)                                                                                                                                     & 11083              \\
+		 \quad~ Days with unknown prices                                                                                                                                               & 10415              \\  
+	 \quad~ Accounts with an average portfolio value of 0                                                                                                                                   & 10367              \\
+		 \quad~ Accounts with no remaining selling days after the earlier exclusions                                                                                                             & 8242              \\
+		 	\midrule
+		\textbf{Number of Accounts}                                                                                                                                                     & \textbf{8242}      \\
+		\textbf{Number of Observations}                                                                                                                                                 & \textbf{5894175}   \\ \\
+		\textbf{Sub-samples}   &                    \\
+		\textit{Price Increasing Stocks Sample}   &                    \\
+	 \quad~	Quarters in which stock prices $>$  first price of the quarter & 316242             \\
+	 \quad~	  and the price changed the leftmost digit at  least once  & \\
+		\textit{Price Decreasing Stocks Sample}   &                    \\
+	 \quad~	Quarters in which stock prices $<$   first price of the quarter   & 440850      \\   
+	 \quad~	 and the price changed the leftmost digit at   least once  \\
+}
+	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. Only days in which the investor made a login to their account are included. Sub-samples include stocks and quarters in which prices were increasing (or decreasing) and there was a change in the left most digit of the price of the stock at least once during the quarter. All login days in these quarters are included. }
+\end{econtable}
+
+\begin{table}\footnotesize
+	\caption{Price Increasing Subsamples with Equal Prices Bins}
+	\label{tab:price_summary_stats}
+	\bigskip
+	\begin{adjustbox}{center}
+			\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (A): Price = \pounds0.11 to \pounds1.01} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/reg_sample_increase_1.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+	\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (B): Price = \pounds1.01 to \pounds10.1} \\>{
+		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+		%	\cmidrule(rr){2-7}
+		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+		\multicolumn{1}{c}{(5)} & \\ 
+		\midrule
+		\input{tables/reg_sample_increase_2.tex} 
+	}
+\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+	\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (C): Price = \pounds11 to \pounds101} \\>{
+		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+		%	\cmidrule(rr){2-7}
+		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+		\multicolumn{1}{c}{(5)} & \\ 
+		\midrule
+		\input{tables/reg_sample_increase_2.tex} 
+	}
+\end{adjustbox}
+\end{table}
+
+
+
+\begin{table}\footnotesize
+	\caption{Price Decreasing Subsamples with Equal Prices Bins}
+	\label{tab:price_summary_stats}
+	\bigskip
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (A): Price = \pounds0.10 to \pounds1.00} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/reg_sample_decrease_1.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (B): Price = \pounds1.00 to \pounds10.0} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/reg_sample_decrease_2.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (C): Price = \pounds10 to \pounds100} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/reg_sample_decrease_3.tex} 
+		}
+	\end{adjustbox}
+\end{table}
+
+\clearpage
+\textcolor{blue}{[EQ: new results using the sell day sample. We use the same quarters but we only include sell days. We replicate the main regressions. Do you think we need to replicate some other tables presented with the login sample?  ]}.
+
+\begin{econtable}[h]\footnotesize
+	\caption{Probability of Sale and Left Digit, Price Increasing Sample, Sell Days}
+	\label{tab:regressions_increase}
+	\estauto{l c c c c c c  }{
+		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+		%	\cmidrule(rr){2-7}
+		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+		\multicolumn{1}{c}{(5)} & \\ 
+		\midrule
+		\input{tables/reg_sample_increase_all_sell_sample.tex} 
+	}
+	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to sell days. We include only quarters in which the stocks increased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (X0). SE are clustered by account.}
+\end{econtable}
+
+\clearpage
+
+\begin{econtable}[h]\footnotesize
+	\caption{Probability of Sale and Left Digit, Price Decreasing Sample, Sell Days}
+	\label{tab:regressions_decrease}
+	\estauto{l c c c c c c  }{
+		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+		%	\cmidrule(rr){2-7}
+		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+		\multicolumn{1}{c}{(5)} & \\ 
+		\midrule
+		\input{tables/reg_sample_decrease_all_sell_sample.tex} 
+	}
+	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to sell days. We include only quarters in which the stocks have not increased in price (regarding the first observation of the quarter) and have not changed the left most digit at least once during the quarter. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (X0). SE are clustered by account.}
+\end{econtable}
+
