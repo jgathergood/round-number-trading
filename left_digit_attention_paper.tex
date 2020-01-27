@@ -1,7 +1,7 @@
 % -*- TeX:UTF-8:Soft -*-
 
 \documentclass[
-	USenglish,11pt,paper=a4,numbers=noenddot,abstract=on,
+	USenglish,12pt,paper=a4,numbers=noenddot,abstract=on,
 	final,% remove sample info
 	fullsample,
 % 	centertables,
@@ -16,17 +16,17 @@
 \doublespacing
 
 \input{sections/title} \clearpage
-%\input{sections/intro_paper} \clearpage
+\input{sections/intro_paper} \clearpage
 
 \input{sections/figures} \clearpage
 \input{sections/tables} \clearpage
 \appendix
 \input{sections/appendix_figures} \clearpage
 \input{sections/appendix_tables} \clearpage
-%\begin{onehalfspacing}
-%	\bibliographystyle{chicago}
-%	\bibliographystockholding_paper-minimal}
-%\end{onehalfspacing}
+\begin{onehalfspacing}
+	\bibliographystyle{chicago}
+	\bibliography{left_digit_bibliography}
+\end{onehalfspacing}
 
 %main figures and tables
 \singlespacing

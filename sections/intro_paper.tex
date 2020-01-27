@@ -1,453 +1,51 @@
-\subsection*{The Left-Digit Effect and Stock Selling Behavior}
+We show left-digit bias in stock-selling behavior of individual investors. Left-digit bias is the tendency to focus on the leftmost digit of a number while partially ignoring other digits (\citealp{poltrock1984comparative}). Our contribution is to show that investors are disproportionately attentive to the leftmost digit in their trading choices, the salience of prices matters for investment choices (is this what we think is going on?).  This is similar to the rank effect finding of \cite{hartzmark2015}, whereby either top-ranked or bottom-ranked stocks by return since purchase are those most likely to be sold. We contribute to the broader literature on left-digit bias, including \cite{lacetera2012heuristic} and \cite{shlain2018more}. Our study contributes to our understanding of when and why investors sell stocks. 
 
-Investors are more likely to sell stocks after a change in the left-digit. This occurs for both price increases and decreases. The likelihood of a stock being sold jumps when the price crosses the left-digit from below, e.g. a stock increasing from \pounds9 to \pounds10, and also increases when the price crosses the left-digit from above, e.g. a stock decreasing from \pounds10 to \pounds9. We interpret this as showing that investor attention is drawn to stocks that change their leftmost digit. Left-digit changes are attention grabbing, causing sale activity. This is similar to the rank effect finding of Hartzmark (2015), whereby either top-ranked or bottom-ranked stocks by return since purchase are those most likely to be sold.
+\section{Data and Sample Selection}
 
-To show our result, we draw a sample of stock $\times$ quarters that have increased in value and have gone through a left-digit in a calendar quarter (e.g. Jan - Mar), which we call the Price Increasing Sample. We then draw a sample of stocks that have decreased in value through a left-digit in a calendar quarter, which we call the Price Decreasing Sample.\footnote{We have implemented this sample restriction approximately in this version. In a future version we will implement the sample restriction precisely. We do not expect the results to change when we do this.} Note, this sample restriction is at the stock $\times$ quarter level.
+We use the Barclays data. We first do some basic data cleaning, with details shown in \ref{tab:sample_selection}. 
 
-We then draw all investor $\times$ stock $\times$ days within the Price Increasing Sample and the Price Decreasing Sample, i.e. all observations for investors $\times$ days on which the investor held the stock at the beginning of the day. We look at the probability of sale when the stock is just below a left-digit change, e.g. \pounds9, compared with above the left-digit change, e.g. \pounds10. This exercise might compare investor $\times$ stock $\times$ days drawn from different investors. Therefore, we also conduct estimates that include individual fixed effects, thereby exploiting within-investor variation in the probability of sale either side of the left-digit change.
+We then choose a sample for analysis. A key element in our analysis is to draw a price increasing sample and a price decreasing sample, because we will show that the probability of sale increases with a change in the left digit both from below and from above. 
 
-\ref{fig:left_digit_sell} illustrates the main result. Each panel shows the probability of a stock sale by the leftmost two digits of the stock price. Note, this pools over leftmost digits that are in pence, pounds, hundreds of pounds, and so on. The only information used in the analysis is the leftmost two digits, in integer values. The left-side plots pool all observations by the leftmost two digits and the probability of sale together with a 95\% confidence interval. The right-side plots show the probability of sale by leftmost two digits. Panel A shows an increase in the probability of sale when the price crosses the left-digit from below, Panel B shows an increase in the probability of sale when the price crosses the left-digit from above. \ref{fig:left_digit_sell_increase} and \ref{fig:left_digit_sell_decrease} reproduce these plots for subsamples by the price range of the stock, in Panel A up to \pounds1, in Panel B between \pounds1 and \pounds10, and in Panel C between \pounds10 and \pounds100.
+We define these samples are follows. First, using the example of price increasing, we identify the first day in each calendar quarter on which an investor made a login to their account. We then define the price increasing sample as the set of individual $\times$ days for which the left-digit changed within the quarter on at least one subsequent login-day. We define the price decreasing sample as the set of individual $\times$ days for which the left-digit changed within the quarter on at least one subsequent login-day. Due to the immense size of the data, we further restrict to a 30\% random sample.
 
-Possible queries:
+The idea behind this sample restriction is that we need to focus on changes in left-digit that the investor actually saw. By restricting to changes in the left digit between login-days, we know that the investor saw the below-price and then subsequently the above-price (or vice versa).
+
+We show later that results are unchanged when we modify the period that defines a sample to either a month or a year. 
+
+Summary statistics are shown in \ref{tab:price_summary_stats_main}. Note, there are four units of left-digit in the data, pennies, tens of pennies, pounds and tens of pounds (there are only a few cases of hundreds of pounds). So, the left-digit changes of interest are pence to tens of pence, tens of pence to pounds, and pounds to tens of pounds (plus a few cases of tends of pounds to hundreds of pounds). Most stocks in the samples are prices in the range \pounds1.10 to \pounds10.10. A histogram of prices for all investor $\times$ login $\times$ days is shown in \ref{fig:histogram_prices}.
+
+\section{Results}
+
+Our main result is shown in \ref{fig:left_digit_sell_main}. The figures stack all investor $\times$ login $\times$ days by the leftmost two digits and plot in the left-side plots the probability of sale by leftmost digits, and in the right-side plots the probability of sale by the leftmost two digits. For example, the left-side plot stacks up stocks which pass from 9 pence to 10 pence, 29 pence to 30 pence, 199 pence to 200 pence, and so on in every case in which the leftmost digit changes. These examples each enter the plot at X9 to Y0, where X and Y are integer units and $Y = X + 1$. The left-side plots show clear jumps in the probability of sale when the stock price crosses the leftmost digit; the right-side plots also show this phenomena, with the red bar denoting base 10 leftmost two digit prices. In Panel A there is a jump in probability of sale when the price crosses the left digit from below, e.g. 19 pence to 20 pence; in Panel B there is a jump when the price crosses the left digit from above, e.g. 20 pence to 19 pence. Note that in general the probability of sale is higher in the price increasing sample than in the price decreasing sample, consistent with the disposition effect. \ref{fig:left_digit_sell_increase_main} and \ref{fig:left_digit_sell_decrease_main} show that the left-digit effect occurs in each of the pennies, pounds and tens of pounds samples.
+
+We estimate the size of the left-digit effect in \ref{tab:regressions_increase_main} and \ref{tab:regressions_decrease_main}. The regression setup is a discontinuity regression which pools all of the observations from the sample (increasing or decreasing) and regresses the probability of sale against a dummy for the price being above the left-digit change, plus continuous controls for the leftmost two digits below and above the left-digit change. The coefficient in Column 2 implies that a stock that has crossed the left-digit from below is 50\% more likely to be sold. The coefficient value is stable across specifications, including a rich specification in Column 5 that includes day, industry, account, and stock fixed effects. That specification therefore exploits within-investor, within-stock variation in the probability of sale, conditioning on day and industry differences in the likelihood of sale. In the price-decreasing sample the coefficient estimate in Column 1 implies a 25\% increase in probability of sale when the left-digit changes from above (note the coefficient are negative, reporting the effect of a change from below). \ref{tab:reg_subsamples_increase} and \ref{tab:reg_subsamples_decrease} report regressions from the subsamples by pennies, pounds and tens of pounds.
+
+\subsection{Robustness}
+
+We test for a variety of robustness concerns
 \begin{itemize}
-	\item [1] Limit orders. We have previously discussed the possibility that the patterns we see might be created by limit orders set at left-digit thresholds, i.e., round numbers. We think this is not the general mechanism at work, because limit orders would create a spike in the probability of sale at the left-digit alone. It would not explain the increased probability of sale at X1, X2, etc.. We think we see higher probability at X1, X2, etc.. because there is a delay between the stock crossing the left-digit and investors logging-in to their accounts. We could examine the role of limit orders more precisely by looking into very fine price data at the penny level.
-	\item [2] Sample selection. We have previously discussed the possibility that the results might in some way be an artefact of sample selection, given that we are selecting on stock $\times$ quarters that pass through a left digit change. We can clarify any concerns around sample selection in two ways. 
-	\begin{itemize}
-		\item [A] It is true that our sample selection criteria mean that our sample does not uniformly comprise observations across XO - X9. For example, in the price increasing sample the requirement is that the stock has increased in value up to at least X0, but there is no further requirement. This will give us an excess of observations at X0 compared with X1, X2, and so on. We see this is indeed the case in \ref{fig:sample_selection_test} in the histogram. However, this does not bias our results as the y-variable in our analysis is the \textit{probability} of sale. Hence, the XO bin has a larger denominator in the y-variable compared with the other variables. Moreover, our results is that the probability of sales increases between X9 and X0, for which there is only a small increase in density in the histogram.
-		\item [B] To double-check, we conducted a simulation analysis in which we input the same data but choose stocks to be sold at random. The result in \ref{fig:sample_selection_test} in the right-side plot confirms that this delivers a uniform probability of sale. 
-	\end{itemize}
+	\item Limit orders. The effect we see might in some cases be due to limit orders set at left-digit changes However, while the strike price of the limit order would be at exactly the left-digit change, we see an elevated probability of sale across the range Y0 to Y5.
+	\item Sample selection. We might be worried that our results are somehow due to sample selection. Therefore, we conduct a simulation analysis in which we assign sales randomly to investor $\times$ stock $\times$ days in each sample. \ref{fig:sample_selection_test} shows that with randomly allocated sales we see no evidence of discontinuity in the probability of sale when the leftmost digit changes.
+	\item Quarter time period. One might worry that this also somehow creates a selection effect. We therefore conduct the same analysis, with the same results, on samples where the time period is defined as a month in \ref{fig:left_digit_sell_monthly} and as a year in \ref{fig:left_digit_sell_annual}. See \ref{tab:summary_stats_annual_monthly} for summary statistics and \ref{tab:price_increasing_monthly_annual} and \ref{tab:price_decreasing_monthly_annual} for regression estimates.
+	\item Sell-day sample. We see the same result in the sell-day sample in \ref{fig:left_digit_sell}, with again the same patterns in sub-samples by pennies, pounds and tens of pounds in \ref{fig:left_digit_sell_increase_sellsample} and \ref{fig:left_digit_sell_decrease_sellsample}. See \ref{tab:regressions_sellsample_increase} and \ref{tab:regressions_sellsample_decrease} for regression estimates, plus \ref{tab:regression_sellsubsamples_increase} and \ref{tab:regression_sellsubsample_decrease} for regression estimates using the sub-samples by pennies, pounds and tens of pounds.
 \end{itemize}
 
-\textcolor{blue}{EQ: UPDATING SAMPLES: \\ The old samples uses only login days to define a price as being part of increasing or decreasing trend: \\
--- Increasing Price sample: We divided the data by quarters and looked at the $FirstLoginPrice$ (the price at the first login day of the quarter), we selected all quarters in which at least in one login day during the quarter (i) the price was larger than $FirstLoginPrice$ \& (ii) the first left digit of that day was different than the first left digit of $FirstLoginPrice$. \\
--- Decreasing Price sample: All remaining quarters. \\ \\
- \textbf{Because the second sample includes stocks that go down or whose price do not move much,I have redefined the samples as follows:} \\
--- Increasing Price sample: We divided the data by quarters and looked at the $FirstLoginPrice$ (the price at the first login day of the quarter), we selected all quarters in which at least in one login day during the quarter (i) the price was larger than $FirstLoginPrice$ \& (ii) the first left digit of that day was different than the first left digit of $FirstLoginPrice$ \& (iii) \textbf{in all days of the quarter the price was never smaller than $FirstLoginPrice$}. \\
--- Decreasing Price sample: We divided the data by quarters and looked at the $FirstLoginPrice$ (the price at the first login day of the quarter), we selected all quarters in which at least in one login day during the quarter (i) the price was SMALLER than $FirstLoginPrice$ \& (ii) the first left digit of that day was different than the first left digit of $FirstLoginPrice$ \& (iii) \textbf{in all days of the quarter the price was never LARGER than $FirstLoginPrice$}. \\
--- Remaining sample: Remaining days, prices were larger or smaller than $FirstLoginPrice$, but they never change the first left digit in comparison with the first left digit of $FirstLoginPrice$} \\ \\
-\textbf{But because we want to study the aggregate market effects of left digit selling, we cannot use the prices on login days to define increasing and decreasing samples (Datastream only has prices and sells but not logins). So here I redefined the samples without making restrictions on whether the investor log in on the first day of the quarter. Recall that above the samples were built looking at the prices on login days during the quarter relative to the price on the first login day of the quarter. Now we do not look at the first login day, but just at the first day of the quarter, and we compare it with prices on any day---not necessarily login days.} \\
--- Increasing Price sample: We divided the data by quarters and looked at the $FirstPrice$ (the price at the first day of the quarter), we selected all quarters in which at least in one day during the quarter (i) the price was larger than $FirstPrice$ \& (ii) the first left digit of that day was different than the first left digit of $FirstPrice$ \& (iii) \textbf{in all days of the quarter the price was never smaller than $FirstPrice$}. \\
--- Decreasing Price sample: We divided the data by quarters and looked at the $FirstPrice$ (the price at the first day of the quarter), we selected all quarters in which at least in one login day during the quarter (i) the price was SMALLER than $FirstPrice$ \& (ii) the first left digit of that day was different than the first left digit of $FirstPrice$ \& (iii) \textbf{in all days of the quarter the price was never LARGER than $FirstPrice$}. \\
--- Stable Price sample: Remaining days, prices were larger or smaller than $FirstPrice$, but they never change the first left digit in comparison with the first left digit of $FirstPrice$. \\ \\
-THE PROBLEM IS THAT USING PRICES WITHOUT CONDITIONING ON LOGIN DAYS TO DEFINE THE SAMPLES SHOWS NO EFFECT OF LEFT DIGITS ON SELLING CHOICES. THIS IMPLIES THAT PEOPLE CANNOT REPRODUCE OUR RESULTS UNLESS THEY ALSO HAVE LOGIN DATA. THIS ALSO IMPLIES THAT I CANNOT USE MARKET DATA TO IDENTIFY THE ECONOMIC CONSEQUENCES OF LEFT DIGIT BIAS. HOW BIG THIS PROBLEM IS?? \\
-\textcolor{blue}{ ANY WAY, ALL THE ANALYSIS HAS BEEN UPDATED USING THE NEW SAMPLES DEFINED USING PRICES ON LOGIN DAYS (BLUE TEXT ABOVE). I AM KEEPING SOME OF THE OLD PLOTS JUST TO HELP COMPARISON WITH THE NEW RESULTS}
+\subsection{Investor Characteristics} 
 
+We use sample splits and test for differences in the left-digit effect by various investor characteristics
+\begin{itemize}
+	\item Age: stronger among younger investors (\ref{tab:regressions_age_main}).
+	\item Gender: no differences (\ref{tab:regressions_gender_main}).
+	\item Portfolio value: stronger among small portfolios (\ref{tab:regressions_portvalue_main}).
+	\item Tenure: stronger among younger accounts (\ref{tab:regressions_tenure_main}).
+	\item Number of Stocks: stronger with fewer stocks (\ref{tab:regressions_numstocks_main}).
+\end{itemize}
 
+\section{Possible Extensions}
 
-\clearpage
+We should look at the robustness tests used by \cite{hartzmark2015} as some may be applicable here.
 
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale}%
-	\label{fig:left_digit_sell}%
-	\centering%	
-	\bigskip
-	\subfigure[Price Increasing]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI2.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_increase2.pdf}	
-	}
-	\subfigure[Price Decreasing]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI2.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease2.pdf}	
-	}
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
-\end{figure}
+Can we say something about aggregate effects on investor behavior? The effect size in the regressions in very large, so maybe we see some aggregate effects?
 
-
-
-
-\clearpage
-
-\begin{table}\small
-	\caption{Summary Stats}
-	\label{tab:price_summary_stats}
-	\bigskip
-	\begin{adjustbox}{center}
-		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (A): Baseline Sample} \\>{
-			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
-			\input{tables/prices_stats.tex} 
-		}
-	\end{adjustbox}
-	
-	\bigskip
-	
-	\begin{adjustbox}{center}
-		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (B): Price Increasing Sample} \\>{
-			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
-			\input{tables/prices_samples_stats.tex} 
-		}
-	\end{adjustbox}
-	
-	\bigskip
-	
-	\begin{adjustbox}{center}
-		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (C): Price Decreasing Sample} \\>{
-			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
-			\input{tables/prices_samples_stats_down.tex} 
-		}
-	\end{adjustbox}
-\end{table}
-
-\clearpage
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Price Increasing Sample}
-	\label{tab:regressions_increase}
-	\estauto{l c c c c c c  }{
-		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-		\multicolumn{1}{c}{(5)} & \\ 
-		\midrule
-		\input{tables/reg_sample_increase_all.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to login days. We include only quarters in which the stocks increased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (X0). SE are clustered by account.}
-\end{econtable}
-
-\clearpage
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Price Decreasing Sample}
-	\label{tab:regressions_decrease}
-	\estauto{l c c c c c c  }{
-		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-		\multicolumn{1}{c}{(5)} & \\ 
-		\midrule
-		\input{tables/reg_sample_decrease_all.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to login days. We include only quarters in which the stocks have not increased in price (regarding the first observation of the quarter) and have not changed the left most digit at least once during the quarter. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (X0). SE are clustered by account.}
-\end{econtable}
-
-\clearpage
-
-\textcolor{blue}{[EQ: Splitting the data by account/investor characteristics. Young, Male, small portfolios, young accounts, and portfolios with few stocks show more often left digit bias.]}
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Splitting by Median Age}
-	\label{tab:regressions_increase}
-	\estauto{l c c c c c   }{
-		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{Below Median} & \multicolumn{1}{c}{Above Median} & \multicolumn{1}{c}{Below Median} & \multicolumn{1}{c}{Above Median} &  \\ 
-		\midrule
-		\input{tables/reg_sample_age.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to login days. We include only quarters in which the stocks increased/decreased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (Y0). SE are clustered by account.}
-\end{econtable}
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Splitting by Gender}
-	\label{tab:regressions_increase}
-	\estauto{l c c c c c   }{
-		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{Female} & \multicolumn{1}{c}{Male} & \multicolumn{1}{c}{Female} & \multicolumn{1}{c}{Male} &  \\ 
-		\midrule
-		\input{tables/reg_sample_gender.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to login days. We include only quarters in which the stocks increased/decreased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (Y0). SE are clustered by account.}
-\end{econtable}
-
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Splitting by Portfolio Value}
-	\label{tab:regressions_increase}
-	\estauto{l c c c c c   }{
-		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{Below Median} & \multicolumn{1}{c}{Above Median} & \multicolumn{1}{c}{Below Median} & \multicolumn{1}{c}{Above Median} &  \\ 
-		\midrule
-		\input{tables/reg_sample_portfolio.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to login days. We include only quarters in which the stocks increased/decreased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (Y0). SE are clustered by account.}
-\end{econtable}
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Splitting by Account Tenure}
-	\label{tab:regressions_increase}
-	\estauto{l c c c c c   }{
-		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{Below Median} & \multicolumn{1}{c}{Above Median} & \multicolumn{1}{c}{Below Median} & \multicolumn{1}{c}{Above Median} &  \\ 
-		\midrule
-		\input{tables/reg_sample_tenure.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to login days. We include only quarters in which the stocks increased/decreased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (Y0). SE are clustered by account.}
-\end{econtable}
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Splitting by Number of Stocks}
-	\label{tab:regressions_increase}
-	\estauto{l c c c c c   }{
-		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{Below Median} & \multicolumn{1}{c}{Above Median} & \multicolumn{1}{c}{Below Median} & \multicolumn{1}{c}{Above Median} &  \\ 
-		\midrule
-		\input{tables/reg_sample_stocks.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to login days. We include only quarters in which the stocks increased/decreased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (Y0). SE are clustered by account.}
-\end{econtable}
-
-
-
-
-
-
-\appendix
-
-\begin{figure}%
-	\centering%
-	\caption{Histogram of Stock Prices}%
-	\label{fig:histogram_prices}%
-	\includegraphics[width=.6\textwidth]{figures/prices_hist_login_days.pdf}
-	\fignote{Figure shows the histogram of prices on login days. Outliers in the 99 percentile are excluded.}
-\end{figure}
-
-\clearpage
-
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Increasing Sample by Price Range}%
-	\label{fig:left_digit_sell_increase}%
-	\centering%	
-	\bigskip
-	\subfigure[Price = \pounds0.11 to \pounds1.01]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2increases_1pbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin1p.pdf}
-	}
-	\subfigure[Price = \pounds1.01 to \pounds10.1]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2increases_10pbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin10p.pdf}
-	}
-	\subfigure[Price = \pounds11 to \pounds101]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2increases_1poundbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin1pound.pdf}
-	}
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 26.22\% of the observations in the prices increasing sample; Panel B, to 49.28\%; and Panel C, to 8.03\%.}
-\end{figure}
-
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Decreasing Sample by Price Range}%
-	\label{fig:left_digit_sell_decrease}%
-	\centering%	
-	\bigskip
-	\subfigure[Price = \pounds0.10 to \pounds1.00]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_1pbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin1p.pdf}
-	}
-	\subfigure[Price = \pounds1.00 to \pounds10.0]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_10pbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin10p.pdf}
-	}
-	\subfigure[Price = \pounds10 to \pounds100]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_1poundbin_CI.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin1pound.pdf}
-	}
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 25.89\% of the observations in the prices decreasing sample; Panel B, to 41.15\%; and Panel C, to 6.74\%.}
-\end{figure}
-
-\clearpage
-
-\begin{figure}[hbt!]
-	\caption{Sample Selection and Simulation Exercise}%
-	\label{fig:sample_selection_test}%
-	\centering%	
-	\bigskip
-	\subfigure[Price Increasing Sample]{
-		\includegraphics[width=0.45\textwidth]{figures/left2_second_increase_count.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI_random_sell.pdf}
-	}
-	\subfigure[Price Decreasing Sample]{
-	\includegraphics[width=0.45\textwidth]{figures/left2_second_decrease_count.pdf}
-	\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI_random_sell.pdf}
-}
-\end{figure}
-
-
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale, Sell Days \textcolor{blue}{[EQ: sell days results at here the end of the Appendix. But perhaps they should go before Figure A4?]}}%
-	\label{fig:left_digit_sell}%
-	\centering%	
-	\bigskip
-	\subfigure[Price Increasing]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI2_sell_sample.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_increase2_sell_sample.pdf}	
-	}
-	\subfigure[Price Decreasing]{
-		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI2_sell_sample.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/2left_decrease2_sell_sample.pdf}	
-	}
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
-\end{figure}
-
-
-
-\begin{figure}[hbt!]
-	\caption{Probability of Topping-up \textcolor{blue}{[EQ: I remember we talked with George about doing the topping up analysis. Perhaps we could just tell him that the analysis did not work and drop this plot? What do you think? Just in case, I am leaving the plots here for now. ]}}%
-	\label{fig:topup}%
-	\centering%	
-	\bigskip
-	\subfigure[Price Increasing Sample]{
-		\includegraphics[width=0.70\textwidth]{figures/Left2increase_probCI_top_up.pdf}
-	}
-	\subfigure[Price Decreasing Sample]{
-
-	\includegraphics[width=0.70\textwidth]{figures/Left2decrease_probCI_top_up.pdf}
-}
-	\fignote{Figure shows the probability of topping up (increasing position in an stock) under the same sample selection. 	£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc., ).}
-\end{figure}
-
-
-
-\clearpage
-
-
-\begin{econtable}\footnotesize
-	\caption{Sample Selection \textcolor{blue}{[EQ: we used the sample from our DE paper. So these are new accounts. We can control for returns with this sample in a reviewer suggests us to do so. But the table is a preliminary table. Do you think the sub samples are clear? We need to discuss about how to present the sample exclusions]}}
-\estauto{l c c c }{
-	& \multicolumn{1}{c}{Remaining Accounts} &   \\ 
-	\midrule
-		\textbf{All potential new accounts}                                                                                                                                             & 33285              \\
-	Excluding  accounts:                                                                                                                                                 &                    \\
-		 \quad~ Accounts with transfers-in                                                                                                                                                               & 29440              \\
-		 \quad~ Accounts with no single sell  record                                                                                                                                                     & 13785              \\
-		 \quad~ Accounts with no single login  record                                                                                                                                                    & 13681              \\
-	Excluding  observations (account $\times$ stock $\times$ day):                                                                                                 &                    \\
-		 \quad~ Days with fewer than 2 stocks                                                                                                                                                   & 11104              \\
-		 \quad~ Outliers in returns (1 and 99  percentiles)                                                                                                                                     & 11083              \\
-		 \quad~ Days with unknown prices                                                                                                                                               & 10415              \\  
-	 \quad~ Accounts with an average portfolio value of 0                                                                                                                                   & 10367              \\
-		 \quad~ Accounts with no remaining selling days after the earlier exclusions                                                                                                             & 8242              \\
-		 	\midrule
-		\textbf{Number of Accounts}                                                                                                                                                     & \textbf{8242}      \\
-		\textbf{Number of Observations}                                                                                                                                                 & \textbf{5894175}   \\ \\
-		\textbf{Sub-samples}   &                    \\
-		\textit{Price Increasing Stocks Sample}   &                    \\
-	 \quad~	Quarters in which stock prices $>$  first price of the quarter & 316242             \\
-	 \quad~	  and the price changed the leftmost digit at  least once  & \\
-		\textit{Price Decreasing Stocks Sample}   &                    \\
-	 \quad~	Quarters in which stock prices $<$   first price of the quarter   & 440850      \\   
-	 \quad~	 and the price changed the leftmost digit at   least once  \\
-}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. Only days in which the investor made a login to their account are included. Sub-samples include stocks and quarters in which prices were increasing (or decreasing) and there was a change in the left most digit of the price of the stock at least once during the quarter. All login days in these quarters are included. }
-\end{econtable}
-
-\begin{table}\footnotesize
-	\caption{Price Increasing Subsamples with Equal Prices Bins}
-	\label{tab:price_summary_stats}
-	\bigskip
-	\begin{adjustbox}{center}
-			\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (A): Price = \pounds0.11 to \pounds1.01} \\>{
-			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-			%	\cmidrule(rr){2-7}
-			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-			\multicolumn{1}{c}{(5)} & \\ 
-			\midrule
-			\input{tables/reg_sample_increase_1.tex} 
-		}
-	\end{adjustbox}
-	
-	\bigskip
-	
-	\begin{adjustbox}{center}
-	\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (B): Price = \pounds1.01 to \pounds10.1} \\>{
-		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-		\multicolumn{1}{c}{(5)} & \\ 
-		\midrule
-		\input{tables/reg_sample_increase_2.tex} 
-	}
-\end{adjustbox}
-	
-	\bigskip
-	
-	\begin{adjustbox}{center}
-	\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (C): Price = \pounds11 to \pounds101} \\>{
-		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-		\multicolumn{1}{c}{(5)} & \\ 
-		\midrule
-		\input{tables/reg_sample_increase_2.tex} 
-	}
-\end{adjustbox}
-\end{table}
-
-
-
-\begin{table}\footnotesize
-	\caption{Price Decreasing Subsamples with Equal Prices Bins}
-	\label{tab:price_summary_stats}
-	\bigskip
-	\begin{adjustbox}{center}
-		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (A): Price = \pounds0.10 to \pounds1.00} \\>{
-			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-			%	\cmidrule(rr){2-7}
-			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-			\multicolumn{1}{c}{(5)} & \\ 
-			\midrule
-			\input{tables/reg_sample_decrease_1.tex} 
-		}
-	\end{adjustbox}
-	
-	\bigskip
-	
-	\begin{adjustbox}{center}
-		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (B): Price = \pounds1.00 to \pounds10.0} \\>{
-			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-			%	\cmidrule(rr){2-7}
-			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-			\multicolumn{1}{c}{(5)} & \\ 
-			\midrule
-			\input{tables/reg_sample_decrease_2.tex} 
-		}
-	\end{adjustbox}
-	
-	\bigskip
-	
-	\begin{adjustbox}{center}
-		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (C): Price = \pounds10 to \pounds100} \\>{
-			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-			%	\cmidrule(rr){2-7}
-			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-			\multicolumn{1}{c}{(5)} & \\ 
-			\midrule
-			\input{tables/reg_sample_decrease_3.tex} 
-		}
-	\end{adjustbox}
-\end{table}
-
-\clearpage
-\textcolor{blue}{[EQ: new results using the sell day sample. We use the same quarters but we only include sell days. We replicate the main regressions. Do you think we need to replicate some other tables presented with the login sample?  ]}.
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Price Increasing Sample, Sell Days}
-	\label{tab:regressions_increase}
-	\estauto{l c c c c c c  }{
-		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-		\multicolumn{1}{c}{(5)} & \\ 
-		\midrule
-		\input{tables/reg_sample_increase_all_sell_sample.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to sell days. We include only quarters in which the stocks increased in price (regarding the first observation of the quarter) and change the left most digit at least once during the quarter. Only those stocks that have changed the left most digit are included. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (X0). SE are clustered by account.}
-\end{econtable}
-
-\clearpage
-
-\begin{econtable}[h]\footnotesize
-	\caption{Probability of Sale and Left Digit, Price Decreasing Sample, Sell Days}
-	\label{tab:regressions_decrease}
-	\estauto{l c c c c c c  }{
-		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
-		%	\cmidrule(rr){2-7}
-		& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
-		\multicolumn{1}{c}{(5)} & \\ 
-		\midrule
-		\input{tables/reg_sample_decrease_all_sell_sample.tex} 
-	}
-	\fignote{The unit of observation is an investor $\times$ stock $\times$ day. The samples is restricted to sell days. We include only quarters in which the stocks have not increased in price (regarding the first observation of the quarter) and have not changed the left most digit at least once during the quarter. Regressions fit an intercept for the change in the left most digit at X0 and two slopes for the left (with values in the range -3 to 0, corresponding to X6 to X9) and right (with values in the range 0 to 5, corresponding to Y0 to Y5) values. The constant shows the probability to sell the stock at when the second digit is 9 (X9). The second digit over threshold dummy shows the jump in probability when the first digit changes and so the second digit becomes 0 (X0). SE are clustered by account.}
-\end{econtable}
+Other angles?
 

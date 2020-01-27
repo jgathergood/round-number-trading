@@ -1,6 +1,19 @@
+\begin{econtable}[h]\small
+	\caption{Sample Selection}
+	\label{tab:sample_selection}
+	\estauto{l c c c c c c c }{
+		&\multicolumn{1}{c}{ Accounts}&\multicolumn{1}{c}{Login-Days}&\multicolumn{1}{c}{ Transaction-Days}&\multicolumn{1}{c}{Sell-Days}\\
+		\midrule
+		\input{tables/sample_selection.tex}
+	}
+	\fignote{The unrestricted sample contains 155,300 accounts. We use a 30\% random sample of accounts.  The table detail the steps in sample selection.}
+\end{econtable}
+
+\clearpage
+
 \begin{table}\small
 	\caption{Summary Stats, Quarterly Sample}
-	\label{tab:price_summary_stats}
+	\label{tab:price_summary_stats_main}
 	\bigskip
 	\begin{adjustbox}{center}
 		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (A): Baseline Sample} \\>{
@@ -28,19 +41,11 @@
 	\end{adjustbox}
 \end{table}
 
-
-
-
-
-
-
-
-
 \clearpage
 
 \begin{econtable}[h]\footnotesize
 	\caption{Probability of Sale and Left Digit, Price Increasing Sample}
-	\label{tab:regressions_increase}
+	\label{tab:regressions_increase_main}
 	\estauto{l c c c c c c  }{
 		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
 		%	\cmidrule(rr){2-7}
@@ -56,7 +61,7 @@
 
 \begin{econtable}[h]\footnotesize
 	\caption{Probability of Sale and Left Digit, Price Decreasing Sample}
-	\label{tab:regressions_decrease}
+	\label{tab:regressions_decrease_main}
 	\estauto{l c c c c c c  }{
 		& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
 		%	\cmidrule(rr){2-7}
@@ -72,7 +77,7 @@
 
 \begin{econtable}[h]\footnotesize
 	\caption{Probability of Sale and Left Digit, Splitting by Median Age}
-	\label{tab:regressions__age}
+	\label{tab:regressions_age_main}
 	\estauto{l c c c c c   }{
 		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
 		%	\cmidrule(rr){2-7}
@@ -87,7 +92,7 @@
 
 \begin{econtable}[h]\footnotesize
 	\caption{Probability of Sale and Left Digit, Splitting by Gender}
-	\label{tab:regressions_gender}
+	\label{tab:regressions_gender_main}
 	\estauto{l c c c c c   }{
 		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
 		%	\cmidrule(rr){2-7}
@@ -102,7 +107,7 @@
 
 \begin{econtable}[h]\footnotesize
 	\caption{Probability of Sale and Left Digit, Splitting by Portfolio Value}
-	\label{tab:regressions_portvalue}
+	\label{tab:regressions_portvalue_main}
 	\estauto{l c c c c c   }{
 		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
 		%	\cmidrule(rr){2-7}
@@ -117,7 +122,7 @@
 
 \begin{econtable}[h]\footnotesize
 	\caption{Probability of Sale and Left Digit, Splitting by Account Tenure}
-	\label{tab:regressions_tenure}
+	\label{tab:regressions_tenure_main}
 	\estauto{l c c c c c   }{
 		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
 		%	\cmidrule(rr){2-7}
@@ -132,7 +137,7 @@
 
 \begin{econtable}[h]\footnotesize
 	\caption{Probability of Sale and Left Digit, Splitting by Number of Stocks}
-	\label{tab:regressions_numstocks}
+	\label{tab:regressions_numstocks_main}
 	\estauto{l c c c c c   }{
 		& \multicolumn{2}{c}{Prices Increasing Sample} &  \multicolumn{2}{c}{Prices Decreasing Sample} & \\ 
 		%	\cmidrule(rr){2-7}
