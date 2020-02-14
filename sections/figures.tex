@@ -1,5 +1,74 @@
 \clearpage
 
+
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, \\ Prices Increasing Sample \\ Limit Order Robustness Tests}%
+	\label{fig:left_digit_sell_decrease_sellsample}%
+	\centering%	
+	\bigskip
+	\subfigure[Excluding Pre-Market and After-Hours Sells (Outside 8am to 4:30pm)]{	\includegraphics[width=0.45\textwidth]{figures/outside_hoursLeft2increase_probCI_quarter.pdf}
+	\includegraphics[width=0.45\textwidth]{figures/outside_hours2left_increase_quarter.pdf}	
+	}
+	\subfigure[Excluding Sells with Login the Day Before or Weekend Logins for Monday Sells]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2increase_probCI_quarter.pdf}
+\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_increase_quarter.pdf}
+	}
+	\subfigure[Including Only FTSE100 Stocks]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2increase_probCI_quarter.pdf}
+\includegraphics[width=0.45\textwidth]{figures/liquid2left_increase_quarter.pdf}		}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A drops 0.018\% of sells, Panel B drops 61\% of sells and Panel C drops 76\% of sells.}
+\end{figure}
+
+\clearpage
+
+\begin{table}[ht]\footnotesize
+	\caption{Price Increasing Subsamples with Equal Prices Bins}
+	\label{tab:reg_subsamples_increase}
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (A): PExcluding Pre-Market and After-Hours Sells (Outside 8am to 4:30pm)} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/outside_hoursreg_sample_increase_quarter.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (B): Excluding Sells with Login the Day Before or Weekend Logins for Monday Sells} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/no_yest_loginreg_sample_increase_quarter.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (C): Including Only FTSE100 Stocks} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/liquidreg_sample_increase_quarter.tex} 
+		}
+	\end{adjustbox}
+	\fignote{Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A drops 0.018\% of sells, Panel B drops 61\% of sells and Panel C drops 76\% of sells.}
+\end{table}
+
+\clearpage
+
 \begin{figure}[hbt!]
 	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample}%
 	\label{fig:left_digit_sell_main}%
@@ -15,6 +84,7 @@
 	}
 	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
 \end{figure}
+
 
 \clearpage
 
