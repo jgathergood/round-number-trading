@@ -1,0 +1,618 @@
+% -*- TeX:UTF-8:Soft -*-
+
+\documentclass[
+	USenglish,12pt,paper=a4,numbers=noenddot,abstract=on,
+	final,% remove sample info
+	fullsample,
+% 	centertables,
+    ]{scrartcl}
+
+\usepackage{pdflscape}
+
+\input{config/preamble}
+
+ \begin{document}
+
+\doublespacing
+
+\input{sections/title} \clearpage
+%\input{sections/intro_paper_liquid} \clearpage
+
+We show left-digit bias in stock-selling behavior of individual investors. Left-digit bias is the tendency to focus on the leftmost digit of a number while partially ignoring other digits (\citealp{poltrock1984comparative}). Our contribution is to show that investors are disproportionately attentive to the leftmost digit in their trading choices, the salience of prices matters for investment choices (is this what we think is going on?  This is similar to the rank effect finding of \cite{hartzmark2015}, whereby either top-ranked or bottom-ranked stocks by return since purchase are those most likely to be sold. We contribute to the broader literature on left-digit bias, including \cite{lacetera2012heuristic} and \cite{shlain2018more}. Our study contributes to our understanding of when and why investors sell stocks. 
+
+\section{Data and Sample Selection}
+
+We use the Barclays data. We first do some basic data cleaning, with details shown in \ref{tab:sample_selection}. \textcolor{blue}{EQ:[Note that in this report I have added one additional step, I excluded all trades outside market hours 8am to 4:30pm, which are likely reflecting the execution of limit orders.]}
+
+We then choose a sample for analysis. A key element in our analysis is to draw a price increasing sample and a price decreasing sample, because we will show that the probability of sale increases with a change in the left digit both from below and from above. 
+
+We define these samples as follows. First, using the example of price increasing, we identify the first day in each calendar quarter on which an investor made a login to their account. We then define the price increasing sample as the set of login days within the quarter for which the prices on subsequent login days were always above the price on the first day and the left-digit had changed within the quarter on at least one subsequent login-day. We define the price decreasing sample as the set of login days within the quarter for which the prices on subsequent login days were always below the price on the first day and the left-digit had changed within the quarter on at least one subsequent login-day. Our samples are based on quarters and individual $\times$  login days during the quarter. Due to the immense size of the data, we further restrict to a 30\% random sample.
+
+The idea behind this sample restriction is that we need to focus on changes in left-digit that the investor actually saw. By restricting to changes in the left digit as seen by investors on login-days, we know that the investor saw the below-price and then subsequently the above-price (or vice versa).
+
+We show later that results are unchanged when we modify the period that defines a sample to either a month or a year. 
+
+Summary statistics are shown in \ref{tab:price_summary_stats_main}. Note, there are four units of left-digit in the data, pennies, tens of pennies, pounds and tens of pounds (there are only a few cases of hundreds of pounds). So, the left-digit changes of interest are pence to tens of pence, tens of pence to pounds, and pounds to tens of pounds (plus a few cases of tens of pounds to hundreds of pounds). Most stocks in the samples are prices in the range \pounds1.10 to \pounds10.10. A histogram of prices for all investor $\times$ login days is shown in \ref{fig:histogram_prices}.
+
+
+\textcolor{blue}{EQ:[We are concerned about the effect of limit orders in the data. I have redone the analysis using the main samples described above that exclude sells outside the market hours but with some modifications in the analysis: \\
+	\begin{itemize}
+		\item Market-Price: Prices and left digits are defined using the \textbf{market price at the end of the day for all the stocks}.
+		\item Sell-Price: \textbf{For sells, prices and left digits are defined using the exact price at which the stock was sold}. For the remaining days (when the stocks were not sold), prices and left digits are defined based in the market price at the end of the day.
+		\item Sell-Price-No-Login-Yesterday: Uses the same definition of prices and left digits used in Sell-Price but \textbf{it excludes sells with a login the day before. It also excludes sells on Monday with any login on Saturday or Sunday}.
+		\item Sell-Price-FTSE100: Uses the same definition of prices and left digits used in Sell-Price but \textbf{it includes only FTSE100 stocks}.
+	\end{itemize}
+The number of sells is reduced considerably in the last two analysis (Sell-Price-No-Login-Yesterday and Sell-Price-FTSE100) and some patterns are not clear in the plots. For instance, the Price Increasing sample has 27111 sells in the Sell-Price analysis; but only 10574 sells, in the Sell-Price-No-Login-Yesterday analysis (because most investors tend to log in the day before and now we are excluding these sells); and only 6464 sells, in the Sell-Price-FTSE100 analysis.] }	
+
+
+\section{Results}
+
+\textcolor{blue}{Our main results from the Market-Price analysis are shown in \ref{fig:left_digit_sell_main_market}, from the Sell-Price analysis, in \ref{fig:left_digit_sell_main_sell}, from the Sell-Price-No-Login-Yesterday analysis, in \ref{fig:left_digit_sell_main_no_yest}, and from the Sell-Price-FTSE100 analysis, in \ref{fig:left_digit_sell_main_ftse}.} \ref{fig:left_digit_sell_main_market} stack all investor $\times$ stock $\times$ login days by the leftmost two digits. The figure plots in the left-side the probability of sale by leftmost digits, and in the right-side it plots the probability of sale by the leftmost two digits. For example, the left-side plot stacks up stocks which pass from 9 pence to 10 pence, 29 pence to 30 pence, 199 pence to 200 pence, and so on in every case in which the leftmost digit changes. These examples each enter the plot at X9 to Y0, where X and Y are integer units and $Y = X + 1$. The left-side plots show clear jumps in the probability of sale when the stock price crosses the leftmost digit; the right-side plots also show this phenomena, with the red bar denoting base 10 leftmost two digit prices. In Panel A there is a jump in probability of sale when the price crosses the left digit from below, e.g. 19 pence to 20 pence; in Panel B there is a jump when the price crosses the left digit from above, e.g. 20 pence to 19 pence. Note that in general the probability of sale is higher in the price increasing sample than in the price decreasing sample, consistent with the disposition effect. 
+
+\textcolor{blue}{Note that the jump at Y0 is more pronounced in \ref{fig:left_digit_sell_main_market} than in \ref{fig:left_digit_sell_main_sell}. This could reflect that on days in which people observed a changed in the prices' left digits they were willing to sell, but they do not necessarily sold the stocks at Y0, perhaps because some stocks were less liquid or perhaps because they were not really targeting a Y0-price but an slightly higher price due to some optimism. \\
+\textbf{The results for the Sell-Price-No-Login-Yesterday analysis in \ref{fig:left_digit_sell_main_no_yest}  show the same pattern, a jump at Y0 and a slow decay, even though this analysis excludes more than half of the sell observations. However, the analysis for FTSE100 stocks in  \ref{fig:left_digit_sell_main_ftse} shows smaller jumps. By using only this subset of stocks, we loss about four fifths of the sell observations and the patterns might not represent a typical investor. \\
+Nevertheless, if limit orders were a problem, we should see an spike in the Sell-Price-FTSE100 analysis; however, we observe a small jump with a slow decay, which suggest that our effects are not driven by limit orders. And limit orders could not explain the peak at X9 in \ref{fig:left_digit_sell_main_ftse} Panel B. } \\
+In \ref{fig:left_digit_sell_increase_mainsss_market} to \ref{fig:left_digit_sell_increase_mainsss_ftse} (for Price Increasing Samples), and in \ref{fig:left_digit_sell_decrease_mainsss_market} to \ref{fig:left_digit_sell_decrease_mainsss_ftse} (for Price Decreasing Samples), we split the analysis by different price ranges. \textbf{Patterns are not clear for stocks cheaper than £1 or more expensive than £11 because of the small number of observations in these price range}. \\
+In \ref{fig:left_digit_sell_monthly_market} to \ref{fig:left_digit_sell_annual_ftse}, we use the annual and monthly samples instead of the quarterly samples. We observe jumps at Y0 but of small magnitude. \\
+\ref{fig:left_digit_sell_main_market_sell} to \ref{fig:left_digit_sell_main_ftse_sell} replicate the results using sell days only. \\}
+
+
+
+\clearpage
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample \\ \textcolor{blue}{Market-Price, Login-Days}}%
+	\label{fig:left_digit_sell_main_market}%
+	\centering%	
+	\bigskip %liquidLeft2increase_probCI_quarter
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2increase_probCI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_increase_quarter.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2decrease_probCI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_decrease_quarter.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample \\ \textcolor{blue}{Sell-Price, Login Days}}%
+	\label{fig:left_digit_sell_main_sell}%
+	\centering%	
+	\bigskip %liquidLeft2increase_probCI_quarter
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_quarter.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_quarter.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample \\ \textcolor{blue}{Sell-Price-No-Login-Yesterday, Login-Days}}%
+	\label{fig:left_digit_sell_main_no_yest}%
+	\centering%	
+	\bigskip %liquidLeft2increase_probCI_quarter
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2increase_probCI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_increase_quarter.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2decrease_probCI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_decrease_quarter.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample \\ \textcolor{blue}{Sell-Price-FTSE100, Login-Days}}%
+	\label{fig:left_digit_sell_main_ftse}%
+	\centering%	
+	\bigskip %liquidLeft2increase_probCI_quarter
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2increase_probCI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_increase_quarter.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2decrease_probCI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_decrease_quarter.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+\clearpage
+
+
+%subset of prices
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Increasing Sample by Price Range \\ \textcolor{blue}{Market-Price, Login-Days}}%
+	\label{fig:left_digit_sell_increase_mainsss_market}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.11 to \pounds1.01]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2increases_1pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_increase_bin1p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds1.01 to \pounds10.1]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2increases_10pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_increase_bin10p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds11 to \pounds101]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2increases_1poundbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_increase_bin1pound_quarter.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 25\% of the observations in the prices increasing sample; Panel B, to 55\%; and Panel C, to 8\%.}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Increasing Sample by Price Range \\ \textcolor{blue}{Sell-Price, Login-Days}}%
+	\label{fig:left_digit_sell_increase_mainsss_sell}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.11 to \pounds1.01]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increases_1pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin1p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds1.01 to \pounds10.1]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increases_10pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin10p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds11 to \pounds101]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increases_1poundbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_bin1pound_quarter.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 25\% of the observations in the prices increasing sample; Panel B, to 55\%; and Panel C, to 8\%.}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Increasing Sample by Price Range \\ \textcolor{blue}{Sell-Price-No-Login-Yesterday, Login-Days}}%
+	\label{fig:left_digit_sell_increase_mainsss_no_yest}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.11 to \pounds1.01]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2increases_1pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_increase_bin1p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds1.01 to \pounds10.1]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2increases_10pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_increase_bin10p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds11 to \pounds101]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2increases_1poundbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_increase_bin1pound_quarter.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 25\% of the observations in the prices increasing sample; Panel B, to 55\%; and Panel C, to 8\%.}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Increasing Sample by Price Range \\ \textcolor{blue}{Sell-Price-FTSE100, Login-Days}}%
+	\label{fig:left_digit_sell_increase_mainsss_ftse}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.11 to \pounds1.01]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2increases_1pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_increase_bin1p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds1.01 to \pounds10.1]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2increases_10pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_increase_bin10p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds11 to \pounds101]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2increases_1poundbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_increase_bin1pound_quarter.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 25\% of the observations in the prices increasing sample; Panel B, to 55\%; and Panel C, to 8\%.}
+\end{figure}
+
+
+
+
+
+\clearpage
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Decreasing Sample by Price Range \\ \textcolor{blue}{Market-Price, Login-Days}}%
+	\label{fig:left_digit_sell_decrease_mainsss_market}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.10 to \pounds1.00]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2decreases_1pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_decrease_bin1p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds1.00 to \pounds10.0]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2decreases_10pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_decrease_bin10p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds10 to \pounds100]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2decreases_1poundbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_decrease_bin1pound_quarter.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 27\% of the observations in the prices decreasing sample; Panel B, to 43\%; and Panel C, to 7\%.}
+\end{figure}
+
+
+\clearpage
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Decreasing Sample by Price Range \\ \textcolor{blue}{Sell-Price, Login-Days}}%
+	\label{fig:left_digit_sell_decrease_mainsss_sell}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.10 to \pounds1.00]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_1pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin1p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds1.00 to \pounds10.0]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_10pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin10p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds10 to \pounds100]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decreases_1poundbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_bin1pound_quarter.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 27\% of the observations in the prices decreasing sample; Panel B, to 43\%; and Panel C, to 7\%.}
+\end{figure}
+
+\clearpage
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Decreasing Sample by Price Range \\ \textcolor{blue}{Sell-Price-No-Yesterday-Login, Login-Days}}%
+	\label{fig:left_digit_sell_decrease_mainsss_no_yest}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.10 to \pounds1.00]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2decreases_1pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_decrease_bin1p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds1.00 to \pounds10.0]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2decreases_10pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_decrease_bin10p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds10 to \pounds100]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2decreases_1poundbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_decrease_bin1pound_quarter.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 27\% of the observations in the prices decreasing sample; Panel B, to 43\%; and Panel C, to 7\%.}
+\end{figure}
+
+\clearpage
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale \\ Prices Decreasing Sample by Price Range \\ \textcolor{blue}{Sell-Price-FTSE100, Login-Days}}%
+	\label{fig:left_digit_sell_decrease_mainsss_ftse}%
+	\centering%	
+	\bigskip
+	\subfigure[Price = \pounds0.10 to \pounds1.00]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2decreases_1pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_decrease_bin1p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds1.00 to \pounds10.0]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2decreases_10pbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_decrease_bin10p_quarter.pdf}
+	}
+	\subfigure[Price = \pounds10 to \pounds100]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2decreases_1poundbin_CI_quarter.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_decrease_bin1pound_quarter.pdf}
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A corresponds to 27\% of the observations in the prices decreasing sample; Panel B, to 43\%; and Panel C, to 7\%.}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\appendix
+
+
+
+
+\begin{econtable}[h]\small
+	\caption{Sample Selection}
+	\label{tab:sample_selection}
+	\estauto{l c c c c c c c }{
+		&\multicolumn{1}{c}{ Accounts}&\multicolumn{1}{c}{Logins}&\multicolumn{1}{c}{ Transactions}&\multicolumn{1}{c}{Sells}\\
+		\midrule
+		\input{tables/sample_selection.tex}
+	}
+	\fignote{The unrestricted sample contains 155,300 accounts. We use a 30\% random sample of accounts.  The table detail the steps in sample selection. Logins, Transactions, and Sells reflect the number of observations for each category at the Account $\times$ Stock $\times$ Day level.   }
+\end{econtable}
+
+\clearpage
+
+\begin{table}\small
+	\caption{Summary Stats, Quarterly Sample \\ \textcolor{blue}{Sell-Price}}
+	\label{tab:price_summary_stats_main}
+	\bigskip
+	\begin{adjustbox}{center}
+		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (A): Baseline Sample} \\>{
+			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
+			\input{tables/prices_stats.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (B): Price Increasing Sample} \\>{
+			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
+			\input{tables/prices_samples_stats.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{lcccccccccc}<\multicolumn{9}{c}{Panel (C): Price Decreasing Sample} \\>{
+			& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
+			\input{tables/prices_samples_stats_down.tex} 
+		}
+	\end{adjustbox}
+\end{table}
+
+\clearpage
+
+
+
+
+
+
+\begin{figure}[hbt!]
+	\centering%
+	\caption{Histogram of Stock Prices}%
+	\label{fig:histogram_prices}%
+	\includegraphics[width=.6\textwidth]{figures/prices_hist_login_days.pdf}
+	\fignote{Figure shows the histogram of prices on login days. Outliers above the 95 percentile are excluded.}
+\end{figure}
+
+
+
+%sell days
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample \\ \textcolor{blue}{Market-Price, Sell-Days}}%
+	\label{fig:left_digit_sell_main_market_sell}%
+	\centering%	
+	\bigskip %liquidLeft2increase_probCI_quarter
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2increase_probCI_quarter_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_increase_quarter_sell.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2decrease_probCI_quarter_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_decrease_quarter_sell.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample \\ \textcolor{blue}{Sell-Price, Sell-Days}}%
+	\label{fig:left_digit_sell_main_sell_sell}%
+	\centering%	
+	\bigskip %liquidLeft2increase_probCI_quarter
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI_quarter_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_quarter_sell.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI_quarter_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_quarter_sell.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample \\ \textcolor{blue}{Sell-Price-No-Login-Yesterday, Sell-Days}}%
+	\label{fig:left_digit_sell_main_no_yest_sell}%
+	\centering%	
+	\bigskip %liquidLeft2increase_probCI_quarter
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2increase_probCI_quarter_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_increase_quarter_sell.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2decrease_probCI_quarter_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_decrease_quarter_sell.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Quarterly Sample \\ \textcolor{blue}{Sell-Price-FTSE100, Sell-Days}}%
+	\label{fig:left_digit_sell_main_ftse_sell}%
+	\centering%	
+	\bigskip %liquidLeft2increase_probCI_quarter
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2increase_probCI_quarter_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_increase_quarter_sell.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2decrease_probCI_quarter_sell.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_decrease_quarter_sell.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+\clearpage
+
+
+
+%month and year
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Monthly Sample \\ \textcolor{blue}{Market-Price, Login-Days}}%
+	\label{fig:left_digit_sell_monthly_market}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2increase_probCI_month.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_increase_month.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2decrease_probCI_month.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_decrease_month.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Annual Sample \\ \textcolor{blue}{Market-Price, Login-Days}}%
+	\label{fig:left_digit_sell_annual_market}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2increase_probCI_year.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_increase_year.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/EndDayLeft2decrease_probCI_year.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/EndDay2left_decrease_year.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Monthly Sample \\ \textcolor{blue}{Sell-Price, Login-Days}}%
+	\label{fig:left_digit_sell_monthly_sell}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI_month.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_month.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI_month.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_month.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Annual Sample \\ \textcolor{blue}{Sell-Price, Login-Days}}%
+	\label{fig:left_digit_sell_annual_sell}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2increase_probCI_year.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_increase_year.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/Left2decrease_probCI_year.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/2left_decrease_year.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Monthly Sample \\ \textcolor{blue}{Sell-Price-No-Login-Yesterday, Login-Days}}%
+	\label{fig:left_digit_sell_monthly_no_yest}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2increase_probCI_month.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_increase_month.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2decrease_probCI_month.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_decrease_month.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Annual Sample \\ \textcolor{blue}{Sell-Price-No-Login-Yesterday, Login-Days}}%
+	\label{fig:left_digit_sell_annual_no_yest}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2increase_probCI_year.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_increase_year.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_loginLeft2decrease_probCI_year.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/no_yest_login2left_decrease_year.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Monthly Sample \\ \textcolor{blue}{Sell-Price-FTSE100, Login-Days}}%
+	\label{fig:left_digit_sell_monthly_ftse}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2increase_probCI_month.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_increase_month.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2decrease_probCI_month.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_decrease_month.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale, Annual Sample \\ \textcolor{blue}{Sell-Price-FTSE100, Login-Days}}%
+	\label{fig:left_digit_sell_annual_ftse}%
+	\centering%	
+	\bigskip
+	\subfigure[Price Increasing]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2increase_probCI_year.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_increase_year.pdf}	
+	}
+	\subfigure[Price Decreasing]{
+		\includegraphics[width=0.45\textwidth]{figures/liquidLeft2decrease_probCI_year.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/liquid2left_decrease_year.pdf}	
+	}
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.).}
+\end{figure}
+
+
+\clearpage
+
+
+
+\begin{onehalfspacing}
+	\bibliographystyle{chicago}
+	\bibliography{left_digit_bibliography}
+\end{onehalfspacing}
+
+%main figures and tables
+\singlespacing
+
+\end{document}
