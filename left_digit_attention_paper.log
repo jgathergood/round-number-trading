@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.17)  16 FEB 2020 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.17)  16 FEB 2020 19:05
 entering extended mode
 **./left_digit_attention_paper.tex
 (left_digit_attention_paper.tex
@@ -2358,7 +2358,12 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 3.
  [2
 
-] [3]) [4] [5] (sections/figures.tex
+] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+) [4] [5] (sections/figures.tex
 <figures/outside_hoursLeft2increase_probCI_quarter.pdf, id=128, 426.59375pt x 2
 84.06125pt>
 File: figures/outside_hoursLeft2increase_probCI_quarter.pdf Graphic file (type 
@@ -2887,7 +2892,7 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  32110 strings out of 493305
- 623758 string characters out of 3129802
+ 623755 string characters out of 3129802
  768739 words of memory out of 3000000
  34601 multiletter control sequences out of 15000+200000
  777101 words of font info for 397 fonts, out of 3000000 for 9000
@@ -2910,7 +2915,7 @@ dika/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/
 Users/edika/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pf
 b><C:/Users/edika/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/zx
 lri.pfb>
-Output written on left_digit_attention_paper.pdf (37 pages, 673901 bytes).
+Output written on left_digit_attention_paper.pdf (37 pages, 676813 bytes).
 PDF statistics:
  675 PDF objects out of 1000 (max. 8388607)
  117 named destinations out of 1000 (max. 500000)
