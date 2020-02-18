@@ -20,7 +20,24 @@ Our main result is shown in \ref{fig:left_digit_sell_main}. The figure stack all
 
 We estimate the size of the left-digit effect in \ref{tab:regressions_increase_main} and \ref{tab:regressions_decrease_main}. The regression setup is a discontinuity regression which pools all of the observations from the sample (increasing or decreasing) and regresses the probability of sale against a dummy for the price being above the left-digit change, plus continuous controls for the leftmost two digits below and above the left-digit change. The coefficient in Column 2 implies that a stock that has crossed the left-digit from below is 50\% more likely to be sold. The coefficient value is stable across specifications, including a rich specification in Column 5 that includes day, industry, account, and stock fixed effects. That specification therefore exploits within-investor, within-stock variation in the probability of sale, conditioning on day differences in the likelihood of sale. In the price-decreasing sample the coefficient estimate in Column 1 implies a 25\% increase in probability of sale when the left-digit changes from above (note the coefficient are negative, reporting the effect of a change from below). \ref{tab:reg_subsamples_increase} and \ref{tab:reg_subsamples_decrease} report regressions from the subsamples by pennies, pounds and tens of pounds.
 
-\subsection{Robustness}
+\subsection{Limit Order Robustness Tests}
+
+One potential confound in \ref{fig:left_digit_sell_main} Panel A is limit orders. A spike in the probably of sale could arise if individuals set limit orders at round numbers. One argument we considered against limit orders driving the results is that limit orders should strike at exactly the round number, hence limit orders could not explain the elevated probability of sales at Y1, Y2, Y3, and so on. However, there are two counter-arguments to this. First, if individuals place limit order outside of trading hours, the price may have risen further above Y0 by the time the brokerage executes the order (overnight orders form a queue). Second, if the stock is illiquid the the brokerage may only be able to execute the order once the price has risen further above Y0 (again, due ot queueing).
+
+We therefore adopt a number of different tests 
+\begin{itemize}
+	\item A first test is to compare \ref{fig:left_digit_sell_main} Panels A and B. While limit orders could potentially generate the pattern seen in Panel A, they cannot generate the pattern in Panel B, which suggests they are not at work in Panel A.
+	\item Sample Exclusions. In a series of steps, we exclude types of trades that are more likely to be limit orders. Results are shown in \ref{fig:limit_order_figures} Panels A-C, with patterns unchanged from those in \ref{fig:left_digit_sell_main} Panel A. Regression estimates are also shown in \ref{tab:limit_order_1} and \ref{tab:limit_order_2}
+	\begin{itemize}
+		\item Excluding out-of-hours sales in Panel A
+		\item Excluding sales with logins on the previous day (on which a limit order might have been placed) in Panel B
+		\item Including only the most liquid stocks (FTSE100 stocks) in Panel C
+	\end{itemize} 
+	\item Linnainmaa (2010) method for detecting limit orders. Linnaimaa's paper ``Do Limit Orders Alter Inferences about Investor Performance and Behavior?'' in the Journal of Finance develops a method for detecting limit orders in transaction data. We can use the same method. The approach is as follows: By regressing a buy-versus-sell indicator (a dependent variable that takes the value of one when an investor sells a stock and the value of zero when an investor purchases a stock) against the daily return of an stock, for each investor, it is possible to detect investors using limit orders. The same-day return coefficient is significantly positive for limit-order trades, but significantly negative for market-order trades (because individuals who submit market orders often trade in the direction of the same-day return, and hence against limit order traders). See page 1499 for further details.
+	\item Using that method, we exclude accounts with a tendency to limit orders in \ref{fig:limit_order_figures} Panel D (3,021 investors), with results unchanged from the main analysis. Regression estimates are shown in \ref{tab:limit_order_2} Panel D.
+\end{itemize}
+
+\subsection{Other Robustness Tests}
 
 We test for a variety of robustness concerns
 \begin{itemize}
@@ -47,8 +64,8 @@ We should look at the robustness tests used by \cite{hartzmark2015} as some may 
 
 Can we say something about aggregate effects on investor behavior? The effect size in the regressions in very large, so maybe we see some aggregate effects? Other angles? \\
 
- \textcolor{blue}{EQ:[but note that these analysis only work when we use login days. Using market days there is no pattern at all. So any aggregate analysis has to be restricted to login days.] \\
-\textbf{EQ: Effects on volume: New results looking at volume and left digits do not show consistent patterns. There are jumps in volume when the stock crosses a left digit. But there are many more other jumps that happen across the different prices' trajectories that obscure any estimation of the left digit effects. Note also that there is no an indicator of "sells" volume only---I imagine that this is because any sell of an stock tacitly  implies also a purchase of that stock.}}
+% \textcolor{blue}{EQ:[but note that these analysis only work when we use login days. Using market days there is no pattern at all. So any aggregate analysis has to be restricted to login days.] \\
+%\textbf{EQ: Effects on volume: New results looking at volume and left digits do not show consistent patterns. There are jumps in volume when the stock crosses a left digit. But there are many more other jumps that happen across the different prices' trajectories that obscure any estimation of the left digit effects. Note also that there is no an indicator of "sells" volume only---I imagine that this is because any sell of an stock tacitly  implies also a purchase of that stock.}}
 
 
-\textcolor{blue}{\textbf{EQ: Additional exclusion to identify limit orders:} Linnainmaa (2010) develops a method to detect limit orders in a data set. Note that for a limit order to be executed, the stock price has to move against the order. Individuals who are net buyers when the stock price falls, and net sellers when the stock price rises, are likely limit-order traders. Market-order traders often trade in the opposite direction. By regressing a buy-versus-sell indicator (a dependent variable that takes the value of one when an investor sells a stock and the value of zero when an investor purchases a stock) against the daily return of an stock, for each investor, it is possible to detect investors using limit orders. The daily return coefficient is significantly positive for limit-order trades, but significantly negative for market-order trades (individuals who submit market orders often trade in the direction of the same-day return). We followed the same procedure and estimated return coefficients for each investor. To obtain reliable estimates, we included only investors with at least 10 trades, as in Linnainmaa (2010). Panel D excluded all investors with a positive and significant coefficient, 3,021 investors.}
+

@@ -91,6 +91,71 @@
 
 \clearpage
 
+\begin{table}[ht]\footnotesize
+	\caption{Price Increasing Sample \\ Limit Order Robustness Tests}
+	\label{tab:limit_order_1}
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (A): Excluding Pre-Market and After-Hours Sells (Outside 8am to 4:30pm)} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/outside_hoursreg_sample_increase_quarter.tex} 
+		}
+	\end{adjustbox}
+	
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (B): Excluding Sells with Login the Day Before or Weekend Logins for Monday Sells} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/no_yest_loginreg_sample_increase_quarter.tex} 
+		}
+	\end{adjustbox}
+	\fignote{Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A drops 0.018\% of sells, Panel B drops 61\% of sells, Panel C drops 76\% of sells, and Panel D drops 11\% of sells.}
+\end{table}
+
+\clearpage
+
+\begin{table}[ht]\footnotesize
+	\caption{Price Increasing Sample \\ Limit Order Robustness Tests}
+	\label{tab:limit_order_2}
+	\bigskip
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (C): Including Only FTSE100 Stocks} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/liquidreg_sample_increase_quarter.tex} 
+		}
+	\end{adjustbox}
+	
+	\begin{adjustbox}{center}
+		\estauto{l c c c c c c  }<\multicolumn{6}{c}{Panel (D): Excluding Accounts with Potential Limit Orders (Linnainmaa, 2010)} \\>{
+			& \multicolumn{5}{c}{$Probability\:  of\:  Sale_{ijt}=1$} \\ 
+			%	\cmidrule(rr){2-7}
+			& \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)} & \multicolumn{1}{c}{(4)} & 
+			\multicolumn{1}{c}{(5)} & \\ 
+			\midrule
+			\input{tables/potential_lmreg_sample_increase_quarter.tex} 
+		}
+	\end{adjustbox}
+	\fignote{Panels A, B and C show equal size bins of 1p, 10p and £1, respectively. Panel A drops 0.018\% of sells, Panel B drops 61\% of sells, Panel C drops 76\% of sells, and Panel D drops 11\% of sells.}
+\end{table}
+\clearpage
+
+\clearpage
+
 \begin{econtable}[h]\footnotesize
 	\caption{Summary Stats for Annual and Monthly Samples}
 	\label{tab:summary_stats_annual_monthly}
