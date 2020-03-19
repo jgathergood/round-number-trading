@@ -11,6 +11,19 @@
 
 \clearpage
 
+\begin{econtable}\small
+	\caption{Baseline Sample Summary Statistics}
+	\label{tab:summary_stats}
+	\estauto{l cccccc}{
+		&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{Min}&\multicolumn{1}{c}{p25}&\multicolumn{1}{c}{p50}&\multicolumn{1}{c}{p75}&\multicolumn{1}{c}{Max} \\
+		\cmidrule(l{.5ex}){2-7} 
+		\input{tables/stats_account.tex} 
+	}
+	\fignote{This table presents summary statistics for the baseline sample of accounts. Age is measured at date of account opening. Account tenure is measured on the final day of the data period. Portfolio value is the value of all securities within the portfolio at market prices. Portfolio value, number of stocks and investment in mutual funds are measured as within-account averages of values at the first day of each calendar month in the data period. Login days is the percentage of days the account is open in the data period and the account holder made at least one login. Transaction days is the percentage of market open days the account is open in the data period and the account holder made at least one trade.}
+\end{econtable}
+
+\clearpage
+
 \begin{table}\small
 	\caption{Summary Stats, Quarterly Sample}
 	\label{tab:price_summary_stats_main}
