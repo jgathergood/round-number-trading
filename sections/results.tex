@@ -1,35 +1,43 @@
 \section{Results}
 
+\subsection{Main Results}
+
 Our main result is shown in \ref{fig:left_digit_sell_main}. The figure stack all investor $\times$ stock $\times$ login days by the leftmost two digits. The figure plots in the left-side the probability of sale by leftmost digits, and in the right-side it plots the probability of sale by the leftmost two digits. For example, the left-side plot stacks up stocks which pass from 9 pence to 10 pence, 29 pence to 30 pence, 199 pence to 200 pence, and so on in every case in which the leftmost digit changes. These examples each enter the plot at X9 to Y0, where X and Y are integer units and $Y = X + 1$. The left-side plots show clear jumps in the probability of sale when the stock price crosses the leftmost digit; the right-side plots also show this phenomena, with the red bar denoting base 10 leftmost two digit prices. In Panel A there is a jump in probability of sale when the price crosses the left digit from below, e.g. 19 pence to 20 pence; in Panel B there is a jump when the price crosses the left digit from above, e.g. 20 pence to 19 pence. Note that in general the probability of sale is higher in the price increasing sample than in the price decreasing sample, consistent with the disposition effect. \ref{fig:left_digit_sell_increase_main} and \ref{fig:left_digit_sell_decrease_main} show that the left-digit effect occurs in each of the pennies, pounds and tens of pounds samples.
+
+These patterns in selling probability are evidence in price increasing and price decreasing samples, but are obscured when one looks at the sample of all observations, shown in \ref{fig:left_digit_sell_all}. 
 
 We estimate the size of the left-digit effect in \ref{tab:regressions_increase_main} and \ref{tab:regressions_decrease_main}. The regression setup is a discontinuity regression which pools all of the observations from the sample (increasing or decreasing) and regresses the probability of sale against a dummy for the price being above the left-digit change, plus continuous controls for the leftmost two digits below and above the left-digit change. The coefficient in Column 2 implies that a stock that has crossed the left-digit from below is 50\% more likely to be sold. The coefficient value is stable across specifications, including a rich specification in Column 5 that includes day, industry, account, and stock fixed effects. That specification therefore exploits within-investor, within-stock variation in the probability of sale, conditioning on day differences in the likelihood of sale. In the price-decreasing sample the coefficient estimate in Column 1 implies a 25\% increase in probability of sale when the left-digit changes from above (note the coefficient are negative, reporting the effect of a change from below). \ref{tab:reg_subsamples_increase} and \ref{tab:reg_subsamples_decrease} report regressions from the subsamples by pennies, pounds and tens of pounds.
 
-\subsection{Limit Order Robustness Tests}
+\subsection{Robustness Tests}
+
+\subsubsection{Individual Fixed Effects}
+
+The rightmost columns in \ref{tab:regressions_increase_main} and \ref{tab:regressions_decrease_main} add individual fixed effects to the specification.
+
+\subsubsection{Limit Orders}
 
 One potential confound in \ref{fig:left_digit_sell_main} Panel A is limit orders. A spike in the probably of sale could arise if individuals set limit orders at round numbers. One argument we considered against limit orders driving the results is that limit orders should strike at exactly the round number, hence limit orders could not explain the elevated probability of sales at Y1, Y2, Y3, and so on. However, there are two counter-arguments to this. First, if individuals place limit order outside of trading hours, the price may have risen further above Y0 by the time the brokerage executes the order (overnight orders form a queue). Second, if the stock is illiquid the brokerage may only be able to execute the order once the price has risen further above Y0 (again, due to queueing).
 
-We therefore adopt a number of different tests 
-\begin{itemize}
-	\item A first test is to compare \ref{fig:left_digit_sell_main} Panels A and B. While limit orders could potentially generate the pattern seen in Panel A, they cannot generate the pattern in Panel B, which suggests they are not at work in Panel A.
-	\item Sample Exclusions. In a series of steps, we exclude types of trades that are more likely to be limit orders. Results are shown in \ref{fig:limit_order_figures} Panels A-C, with patterns unchanged from those in \ref{fig:left_digit_sell_main} Panel A. Regression estimates are also shown in \ref{tab:limit_order_1} and \ref{tab:limit_order_2}
-	\begin{itemize}
-		\item Excluding out-of-hours sales in Panel A
-		\item Excluding sales with logins on the previous day (on which a limit order might have been placed) in Panel B
-		\item Including only the most liquid stocks (FTSE100 stocks) in Panel C
-	\end{itemize} 
-	\item Linnainmaa (2010) method for detecting limit orders. Linnaimaa's paper ``Do Limit Orders Alter Inferences about Investor Performance and Behavior?'' in the Journal of Finance develops a method for detecting limit orders in transaction data. We can use the same method. The approach is as follows: By regressing a buy-versus-sell indicator (a dependent variable that takes the value of one when an investor sells a stock and the value of zero when an investor purchases a stock) against the daily return of an stock, for each investor, it is possible to detect investors using limit orders. The same-day return coefficient is significantly positive for limit-order trades, but significantly negative for market-order trades (because individuals who are net buyers when the stock price falls, and net sellers when the stock price rises, are likely limit-order traders; while individuals who submit market orders often trade in the direction of the same-day return, and hence against limit order traders). See page 1499 for further details.
-	\item Using that method, we exclude accounts with a tendency to use limit orders in \ref{fig:limit_order_figures} Panel D (3,021 investors), with results unchanged from the main analysis. Regression estimates are shown in \ref{tab:limit_order_2} Panel D.
-\end{itemize}
+We therefore adopt a number of different tests. A first test is to compare \ref{fig:left_digit_sell_main} Panels A and B. While limit orders could potentially generate the pattern seen in Panel A, they cannot generate the pattern in Panel B, which suggests they are not at work in Panel A.
 
-\subsection{Other Robustness Tests}
+A second test is to exclude types of trades that are more likely to be limit orders. In a series of steps, we exclude out of hours sales, sales with logins on the previous day (a day on which a limit order might have been placed), and finally restrict to sales including only the most liquid stocks (stocks in the FTSE100). Results are shown in \ref{fig:limit_order_figures} Panels A-C, which apply these steps in analysis, with patterns unchanged from those in \ref{fig:left_digit_sell_main} Panel A. Regression estimates are also shown in \ref{tab:limit_order_1} and \ref{tab:limit_order_2}
 
-We test for a variety of robustness concerns
-\begin{itemize}
-	\item Limit orders. The effect we see might in some cases be due to limit orders set at left-digit changes. However, while the strike price of the limit order would be at exactly the left-digit change, we see an elevated probability of sale across the range Y0 to Y5.
-	\item Sample selection. We might be worried that our results are somehow due to sample selection. Therefore, we conduct a simulation analysis in which we assign sales randomly to investor $\times$ stock $\times$ days in each sample. \ref{fig:sample_selection_test} shows that with randomly allocated sales we see no evidence of discontinuity in the probability of sale when the leftmost digit changes.
-	\item Quarter time period. One might worry that this also somehow creates a selection effect. We therefore conduct the same analysis, with the same results, on samples where the time period is defined as a month in \ref{fig:left_digit_sell_monthly} and as a year in \ref{fig:left_digit_sell_annual}. See \ref{tab:summary_stats_annual_monthly} for summary statistics and \ref{tab:price_increasing_monthly_annual} and \ref{tab:price_decreasing_monthly_annual} for regression estimates.
-	\item Sell-day sample. We see the same result in the sell-day sample in \ref{fig:left_digit_sell}, with again the same patterns in sub-samples by pennies, pounds and tens of pounds in \ref{fig:left_digit_sell_increase_sellsample} and \ref{fig:left_digit_sell_decrease_sellsample}. See \ref{tab:regressions_sellsample_increase} and \ref{tab:regressions_sellsample_decrease} for regression estimates, plus \ref{tab:regression_sellsubsamples_increase} and \ref{tab:regression_sellsubsample_decrease} for regression estimates using the sub-samples by pennies, pounds and tens of pounds.
-\end{itemize}
+As an additional test, we follow an approach to identifying limit order trades suggested by Linnainmaa (2010). Linnaimaa's paper ``Do Limit Orders Alter Inferences about Investor Performance and Behavior?'' in the Journal of Finance develops a method for detecting limit orders in transaction data. We can use the same method. The approach is as follows: By regressing a buy-versus-sell indicator (a dependent variable that takes the value of one when an investor sells a stock and the value of zero when an investor purchases a stock) against the daily return of an stock, for each investor, it is possible to detect investors using limit orders. The same-day return coefficient is significantly positive for limit-order trades, but significantly negative for market-order trades (because individuals who are net buyers when the stock price falls, and net sellers when the stock price rises, are likely limit-order traders; while individuals who submit market orders often trade in the direction of the same-day return, and hence against limit order traders). See page 1499 for further details.
+
+Using that method, we exclude accounts with a tendency to use limit orders in \ref{fig:limit_order_figures} Panel D (3,021 investors), with results unchanged from the main analysis. Regression estimates are shown in \ref{tab:limit_order_2} Panel D.
+
+\subsection{Simulation}
+We might be worried that our results are somehow due to sample selection. Therefore, we conduct a simulation analysis in which we assign sales randomly to investor $\times$ stock $\times$ days in each sample. \ref{fig:sample_selection_test} shows that with randomly allocated sales we see no evidence of discontinuity in the probability of sale when the leftmost digit changes.
+
+\subsection{Sensitivity Tests}
+
+\subsubsection{Variation in Time Period}
+
+One might worry that this also somehow creates a selection effect. We therefore conduct the same analysis, with the same results, on samples where the time period is defined as a month in \ref{fig:left_digit_sell_monthly} and as a year in \ref{fig:left_digit_sell_annual}. See \ref{tab:summary_stats_annual_monthly} for summary statistics and \ref{tab:price_increasing_monthly_annual} and \ref{tab:price_decreasing_monthly_annual} for regression estimates.
+
+\subsubsection{Sell-Day Sample}
+
+Sell-day sample. We see the same result in the sell-day sample in \ref{fig:left_digit_sell}, with again the same patterns in sub-samples by pennies, pounds and tens of pounds in \ref{fig:left_digit_sell_increase_sellsample} and \ref{fig:left_digit_sell_decrease_sellsample}. See \ref{tab:regressions_sellsample_increase} and \ref{tab:regressions_sellsample_decrease} for regression estimates, plus \ref{tab:regression_sellsubsamples_increase} and \ref{tab:regression_sellsubsample_decrease} for regression estimates using the sub-samples by pennies, pounds and tens of pounds.
 
 \subsection{Investor Characteristics} 
 
@@ -41,15 +49,6 @@ We use sample splits and test for differences in the left-digit effect by variou
 	\item Tenure: stronger among younger accounts (\ref{tab:regressions_tenure_main}).
 	\item Number of Stocks: stronger with fewer stocks (\ref{tab:regressions_numstocks_main}).
 \end{itemize}
-
-\section{Possible Extensions}
-
-We should look at the robustness tests used by \cite{hartzmark2015} as some may be applicable here.
-
-%Can we say something about aggregate effects on investor behavior? The effect size in the regressions in very large, so maybe we see some aggregate effects? Other angles? \\
-
-% \textcolor{blue}{EQ:[but note that these analysis only work when we use login days. Using market days there is no pattern at all. So any aggregate analysis has to be restricted to login days.] \\
-%\textbf{EQ: Effects on volume: New results looking at volume and left digits do not show consistent patterns. There are jumps in volume when the stock crosses a left digit. But there are many more other jumps that happen across the different prices' trajectories that obscure any estimation of the left digit effects. Note also that there is no an indicator of "sells" volume only---I imagine that this is because any sell of an stock tacitly  implies also a purchase of that stock.}}
 
 
 
