@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.5)  22 MAR 2020 01:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.5)  23 MAR 2020 11:56
 entering extended mode
 **./left_digit_attention_paper.tex
 (left_digit_attention_paper.tex
@@ -1809,26 +1809,27 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
  [2
 
 ] [3] [4] [5])
-(sections/results.tex [6] [7] [8] [9]) [10] (sections/figures.tex
-<figures/Left2increase_probCI_quarter.pdf, id=162, 426.59375pt x 284.06125pt>
+(sections/results.tex [6] [7] [8] [9] [10] [11] [12]) [13]
+(sections/figures.tex
+<figures/Left2increase_probCI_quarter.pdf, id=185, 426.59375pt x 284.06125pt>
 File: figures/Left2increase_probCI_quarter.pdf Graphic file (type pdf)
 <use figures/Left2increase_probCI_quarter.pdf>
 Package pdftex.def Info: figures/Left2increase_probCI_quarter.pdf  used on inpu
 t line 10.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_quarter.pdf, id=163, 426.59375pt x 284.06125pt>
+<figures/2left_increase_quarter.pdf, id=186, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_quarter.pdf Graphic file (type pdf)
 <use figures/2left_increase_quarter.pdf>
 Package pdftex.def Info: figures/2left_increase_quarter.pdf  used on input line
  10.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decrease_probCI_quarter.pdf, id=164, 426.59375pt x 284.06125pt>
+<figures/Left2decrease_probCI_quarter.pdf, id=187, 426.59375pt x 284.06125pt>
 File: figures/Left2decrease_probCI_quarter.pdf Graphic file (type pdf)
 <use figures/Left2decrease_probCI_quarter.pdf>
 Package pdftex.def Info: figures/Left2decrease_probCI_quarter.pdf  used on inpu
 t line 14.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_quarter.pdf, id=165, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_quarter.pdf, id=188, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_quarter.pdf Graphic file (type pdf)
 <use figures/2left_decrease_quarter.pdf>
 Package pdftex.def Info: figures/2left_decrease_quarter.pdf  used on input line
@@ -1836,104 +1837,104 @@ Package pdftex.def Info: figures/2left_decrease_quarter.pdf  used on input line
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 15.
- [11
+ [14
 
  <./figures/Left2increase_probCI_quarter.pdf> <./figures/2left_increase_quarter
 .pdf> <./figures/Left2decrease_probCI_quarter.pdf> <./figures/2left_decrease_qu
 arter.pdf>]
-<figures/Left2increases_1pbin_CI_quarter.pdf, id=194, 426.59375pt x 284.06125pt
+<figures/Left2increases_1pbin_CI_quarter.pdf, id=217, 426.59375pt x 284.06125pt
 >
 File: figures/Left2increases_1pbin_CI_quarter.pdf Graphic file (type pdf)
 <use figures/Left2increases_1pbin_CI_quarter.pdf>
 Package pdftex.def Info: figures/Left2increases_1pbin_CI_quarter.pdf  used on i
 nput line 28.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin1p_quarter.pdf, id=195, 426.59375pt x 284.06125pt>
+<figures/2left_increase_bin1p_quarter.pdf, id=218, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_bin1p_quarter.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin1p_quarter.pdf>
 Package pdftex.def Info: figures/2left_increase_bin1p_quarter.pdf  used on inpu
 t line 28.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2increases_10pbin_CI_quarter.pdf, id=196, 426.59375pt x 284.06125p
+<figures/Left2increases_10pbin_CI_quarter.pdf, id=219, 426.59375pt x 284.06125p
 t>
 File: figures/Left2increases_10pbin_CI_quarter.pdf Graphic file (type pdf)
 <use figures/Left2increases_10pbin_CI_quarter.pdf>
 Package pdftex.def Info: figures/Left2increases_10pbin_CI_quarter.pdf  used on 
 input line 32.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin10p_quarter.pdf, id=197, 426.59375pt x 284.06125pt>
+<figures/2left_increase_bin10p_quarter.pdf, id=220, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_bin10p_quarter.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin10p_quarter.pdf>
 Package pdftex.def Info: figures/2left_increase_bin10p_quarter.pdf  used on inp
 ut line 32.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2increases_1poundbin_CI_quarter.pdf, id=198, 426.59375pt x 284.061
+<figures/Left2increases_1poundbin_CI_quarter.pdf, id=221, 426.59375pt x 284.061
 25pt>
 File: figures/Left2increases_1poundbin_CI_quarter.pdf Graphic file (type pdf)
 <use figures/Left2increases_1poundbin_CI_quarter.pdf>
 Package pdftex.def Info: figures/Left2increases_1poundbin_CI_quarter.pdf  used 
 on input line 36.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin1pound_quarter.pdf, id=199, 426.59375pt x 284.06125p
+<figures/2left_increase_bin1pound_quarter.pdf, id=222, 426.59375pt x 284.06125p
 t>
 File: figures/2left_increase_bin1pound_quarter.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin1pound_quarter.pdf>
 Package pdftex.def Info: figures/2left_increase_bin1pound_quarter.pdf  used on 
 input line 36.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
- [12
+ [15
 
  <./figures/Left2increases_1pbin_CI_quarter.pdf> <./figures/2left_increase_bin1
 p_quarter.pdf> <./figures/Left2increases_10pbin_CI_quarter.pdf> <./figures/2lef
 t_increase_bin10p_quarter.pdf> <./figures/Left2increases_1poundbin_CI_quarter.p
 df> <./figures/2left_increase_bin1pound_quarter.pdf>]
-<figures/Left2decreases_1pbin_CI_quarter.pdf, id=240, 426.59375pt x 284.06125pt
+<figures/Left2decreases_1pbin_CI_quarter.pdf, id=263, 426.59375pt x 284.06125pt
 >
 File: figures/Left2decreases_1pbin_CI_quarter.pdf Graphic file (type pdf)
 <use figures/Left2decreases_1pbin_CI_quarter.pdf>
 Package pdftex.def Info: figures/Left2decreases_1pbin_CI_quarter.pdf  used on i
 nput line 49.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin1p_quarter.pdf, id=241, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_bin1p_quarter.pdf, id=264, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_bin1p_quarter.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin1p_quarter.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin1p_quarter.pdf  used on inpu
 t line 49.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decreases_10pbin_CI_quarter.pdf, id=242, 426.59375pt x 284.06125p
+<figures/Left2decreases_10pbin_CI_quarter.pdf, id=265, 426.59375pt x 284.06125p
 t>
 File: figures/Left2decreases_10pbin_CI_quarter.pdf Graphic file (type pdf)
 <use figures/Left2decreases_10pbin_CI_quarter.pdf>
 Package pdftex.def Info: figures/Left2decreases_10pbin_CI_quarter.pdf  used on 
 input line 53.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin10p_quarter.pdf, id=243, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_bin10p_quarter.pdf, id=266, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_bin10p_quarter.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin10p_quarter.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin10p_quarter.pdf  used on inp
 ut line 53.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decreases_1poundbin_CI_quarter.pdf, id=244, 426.59375pt x 284.061
+<figures/Left2decreases_1poundbin_CI_quarter.pdf, id=267, 426.59375pt x 284.061
 25pt>
 File: figures/Left2decreases_1poundbin_CI_quarter.pdf Graphic file (type pdf)
 <use figures/Left2decreases_1poundbin_CI_quarter.pdf>
 Package pdftex.def Info: figures/Left2decreases_1poundbin_CI_quarter.pdf  used 
 on input line 57.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin1pound_quarter.pdf, id=245, 426.59375pt x 284.06125p
+<figures/2left_decrease_bin1pound_quarter.pdf, id=268, 426.59375pt x 284.06125p
 t>
 File: figures/2left_decrease_bin1pound_quarter.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin1pound_quarter.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin1pound_quarter.pdf  used on 
 input line 57.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
- [13
+ [16
 
  <./figures/Left2decreases_1pbin_CI_quarter.pdf> <./figures/2left_decrease_bin1
 p_quarter.pdf> <./figures/Left2decreases_10pbin_CI_quarter.pdf> <./figures/2lef
 t_decrease_bin10p_quarter.pdf> <./figures/Left2decreases_1poundbin_CI_quarter.p
 df> <./figures/2left_decrease_bin1pound_quarter.pdf>]
-<figures/outside_hoursLeft2increase_probCI_quarter.pdf, id=287, 426.59375pt x 2
+<figures/outside_hoursLeft2increase_probCI_quarter.pdf, id=309, 426.59375pt x 2
 84.06125pt>
 File: figures/outside_hoursLeft2increase_probCI_quarter.pdf Graphic file (type 
 pdf)
@@ -1941,14 +1942,14 @@ pdf)
 Package pdftex.def Info: figures/outside_hoursLeft2increase_probCI_quarter.pdf 
  used on input line 70.
 (pdftex.def)             Requested size: 182.09486pt x 121.25539pt.
-<figures/outside_hours2left_increase_quarter.pdf, id=288, 426.59375pt x 284.061
+<figures/outside_hours2left_increase_quarter.pdf, id=310, 426.59375pt x 284.061
 25pt>
 File: figures/outside_hours2left_increase_quarter.pdf Graphic file (type pdf)
 <use figures/outside_hours2left_increase_quarter.pdf>
 Package pdftex.def Info: figures/outside_hours2left_increase_quarter.pdf  used 
 on input line 70.
 (pdftex.def)             Requested size: 182.09486pt x 121.25539pt.
-<figures/no_yest_loginLeft2increase_probCI_quarter.pdf, id=289, 426.59375pt x 2
+<figures/no_yest_loginLeft2increase_probCI_quarter.pdf, id=311, 426.59375pt x 2
 84.06125pt>
 File: figures/no_yest_loginLeft2increase_probCI_quarter.pdf Graphic file (type 
 pdf)
@@ -1956,27 +1957,27 @@ pdf)
 Package pdftex.def Info: figures/no_yest_loginLeft2increase_probCI_quarter.pdf 
  used on input line 74.
 (pdftex.def)             Requested size: 182.09486pt x 121.25539pt.
-<figures/no_yest_login2left_increase_quarter.pdf, id=290, 426.59375pt x 284.061
+<figures/no_yest_login2left_increase_quarter.pdf, id=312, 426.59375pt x 284.061
 25pt>
 File: figures/no_yest_login2left_increase_quarter.pdf Graphic file (type pdf)
 <use figures/no_yest_login2left_increase_quarter.pdf>
 Package pdftex.def Info: figures/no_yest_login2left_increase_quarter.pdf  used 
 on input line 74.
 (pdftex.def)             Requested size: 182.09486pt x 121.25539pt.
-<figures/liquidLeft2increase_probCI_quarter.pdf, id=291, 426.59375pt x 284.0612
+<figures/liquidLeft2increase_probCI_quarter.pdf, id=313, 426.59375pt x 284.0612
 5pt>
 File: figures/liquidLeft2increase_probCI_quarter.pdf Graphic file (type pdf)
 <use figures/liquidLeft2increase_probCI_quarter.pdf>
 Package pdftex.def Info: figures/liquidLeft2increase_probCI_quarter.pdf  used o
 n input line 77.
 (pdftex.def)             Requested size: 182.09486pt x 121.25539pt.
-<figures/liquid2left_increase_quarter.pdf, id=292, 426.59375pt x 284.06125pt>
+<figures/liquid2left_increase_quarter.pdf, id=314, 426.59375pt x 284.06125pt>
 File: figures/liquid2left_increase_quarter.pdf Graphic file (type pdf)
 <use figures/liquid2left_increase_quarter.pdf>
 Package pdftex.def Info: figures/liquid2left_increase_quarter.pdf  used on inpu
 t line 77.
 (pdftex.def)             Requested size: 182.09486pt x 121.25539pt.
-<figures/potential_lmLeft2increase_probCI_quarter.pdf, id=293, 426.59375pt x 28
+<figures/potential_lmLeft2increase_probCI_quarter.pdf, id=315, 426.59375pt x 28
 4.06125pt>
 File: figures/potential_lmLeft2increase_probCI_quarter.pdf Graphic file (type p
 df)
@@ -1984,7 +1985,7 @@ df)
 Package pdftex.def Info: figures/potential_lmLeft2increase_probCI_quarter.pdf  
 used on input line 81.
 (pdftex.def)             Requested size: 182.09486pt x 121.25539pt.
-<figures/potential_lm2left_increase_quarter.pdf, id=294, 426.59375pt x 284.0612
+<figures/potential_lm2left_increase_quarter.pdf, id=316, 426.59375pt x 284.0612
 5pt>
 File: figures/potential_lm2left_increase_quarter.pdf Graphic file (type pdf)
 <use figures/potential_lm2left_increase_quarter.pdf>
@@ -1995,7 +1996,7 @@ n input line 81.
 
 LaTeX Warning: Float too large for page by 29.17441pt on input line 83.
 
-) [14 <./figures/outside_hoursLeft2increase_probCI_quarter.pdf> <./figures/outs
+) [17 <./figures/outside_hoursLeft2increase_probCI_quarter.pdf> <./figures/outs
 ide_hours2left_increase_quarter.pdf> <./figures/no_yest_loginLeft2increase_prob
 CI_quarter.pdf> <./figures/no_yest_login2left_increase_quarter.pdf> <./figures/
 liquidLeft2increase_probCI_quarter.pdf> <./figures/liquid2left_increase_quarter
@@ -2030,56 +2031,56 @@ tead on input line 8.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
 (Font)              scaled to size 6.1pt on input line 8.
 
-(tables/sample_selection.tex) [15
+(tables/sample_selection.tex) [18
 
 
-] (tables/stats_account.tex) [16]
+] (tables/stats_account.tex) [19]
 (tables/prices_stats.tex) (tables/prices_samples_stats.tex)
-(tables/prices_samples_stats_down.tex) [17]
-(tables/reg_sample_increase_quarter.tex) [18
+(tables/prices_samples_stats_down.tex) [20]
+(tables/reg_sample_increase_quarter.tex) [21
 
 
 
 ]
-(tables/reg_sample_decrease_quarter.tex) [19
+(tables/reg_sample_decrease_quarter.tex) [22
 
 ] (tables/reg_sample_age.tex)
-[20
+[23
 
-] (tables/reg_sample_gender.tex) [21
+] (tables/reg_sample_gender.tex) [24
 
 ] (tables/reg_sample_portfolio.tex)
-[22
+[25
 
-] (tables/reg_sample_tenure.tex) [23
+] (tables/reg_sample_tenure.tex) [26
 
 ] (tables/reg_sample_stocks.tex))
-[24
+[27
 
 ] (sections/appendix_figures.tex
-<figures/prices_hist_login_days.pdf, id=399, 361.35pt x 361.35pt>
+<figures/prices_hist_login_days.pdf, id=422, 361.35pt x 361.35pt>
 File: figures/prices_hist_login_days.pdf Graphic file (type pdf)
 <use figures/prices_hist_login_days.pdf>
 Package pdftex.def Info: figures/prices_hist_login_days.pdf  used on input line
  6.
 (pdftex.def)             Requested size: 273.14923pt x 273.15117pt.
- [25
+ [28
 
  <./figures/prices_hist_login_days.pdf>]
-<figures/Left2_all.pdf, id=412, 426.59375pt x 284.06125pt>
+<figures/Left2_all.pdf, id=434, 426.59375pt x 284.06125pt>
 File: figures/Left2_all.pdf Graphic file (type pdf)
 <use figures/Left2_all.pdf>
 Package pdftex.def Info: figures/Left2_all.pdf  used on input line 20.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_all.pdf, id=413, 426.59375pt x 284.06125pt>
+<figures/2left_all.pdf, id=435, 426.59375pt x 284.06125pt>
 File: figures/2left_all.pdf Graphic file (type pdf)
 <use figures/2left_all.pdf>
 Package pdftex.def Info: figures/2left_all.pdf  used on input line 20.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-[26
+[29
 
  <./figures/Left2_all.pdf> <./figures/2left_all.pdf>]
-<figures/Left2increase_probCI_quarter_random_sell.pdf, id=430, 426.59375pt x 28
+<figures/Left2increase_probCI_quarter_random_sell.pdf, id=452, 426.59375pt x 28
 4.06125pt>
 File: figures/Left2increase_probCI_quarter_random_sell.pdf Graphic file (type p
 df)
@@ -2087,7 +2088,7 @@ df)
 Package pdftex.def Info: figures/Left2increase_probCI_quarter_random_sell.pdf  
 used on input line 46.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decrease_probCI_quarter_random_sell.pdf, id=431, 426.59375pt x 28
+<figures/Left2decrease_probCI_quarter_random_sell.pdf, id=453, 426.59375pt x 28
 4.06125pt>
 File: figures/Left2decrease_probCI_quarter_random_sell.pdf Graphic file (type p
 df)
@@ -2095,113 +2096,113 @@ df)
 Package pdftex.def Info: figures/Left2decrease_probCI_quarter_random_sell.pdf  
 used on input line 50.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
- [27
+ [30
 
  <./figures/Left2increase_probCI_quarter_random_sell.pdf> <./figures/Left2decre
 ase_probCI_quarter_random_sell.pdf>]
-<figures/Left2increase_probCI_month.pdf, id=450, 426.59375pt x 284.06125pt>
+<figures/Left2increase_probCI_month.pdf, id=472, 426.59375pt x 284.06125pt>
 File: figures/Left2increase_probCI_month.pdf Graphic file (type pdf)
 <use figures/Left2increase_probCI_month.pdf>
 Package pdftex.def Info: figures/Left2increase_probCI_month.pdf  used on input 
 line 63.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_month.pdf, id=451, 426.59375pt x 284.06125pt>
+<figures/2left_increase_month.pdf, id=473, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_month.pdf Graphic file (type pdf)
 <use figures/2left_increase_month.pdf>
 Package pdftex.def Info: figures/2left_increase_month.pdf  used on input line 6
 3.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decrease_probCI_month.pdf, id=452, 426.59375pt x 284.06125pt>
+<figures/Left2decrease_probCI_month.pdf, id=474, 426.59375pt x 284.06125pt>
 File: figures/Left2decrease_probCI_month.pdf Graphic file (type pdf)
 <use figures/Left2decrease_probCI_month.pdf>
 Package pdftex.def Info: figures/Left2decrease_probCI_month.pdf  used on input 
 line 67.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_month.pdf, id=453, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_month.pdf, id=475, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_month.pdf Graphic file (type pdf)
 <use figures/2left_decrease_month.pdf>
 Package pdftex.def Info: figures/2left_decrease_month.pdf  used on input line 6
 7.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
- [28
+ [31
 
  <./figures/Left2increase_probCI_month.pdf> <./figures/2left_increase_month.pdf
 > <./figures/Left2decrease_probCI_month.pdf> <./figures/2left_decrease_month.pd
 f>]
-<figures/Left2increase_probCI_year.pdf, id=482, 426.59375pt x 284.06125pt>
+<figures/Left2increase_probCI_year.pdf, id=505, 426.59375pt x 284.06125pt>
 File: figures/Left2increase_probCI_year.pdf Graphic file (type pdf)
 <use figures/Left2increase_probCI_year.pdf>
 Package pdftex.def Info: figures/Left2increase_probCI_year.pdf  used on input l
 ine 81.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_year.pdf, id=483, 426.59375pt x 284.06125pt>
+<figures/2left_increase_year.pdf, id=506, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_year.pdf Graphic file (type pdf)
 <use figures/2left_increase_year.pdf>
 Package pdftex.def Info: figures/2left_increase_year.pdf  used on input line 81
 .
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decrease_probCI_year.pdf, id=484, 426.59375pt x 284.06125pt>
+<figures/Left2decrease_probCI_year.pdf, id=507, 426.59375pt x 284.06125pt>
 File: figures/Left2decrease_probCI_year.pdf Graphic file (type pdf)
 <use figures/Left2decrease_probCI_year.pdf>
 Package pdftex.def Info: figures/Left2decrease_probCI_year.pdf  used on input l
 ine 85.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_year.pdf, id=485, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_year.pdf, id=508, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_year.pdf Graphic file (type pdf)
 <use figures/2left_decrease_year.pdf>
 Package pdftex.def Info: figures/2left_decrease_year.pdf  used on input line 85
 .
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
- [29
+ [32
 
  <./figures/Left2increase_probCI_year.pdf> <./figures/2left_increase_year.pdf> 
 <./figures/Left2decrease_probCI_year.pdf> <./figures/2left_decrease_year.pdf>]
-<figures/Left2increase_probCI_quarter_sell.pdf, id=514, 426.59375pt x 284.06125
+<figures/Left2increase_probCI_quarter_sell.pdf, id=537, 426.59375pt x 284.06125
 pt>
 File: figures/Left2increase_probCI_quarter_sell.pdf Graphic file (type pdf)
 <use figures/Left2increase_probCI_quarter_sell.pdf>
 Package pdftex.def Info: figures/Left2increase_probCI_quarter_sell.pdf  used on
  input line 99.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_quarter_sell.pdf, id=515, 426.59375pt x 284.06125pt>
+<figures/2left_increase_quarter_sell.pdf, id=538, 426.59375pt x 284.06125pt>
 File: figures/2left_increase_quarter_sell.pdf Graphic file (type pdf)
 <use figures/2left_increase_quarter_sell.pdf>
 Package pdftex.def Info: figures/2left_increase_quarter_sell.pdf  used on input
  line 99.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decrease_probCI_quarter_sell.pdf, id=516, 426.59375pt x 284.06125
+<figures/Left2decrease_probCI_quarter_sell.pdf, id=539, 426.59375pt x 284.06125
 pt>
 File: figures/Left2decrease_probCI_quarter_sell.pdf Graphic file (type pdf)
 <use figures/Left2decrease_probCI_quarter_sell.pdf>
 Package pdftex.def Info: figures/Left2decrease_probCI_quarter_sell.pdf  used on
  input line 103.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_quarter_sell.pdf, id=517, 426.59375pt x 284.06125pt>
+<figures/2left_decrease_quarter_sell.pdf, id=540, 426.59375pt x 284.06125pt>
 File: figures/2left_decrease_quarter_sell.pdf Graphic file (type pdf)
 <use figures/2left_decrease_quarter_sell.pdf>
 Package pdftex.def Info: figures/2left_decrease_quarter_sell.pdf  used on input
  line 103.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
- [30
+ [33
 
  <./figures/Left2increase_probCI_quarter_sell.pdf> <./figures/2left_increase_qu
 arter_sell.pdf> <./figures/Left2decrease_probCI_quarter_sell.pdf> <./figures/2l
 eft_decrease_quarter_sell.pdf>]
-<figures/Left2increases_1pbin_CI_quarter_sell.pdf, id=546, 426.59375pt x 284.06
+<figures/Left2increases_1pbin_CI_quarter_sell.pdf, id=569, 426.59375pt x 284.06
 125pt>
 File: figures/Left2increases_1pbin_CI_quarter_sell.pdf Graphic file (type pdf)
 <use figures/Left2increases_1pbin_CI_quarter_sell.pdf>
 Package pdftex.def Info: figures/Left2increases_1pbin_CI_quarter_sell.pdf  used
  on input line 117.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin1p_quarter_sell.pdf, id=547, 426.59375pt x 284.06125
+<figures/2left_increase_bin1p_quarter_sell.pdf, id=570, 426.59375pt x 284.06125
 pt>
 File: figures/2left_increase_bin1p_quarter_sell.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin1p_quarter_sell.pdf>
 Package pdftex.def Info: figures/2left_increase_bin1p_quarter_sell.pdf  used on
  input line 117.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2increases_10pbin_CI_quarter_sell.pdf, id=548, 426.59375pt x 284.0
+<figures/Left2increases_10pbin_CI_quarter_sell.pdf, id=571, 426.59375pt x 284.0
 6125pt>
 File: figures/Left2increases_10pbin_CI_quarter_sell.pdf Graphic file (type pdf)
 
@@ -2209,14 +2210,14 @@ File: figures/Left2increases_10pbin_CI_quarter_sell.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/Left2increases_10pbin_CI_quarter_sell.pdf  use
 d on input line 121.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin10p_quarter_sell.pdf, id=549, 426.59375pt x 284.0612
+<figures/2left_increase_bin10p_quarter_sell.pdf, id=572, 426.59375pt x 284.0612
 5pt>
 File: figures/2left_increase_bin10p_quarter_sell.pdf Graphic file (type pdf)
 <use figures/2left_increase_bin10p_quarter_sell.pdf>
 Package pdftex.def Info: figures/2left_increase_bin10p_quarter_sell.pdf  used o
 n input line 121.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2increases_1poundbin_CI_quarter_sell.pdf, id=550, 426.59375pt x 28
+<figures/Left2increases_1poundbin_CI_quarter_sell.pdf, id=573, 426.59375pt x 28
 4.06125pt>
 File: figures/Left2increases_1poundbin_CI_quarter_sell.pdf Graphic file (type p
 df)
@@ -2224,7 +2225,7 @@ df)
 Package pdftex.def Info: figures/Left2increases_1poundbin_CI_quarter_sell.pdf  
 used on input line 125.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_increase_bin1pound_quarter_sell.pdf, id=551, 426.59375pt x 284.0
+<figures/2left_increase_bin1pound_quarter_sell.pdf, id=574, 426.59375pt x 284.0
 6125pt>
 File: figures/2left_increase_bin1pound_quarter_sell.pdf Graphic file (type pdf)
 
@@ -2232,28 +2233,28 @@ File: figures/2left_increase_bin1pound_quarter_sell.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/2left_increase_bin1pound_quarter_sell.pdf  use
 d on input line 125.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
- [31
+ [34
 
  <./figures/Left2increases_1pbin_CI_quarter_sell.pdf> <./figures/2left_increase
 _bin1p_quarter_sell.pdf> <./figures/Left2increases_10pbin_CI_quarter_sell.pdf> 
 <./figures/2left_increase_bin10p_quarter_sell.pdf> <./figures/Left2increases_1p
 oundbin_CI_quarter_sell.pdf> <./figures/2left_increase_bin1pound_quarter_sell.p
 df>]
-<figures/Left2decreases_1pbin_CI_quarter_sell.pdf, id=593, 426.59375pt x 284.06
+<figures/Left2decreases_1pbin_CI_quarter_sell.pdf, id=615, 426.59375pt x 284.06
 125pt>
 File: figures/Left2decreases_1pbin_CI_quarter_sell.pdf Graphic file (type pdf)
 <use figures/Left2decreases_1pbin_CI_quarter_sell.pdf>
 Package pdftex.def Info: figures/Left2decreases_1pbin_CI_quarter_sell.pdf  used
  on input line 139.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin1p_quarter_sell.pdf, id=594, 426.59375pt x 284.06125
+<figures/2left_decrease_bin1p_quarter_sell.pdf, id=616, 426.59375pt x 284.06125
 pt>
 File: figures/2left_decrease_bin1p_quarter_sell.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin1p_quarter_sell.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin1p_quarter_sell.pdf  used on
  input line 139.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decreases_10pbin_CI_quarter_sell.pdf, id=595, 426.59375pt x 284.0
+<figures/Left2decreases_10pbin_CI_quarter_sell.pdf, id=617, 426.59375pt x 284.0
 6125pt>
 File: figures/Left2decreases_10pbin_CI_quarter_sell.pdf Graphic file (type pdf)
 
@@ -2261,14 +2262,14 @@ File: figures/Left2decreases_10pbin_CI_quarter_sell.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/Left2decreases_10pbin_CI_quarter_sell.pdf  use
 d on input line 143.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin10p_quarter_sell.pdf, id=596, 426.59375pt x 284.0612
+<figures/2left_decrease_bin10p_quarter_sell.pdf, id=618, 426.59375pt x 284.0612
 5pt>
 File: figures/2left_decrease_bin10p_quarter_sell.pdf Graphic file (type pdf)
 <use figures/2left_decrease_bin10p_quarter_sell.pdf>
 Package pdftex.def Info: figures/2left_decrease_bin10p_quarter_sell.pdf  used o
 n input line 143.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/Left2decreases_1poundbin_CI_quarter_sell.pdf, id=597, 426.59375pt x 28
+<figures/Left2decreases_1poundbin_CI_quarter_sell.pdf, id=619, 426.59375pt x 28
 4.06125pt>
 File: figures/Left2decreases_1poundbin_CI_quarter_sell.pdf Graphic file (type p
 df)
@@ -2276,7 +2277,7 @@ df)
 Package pdftex.def Info: figures/Left2decreases_1poundbin_CI_quarter_sell.pdf  
 used on input line 147.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
-<figures/2left_decrease_bin1pound_quarter_sell.pdf, id=598, 426.59375pt x 284.0
+<figures/2left_decrease_bin1pound_quarter_sell.pdf, id=620, 426.59375pt x 284.0
 6125pt>
 File: figures/2left_decrease_bin1pound_quarter_sell.pdf Graphic file (type pdf)
 
@@ -2285,7 +2286,7 @@ Package pdftex.def Info: figures/2left_decrease_bin1pound_quarter_sell.pdf  use
 d on input line 147.
 (pdftex.def)             Requested size: 204.85846pt x 136.41286pt.
 )
-[32
+[35
 
  <./figures/Left2decreases_1pbin_CI_quarter_sell.pdf> <./figures/2left_decrease
 _bin1p_quarter_sell.pdf> <./figures/Left2decreases_10pbin_CI_quarter_sell.pdf> 
@@ -2298,17 +2299,17 @@ df>] (sections/appendix_tables.tex
 
 LaTeX Warning: Float too large for page by 67.28474pt on input line 46.
 
-[33] (tables/reg_sample_increase_bin1p_quarter.tex)
+[36] (tables/reg_sample_increase_bin1p_quarter.tex)
 (tables/reg_sample_decrease_bin10p_quarter.tex)
 (tables/reg_sample_decrease_bin1pound_quarter.tex)
 
 LaTeX Warning: Float too large for page by 67.28474pt on input line 90.
 
-[34] (tables/outside_hoursreg_sample_increase_quarter.tex)
-(tables/no_yest_loginreg_sample_increase_quarter.tex) [35]
+[37] (tables/outside_hoursreg_sample_increase_quarter.tex)
+(tables/no_yest_loginreg_sample_increase_quarter.tex) [38]
 (tables/liquidreg_sample_increase_quarter.tex)
-(tables/potential_lmreg_sample_increase_quarter.tex) [36]
-(tables/prices_samples_stats_month_year.tex) [37
+(tables/potential_lmreg_sample_increase_quarter.tex) [39]
+(tables/prices_samples_stats_month_year.tex) [40
 
 
 
@@ -2318,15 +2319,15 @@ LaTeX Warning: Float too large for page by 67.28474pt on input line 90.
 
 ]
 (tables/reg_sample_increase_month.tex) (tables/reg_sample_increase_year.tex)
-[38
+[41
 
 ] (tables/reg_sample_decrease_month.tex)
-(tables/reg_sample_decrease_year.tex) [39]
-(tables/reg_sample_increase_quarter_sell.tex) [40
+(tables/reg_sample_decrease_year.tex) [42]
+(tables/reg_sample_increase_quarter_sell.tex) [43
 
 
 ]
-(tables/reg_sample_decrease_quarter_sell.tex) [41
+(tables/reg_sample_decrease_quarter_sell.tex) [44
 
 ]
 (tables/reg_sample_increase_bin1p_quarter_sell.tex)
@@ -2335,15 +2336,15 @@ LaTeX Warning: Float too large for page by 67.28474pt on input line 90.
 
 LaTeX Warning: Float too large for page by 67.28474pt on input line 308.
 
-[42] (tables/reg_sample_increase_bin1p_quarter_sell.tex)
+[45] (tables/reg_sample_increase_bin1p_quarter_sell.tex)
 (tables/reg_sample_decrease_bin10p_quarter_sell.tex)
 (tables/reg_sample_decrease_bin1pound_quarter_sell.tex)
 
 LaTeX Warning: Float too large for page by 67.28474pt on input line 352.
 
-) [43] (left_digit_attention_paper.bbl)
+) [46] (left_digit_attention_paper.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
- [44
+ [47
 
 
 
@@ -2357,13 +2358,13 @@ ged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33821 strings out of 492895
- 652931 string characters out of 3123269
+ 33838 strings out of 492895
+ 653236 string characters out of 3123269
  817820 words of memory out of 3000000
- 36609 multiletter control sequences out of 15000+200000
- 788111 words of font info for 426 fonts, out of 3000000 for 9000
+ 36608 multiletter control sequences out of 15000+200000
+ 790522 words of font info for 435 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,100p,9107b,1048s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,100p,9107b,1050s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/libe
 rtinealt.enc}{C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
 /libertine/lbtn_oexx6f.enc}{C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/f
@@ -2378,12 +2379,13 @@ tine/LinLibertineT.pfb><C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts
 ams/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/lizjg1
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/fxlri-7letters.pfb>
 <C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/txfonts/r
-txr.pfb><C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/n
-ewtx/txsys.pfb><C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/newtx/zxlri.pfb>
-Output written on left_digit_attention_paper.pdf (44 pages, 713481 bytes).
+txmi.pfb><C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+txfonts/rtxr.pfb><C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/newtx/txsys.pfb><C:/Users/lizjg1/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/newtx/zxlri.pfb>
+Output written on left_digit_attention_paper.pdf (47 pages, 731777 bytes).
 PDF statistics:
- 799 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
- 71026 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 824 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 71018 words of extra memory for PDF output out of 74296 (max. 10000000)
 
