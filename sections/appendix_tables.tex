@@ -350,3 +350,42 @@
 \\		}
 	\end{adjustbox}
 \end{table}
+
+
+\begin{econtable}[h]\footnotesize
+	\caption{Summary Stats for Individual Left Digit Bias}
+	\label{tab:summary_stats_annual_monthly}
+	\estauto{lcccccccccc}{
+		& \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Pctl(25)} & \multicolumn{1}{c}{Median} & \multicolumn{1}{c}{Pctl(75)} & \multicolumn{1}{c}{Max} \\ 	
+		\input{tables/betas_stats.tex} 
+}
+\fignote{Distribution of the coefficients for the dummy \textit{Above Y0=1} (or left digit bias) for each account in the aggregate of increasing samples (including the monthly, quarterly and annual samples) and the aggregate of decreasing samples. Outliers below the 5 percentile and above the 95 percentile were excluded.}
+\end{econtable}
+
+
+
+\begin{econtable}\small
+	\caption{Summary Statistics for Quartiles in Left Digit Bias \\ Price Increasing Samples}
+	\label{tab:summary_stats}
+	\estauto{l ccccccccc}{
+		& \multicolumn{2}{c}{Quartile 1}& \multicolumn{2}{c}{Quartile 2}& \multicolumn{2}{c}{Quartile 3}& \multicolumn{2}{c}{Quartile 4} \\ 
+		&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{p50}&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{p50}&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{p50}&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{p50} \\
+		\cmidrule(l{.5ex}){2-9} 
+		\input{tables/stats_account_quartiles.tex} 
+	}
+	\fignote{This table presents summary statistics for investors split by quartile based on their individual coefficients for the dummy \textit{Above Y0=1} (or left digit bias) in the  aggregate of price increasing samples (including the monthly, quarterly and annual samples). Age is measured at date of account opening. Account tenure is measured on the final day of the data period. Portfolio value is the value of all securities within the portfolio at market prices. Portfolio value, number of stocks and investment in mutual funds are measured as within-account averages of values at the first day of each calendar month in the data period. Login days is the percentage of days the account is open in the data period and the account holder made at least one login. Transaction days is the percentage of market open days the account is open in the data period and the account holder made at least one trade.}
+\end{econtable}
+
+
+\begin{econtable}\small
+	\caption{Summary Statistics for Quartiles in Left Digit Bias \\ Price Decreasing Samples}
+	\label{tab:summary_stats}
+	\estauto{l ccccccccc}{
+		& \multicolumn{2}{c}{Quartile 1}& \multicolumn{2}{c}{Quartile 2}& \multicolumn{2}{c}{Quartile 3}& \multicolumn{2}{c}{Quartile 4} \\ 
+		&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{p50}&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{p50}&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{p50}&\multicolumn{1}{c}{Mean}&\multicolumn{1}{c}{p50} \\
+		\cmidrule(l{.5ex}){2-9} 
+		\input{tables/stats_account_quartiles_decreasing.tex} 
+	}
+	\fignote{This table presents summary statistics for investors split by quartile based on their individual coefficients for the dummy \textit{Above Y0=1} (or left digit bias) in the  aggregate of price decreasing samples (including the monthly, quarterly and annual samples). Age is measured at date of account opening. Account tenure is measured on the final day of the data period. Portfolio value is the value of all securities within the portfolio at market prices. Portfolio value, number of stocks and investment in mutual funds are measured as within-account averages of values at the first day of each calendar month in the data period. Login days is the percentage of days the account is open in the data period and the account holder made at least one login. Transaction days is the percentage of market open days the account is open in the data period and the account holder made at least one trade.}
+\end{econtable}
+
