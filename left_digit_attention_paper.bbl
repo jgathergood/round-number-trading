@@ -45,6 +45,20 @@ Barberis, N. (2018).
 \newblock In {\em Handbook of Behavioral Economics: Applications and
   Foundations 1}, Volume~1, pp.\  79--175. Elsevier.
 
+\bibitem[\protect\citeauthoryear{Barberis and Xiong}{Barberis and
+  Xiong}{2009}]{barberis2009drives}
+Barberis, N. and W.~Xiong (2009).
+\newblock What drives the disposition effect? an analysis of a long-standing
+  preference-based explanation.
+\newblock {\em the Journal of Finance\/}~{\em 64\/}(2), 751--784.
+
+\bibitem[\protect\citeauthoryear{Ben-David and Hirshleifer}{Ben-David and
+  Hirshleifer}{2012}]{ben2012investors}
+Ben-David, I. and D.~Hirshleifer (2012).
+\newblock Are investors really reluctant to realize their losses? trading
+  responses to past returns and the disposition effect.
+\newblock {\em The Review of Financial Studies\/}~{\em 25\/}(8), 2485--2532.
+
 \bibitem[\protect\citeauthoryear{Bhattacharya, Holden, and
   Jacobsen}{Bhattacharya et~al.}{2012}]{bhattacharya2012penny}
 Bhattacharya, U., C.~W. Holden, and S.~Jacobsen (2012).
@@ -58,11 +72,36 @@ Bordalo, P., N.~Gennaioli, and A.~Shleifer (2012).
 \newblock Salience theory of choice under risk.
 \newblock {\em Quarterly Journal of Economics\/}~{\em 127}, 1243--1285.
 
+\bibitem[\protect\citeauthoryear{Bordalo, Gennaioli, and Shleifer}{Bordalo
+  et~al.}{2013}]{bordalo2013salience}
+Bordalo, P., N.~Gennaioli, and A.~Shleifer (2013).
+\newblock Salience and consumer choice.
+\newblock {\em Journal of Political Economy\/}~{\em 121\/}(5), 803--843.
+
+\bibitem[\protect\citeauthoryear{Bourghelle and Cellier}{Bourghelle and
+  Cellier}{2009}]{bourghelle2009limit}
+Bourghelle, D. and A.~Cellier (2009).
+\newblock Limit order clustering and price barriers on financial markets:
+  Empirical evidence from euronext.
+\newblock Technical report, Citeseer.
+
+\bibitem[\protect\citeauthoryear{Bushong, Rabin, and Schwartzstein}{Bushong
+  et~al.}{2015}]{bushong2015model}
+Bushong, B., M.~Rabin, and J.~Schwartzstein (2015).
+\newblock A model of relative thinking.
+\newblock {\em Unpublished manuscript, Harvard University, Cambridge, MA\/}.
+
 \bibitem[\protect\citeauthoryear{Chetty, Looney, and Kroft}{Chetty
   et~al.}{2009}]{chetty2009salience}
 Chetty, R., A.~Looney, and K.~Kroft (2009).
 \newblock Salience and taxation: Theory and evidence.
 \newblock {\em American Economic Review\/}~{\em 99}, 1145--77.
+
+\bibitem[\protect\citeauthoryear{Chiao and Wang}{Chiao and
+  Wang}{2009}]{chiao2009price}
+Chiao, C. and Z.-M. Wang (2009).
+\newblock Price clustering: Evidence using comprehensive limit-order data.
+\newblock {\em Financial Review\/}~{\em 44\/}(1), 1--29.
 
 \bibitem[\protect\citeauthoryear{Dorn and Huberman}{Dorn and
   Huberman}{2005}]{dorn2005}
@@ -82,6 +121,11 @@ Finkelstein, A. (2009).
 \newblock E-ztax: Tax salience and tax rates.
 \newblock {\em Quarterly Journal of Economics\/}~{\em 124}, 969--1010.
 
+\bibitem[\protect\citeauthoryear{Frazzini}{Frazzini}{2006}]{frazzini2006disposition}
+Frazzini, A. (2006).
+\newblock The disposition effect and underreaction to news.
+\newblock {\em The Journal of Finance\/}~{\em 61\/}(4), 2017--2046.
+
 \bibitem[\protect\citeauthoryear{Hartzmark}{Hartzmark}{2015}]{hartzmark2015}
 Hartzmark, S.~M. (2015).
 \newblock {The Worst, the Best, Ignoring All the Rest: The Rank Effect and
@@ -93,11 +137,30 @@ Hirshleifer, D.~A. (2015).
 \newblock {Behavioral Finance}.
 \newblock {\em Annual Review of Financial Economics\/}~{\em 7}, 133--159.
 
+\bibitem[\protect\citeauthoryear{K{\H{o}}szegi and Szeidl}{K{\H{o}}szegi and
+  Szeidl}{2013}]{kHoszegi2013model}
+K{\H{o}}szegi, B. and A.~Szeidl (2013).
+\newblock A model of focusing in economic choice.
+\newblock {\em The Quarterly journal of economics\/}~{\em 128\/}(1), 53--104.
+
+\bibitem[\protect\citeauthoryear{Kuo, Lin, and Zhao}{Kuo
+  et~al.}{2015}]{kuo2015cognitive}
+Kuo, W.-Y., T.-C. Lin, and J.~Zhao (2015).
+\newblock Cognitive limitation and investment performance: Evidence from limit
+  order clustering.
+\newblock {\em The Review of Financial Studies\/}~{\em 28\/}(3), 838--875.
+
 \bibitem[\protect\citeauthoryear{Lacetera, Pope, and Sydnor}{Lacetera
   et~al.}{2012}]{lacetera2012heuristic}
 Lacetera, N., D.~G. Pope, and J.~R. Sydnor (2012).
 \newblock Heuristic thinking and limited attention in the car market.
 \newblock {\em American Economic Review\/}~{\em 102\/}(5), 2206--36.
+
+\bibitem[\protect\citeauthoryear{Li and Yang}{Li and
+  Yang}{2013}]{li2013prospect}
+Li, Y. and L.~Yang (2013).
+\newblock Prospect theory, the disposition effect, and asset prices.
+\newblock {\em Journal of Financial Economics\/}~{\em 107\/}(3), 715--739.
 
 \bibitem[\protect\citeauthoryear{Linnainmaa}{Linnainmaa}{2010}]{linnainmaa2010limit}
 Linnainmaa, J.~T. (2010).
@@ -180,5 +243,13 @@ Thomas, M. and V.~Morwitz (2005).
 \newblock Penny wise and pound foolish: the left-digit effect in price
   cognition.
 \newblock {\em Journal of Consumer Research\/}~{\em 32}, 54--64.
+
+\bibitem[\protect\citeauthoryear{Weber and Camerer}{Weber and
+  Camerer}{1998}]{weber1998disposition}
+Weber, M. and C.~F. Camerer (1998).
+\newblock The disposition effect in securities trading: An experimental
+  analysis.
+\newblock {\em Journal of Economic Behavior \& Organization\/}~{\em 33\/}(2),
+  167--184.
 
 \end{thebibliography}
