@@ -21,11 +21,11 @@ We have keep our definition of increasing and decreasing samples (an increasing 
 \begin{itemize}
 \item \textbf{We do not condition on the investor experiencing a change in leftmost digit any more---so the investor is allowed to sell his whole position before reaching Y0 or he could not login on days in which the price crosses Y0.}
 \item We condition on (A) the stock (and not the investor) changing leftmost digit during the quarter following the first login in the quarter. But the investor could sell his position before reaching Y0---all his login days in the quarter are anyway included and are used to define the probabilities before Y0 (for X9, X8, etc.)
-\item We also tested an additional restriction, when we condition on (A) plus the stock reaches Y5---again, the investor could sell before reaching Y5, his observations in the quarter are still included in the samples. This sample includes stocks which larger movements in price.
+\item We also tested an additional restriction, when we condition on (A) plus the stock reaches Y5---again, the investor could sell before reaching Y5, his observations in the quarter are still included in the samples. Y5 is not necessarily higher than Y0. But by reaching Y5 and Y0 in the same quarter, this sample includes stocks which larger movements in price.
 \end{itemize}
 
 Our results use login days, but we have found identical patterns but which much larger confidence intervals using sell days to define the above samples. \\ \\
-Also, Because we are not conditioning on investors experiencing Y0, more than half of the quarters in the data are quarters in which the investor $\times$ stock did not reach Y0.
+Also, because we are not conditioning on investors experiencing Y0,\textbf{ more than half of the quarters} in the data are quarters in which the investor $\times$ stock never experience Y0 (either because he sold the position before or because he decided not to login on Y0 days).
 \subsection{New simple criteria}
 We tested a new and much simpler criteria to define samples. A price increasing sample is a day in which the price was higher than the price on the day before and the stock change the second digit. Similarly, for the price decreasing sample, today is included if the price is higher than yesterday's price and the stock changed the second digit today. Under this new criteria, both samples appear to have the same pattern and the pattern is observed for buys and sells.  \\
 The next plots show the different results using 20\% of the data. \\
@@ -85,6 +85,24 @@ In our last talk we discussed a weird pattern showing a reduction in the probabi
 	\subfigure[Price on $t$ < Price on $t-1$ \& Second digit change on $t$]{
 		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest.pdf}
 \includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_buy.pdf}
+	}
+	
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
+\end{figure}
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ New criteria (salient changes in price)}%
+	\label{fig:left_digit_sell_increase_main}%
+	\centering%	
+	\bigskip
+	\subfigure[Price on $t$ > Price on $t-1$ \& Second digit change on $t$ \& Month return > 5\%]{
+		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_salient.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_buy_salient.pdf}
+	}
+	\subfigure[Price on $t$ < Price on $t-1$ \& Second digit change on $t$ \& Month return < -5\%]{
+		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_salient.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_buy_salient.pdf}
 	}
 	
 	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
