@@ -1,0 +1,92 @@
+% -*- TeX:UTF-8:Soft -*-
+
+\documentclass[
+	USenglish,12pt,paper=a4,numbers=noenddot,abstract=on,
+	final,% remove sample info
+	fullsample,
+% 	centertables,
+    ]{scrartcl}
+
+\usepackage{pdflscape}
+
+\input{config/preamble}
+
+ \begin{document}
+
+\section{Results}
+
+\subsection{Testing selection bias}
+Earlier results were subject to selection bias because we were conditioning on the investor $\times$ stock \textit{experiencing} a change in the leftmost digit of the price (i.e., second digit reaching Y0). As a consequence, the first X9 experienced by the investor could not have a sell. This result lower the probability of a sell at X9. We notice this error after adjusting the sample and conditioning on reaching Y5, which increased the probability of a sell at Y5 while lowering the probability of a sell for the earlier digits. \\
+We have keep our definition of increasing and decreasing samples (an increasing price sample is one in which prices in all login days of the quarter are higher than the price on the first login day of the quarter; and similarly for a decreasing price sample) but modified the following conditions: 
+\begin{itemize}
+\item \textbf{We do not condition on the investor experiencing a change in leftmost digit any more---so the investor is allowed to sell his whole position before reaching Y0 or he could not login on days in which the price crosses Y0.}
+\item We condition on (A) the stock (and not the investor) changing leftmost digit during the quarter following the first login in the quarter. But the investor could sell his position before reaching Y0---all his login days in the quarter are anyway included and are used to define the probabilities before Y0 (for X9, X8, etc.)
+\item We also tested an additional restriction, when we condition on (A) plus the stock reaches Y5---again, the investor could sell before reaching Y5, his observations in the quarter are still included in the samples. This sample includes stocks which larger movements in price.
+\end{itemize}
+
+Our results use login days, but we have found identical patterns but which much larger confidence intervals using sell days to define the above samples. \\ \\
+Also, Because we are not conditioning on investors experiencing Y0, more than half of the quarters in the data are quarters in which the investor $\times$ stock did not reach Y0.
+\subsection{New simple criteria}
+We tested a new and much simpler criteria to define samples. A price increasing sample is a day in which the price was higher than the price on the day before and the stock change the second digit. Similarly, for the price decreasing sample, today is included if the price is higher than yesterday's price and the stock changed the second digit today. Under this new criteria, both samples appear to have the same pattern and the pattern is observed for buys and sells.  \\
+The next plots show the different results using 20\% of the data. \\
+The plots use login days, but similar patterns are observed in sell days. \\ \\
+\textbf{A note on the probability to login as a function of left digits}.
+In our last talk we discussed a weird pattern showing a reduction in the probability to login when at least one stock in the portfolio increases in price and reaches Y0. This pattern disappears once we take into account the other stocks in the portfolio---when one stock reached Y0, many more stocks decreased in price on average, inducing less logins on the day.
+
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ Prices Increasing Sample}%
+	\label{fig:left_digit_sell_increase_main}%
+	\centering%	
+	\bigskip
+	\subfigure[Stock crosses Y0]{
+		\includegraphics[width=0.45\textwidth]{figures/inc_stock_cross0.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/inc_stock_cross0buy.pdf}
+	}
+	\subfigure[Stock crosses Y0 and Y5]{
+		\includegraphics[width=0.45\textwidth]{figures/inc_stock_cross05.pdf}
+\includegraphics[width=0.45\textwidth]{figures/inc_stock_cross05buy.pdf}
+	}
+
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
+\end{figure}
+
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ Prices Decreasing Sample}%
+	\label{fig:left_digit_sell_increase_main}%
+	\centering%	
+	\bigskip
+	\subfigure[Stock crosses Y0 (to X9)]{
+		\includegraphics[width=0.45\textwidth]{figures/dec_stock_cross0.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/dec_stock_cross0buy.pdf}
+	}
+	\subfigure[Stock crosses Y0 and Y5]{
+		\includegraphics[width=0.45\textwidth]{figures/dec_stock_cross05.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/dec_stock_cross05buy.pdf}
+	}
+	
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
+\end{figure}
+
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ New criteria}%
+	\label{fig:left_digit_sell_increase_main}%
+	\centering%	
+	\bigskip
+	\subfigure[Price on $t$ > Price on $t-1$ \& Second digit change on $t$]{
+		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_buy.pdf}
+	}
+	\subfigure[Price on $t$ < Price on $t-1$ \& Second digit change on $t$]{
+		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest.pdf}
+\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_buy.pdf}
+	}
+	
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
+\end{figure}
+\end{document}
