@@ -17,25 +17,33 @@
 
 \subsection{Testing selection bias}
 Earlier results were subject to selection bias because we were conditioning on the investor $\times$ stock \textit{experiencing} a change in the leftmost digit of the price (i.e., second digit reaching Y0). As a consequence, the first X9 experienced by the investor could not have a sell. This result lower the probability of a sell at X9. We notice this error after adjusting the sample and conditioning on reaching Y5, which increased the probability of a sell at Y5 while lowering the probability of a sell for the earlier digits. \\
-We have keep our definition of increasing and decreasing samples (an increasing price sample is one in which prices in all login days of the quarter are higher than the price on the first login day of the quarter; and similarly for a decreasing price sample) but modified the following conditions: 
+We have tested some variants in the sample selection criteria (which we discarded for a more simple criteria). Among these variants, we keep our definition of increasing and decreasing samples (an increasing price sample is one in which prices in all login days of the quarter are higher than the price on the first login day of the quarter; and similarly for a decreasing price sample) but modified the following conditions: 
 \begin{itemize}
 \item \textbf{We do not condition on the investor experiencing a change in leftmost digit any more---so the investor is allowed to sell his whole position before reaching Y0 or he could not login on days in which the price crosses Y0.}
 \item (A) We condition on the stock (and not the investor) changing leftmost digit during the quarter following the first login in the quarter. But the investor could sell his position before reaching Y0---all his login days in the quarter are anyway included and are used to define the probabilities before Y0 (for X9, X8, etc.). See \ref{fig:increasing} and \ref{fig:decreasing} Panels A.
-\item (B) We also tested an additional restriction, when we condition on (A) plus the stock reaches Y5---again, the investor could sell before reaching Y5, his observations in the quarter are still included in the samples. Y5 is not necessarily higher than Y0. But by reaching Y5 and Y0 in the same quarter, this sample includes stocks which larger movements in price. See \ref{fig:increasing} and \ref{fig:decreasing} Panels B.
+\item (B) We also tested an additional restriction, when we condition on (A) plus the stock reaches Y5---again, the investor could sell before reaching Y5, his observations in the quarter are still included in the samples. Y5 is not necessarily higher than Y0. \textbf{But by reaching Y5 and Y0 in the same quarter, this sample includes stocks which larger movements in price}. See \ref{fig:increasing} and \ref{fig:decreasing} Panels B.
 \end{itemize}
 
 Our results use login days, but we have found identical patterns but which much larger confidence intervals using sell days to define the above samples. \\ \\
 Also, because we are not conditioning on investors experiencing Y0,\textbf{ more than half of the quarters} in the data are quarters in which the investor $\times$ stock never experience Y0 (either because he sold the position before or because he decided not to login on Y0 days).
-\subsection{New simple criteria: Using only days with change in left digits}
-\textbf{Are there differences in the probability to sell in the exact day of change in the second digit?}
-We tested a new and much simpler criteria to define samples. A price increasing sample is a day $t$ in which the price was higher than the price on the day before $t-1$ and the stock change the second digit on day $t$. Similarly, for the price decreasing sample, a day is included if the price is higher than that on the day before and the stock changed the second digit. Under this new criteria, both samples appear to have the same patterns and the patterns are consistent for buys and sells. \ref{fig:new_change_p_digit} shows the different results using 20\% of the data. \\
-The plots use login days, but similar patterns are observed in sell days and top-up days.
+
+\ref{fig:increasing} and \ref{fig:decreasing} have a higher probability to sell (left panels) around X9 or Y0. the probability to top-up is not consistent across plots (right panels). \textbf{Since patterns are very noisy. We decided to study a much simple sample selection criteria below.}
+
+\subsection{New simple criteria: Using only days with change in second leftmost digits}
+\textbf{Are there differences in the probability to sell in the exact day of change in the second digit?} \\
+We tested a new and much simpler criteria to define samples.\\i) A price increasing sample is a day $t$ in which the price was higher than the price on the day before $t-1$ and the stock change the second digit on day $t$. \\ ii) Similarly, for the price decreasing sample, a day is included if the price is higher than that on the day before and the stock changed the second digit on day $t$. \\ \\ We use login  days that meet this new criteria. In \ref{fig:new_change_p_digit} both samples (i) and (ii) appear to have the same patterns (a jump in the probability to sell when the stock reaches Y0, from above or below) and the patterns are consistent for buys and sells---but they look  noisy. If we use the prices on the past login day instead of the prices on $t-1$, the results do not improve. \\ \ref{fig:new_change_p_digit} shows the different results using 10\% of the data. There are no much improvements looking at 20\% of the data. \\
+The plots use login days, but similar results are observed in sell days and top-up days.
 \\ \\
-\textbf{Are these changes in the probability to sell persistent after the day changing the second digit?} \ref{fig:new_change_p} shows the same analysis but for the days in which  second digits do not change with respect to the day before---e.g., Y0 includes today if yesterday the price was £10.3 and today is £10.5. \\
-The plots use login days, but similar patterns are observed in sell days. When digits do not change, there are no clear differences in the probability to sell among second digits. But probabilities to buy show small higher values for Y0 and Y1
- \\ \\
- \ref{fig:new_all} pools all observations (where prices or left digits could change or not). There are no clear patterns.
- \\ \\
+\textbf{Are these changes in the probability to sell persistent after the day changing the second digit?} \\ \ref{fig:new_change_p} shows the same analysis but for the days in which  second digits do not change with respect to the day before---e.g., Y0 includes today if yesterday the price was £10.3 and today is £10.5. \\
+When digits do not change, there are no clear differences in the probability to sell among second digits. But probabilities to buy show small higher values for Y0 and Y1. \\
+\textbf{What about looking at the second day after the change of the second digit?} \\
+\ref{fig:days}, Panel A, shows that the jump at Y0 is smaller. \\
+\textbf{What about looking at the ten day after the change of the second digit?} \\
+\ref{fig:days}, Panel C, shows that the jump at Y0 has disappeared.
+\\ \\
+\textbf{What about looking at all login days?} \\
+ \ref{fig:new_all} pools all observations (where prices or left digits have changed or not). There are no clear patterns. Some jumps are due to few particular stocks attracting a lot of attention on certain days (e.g., the jump at X7 is caused by one particular stock and day). Regressions can control for these unusual jumps by adding stock and day fixed effects. \textbf{But even thought after adding these controls we observe estimates that show a higher probability to sell at Y0, our narrative of the results has changed. Now the results suggest that people are prone to sell when second digits reach zero. When prices move up, this implies a higher probability to sell when the left most digit changes. But when prices move down, this implies a higher probability to sell before the left most digit change. Since patterns look noisy, perhaps we should move on?}
+  \\ \\
 \textbf{A note on the probability to login as a function of left digits}.
 In our last talk we discussed a weird pattern showing a reduction in the probability to login when at least one stock in the portfolio increases in price and reaches Y0. This pattern disappears once we take into account the changes in the other stocks in the portfolio. Days with changes in second digits to X9 and to Y0 appear to have a higher probability to login than days with changes to other digits but the difference is very small.
 
@@ -46,7 +54,7 @@ In our last talk we discussed a weird pattern showing a reduction in the probabi
 	\label{fig:increasing}%
 	\centering%	
 	\bigskip
-	\subfigure[Stock crosses Y0]{
+	\subfigure[Stock crosses Y0 (to Y1)]{
 		\includegraphics[width=0.45\textwidth]{figures/inc_stock_cross0.pdf}
 		\includegraphics[width=0.45\textwidth]{figures/inc_stock_cross0buy.pdf}
 	}
@@ -80,42 +88,42 @@ In our last talk we discussed a weird pattern showing a reduction in the probabi
 
 
 \begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ New Sample Criteria \\ \textbf{Days with Changes in Prices and Changes in Second Digits}}%
+	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ \textcolor{blue}{New Sample Criteria} \\ \textbf{Days with Changes in Prices and Changes in Second Digits}}%
 	\label{fig:new_change_p_digit}%
 	\centering%	
 	\bigskip
 	\subfigure[Price on $t$ > Price on $t-1$ \& Second digit change on $t$]{
-		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_buy.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/sell_Left2increase_yest_probCI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/buy_Left2increase_yest_probCI.pdf}
 	}
 	\subfigure[Price on $t$ < Price on $t-1$ \& Second digit change on $t$]{
-		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest.pdf}
-\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_buy.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/sell_Left2decrease_yest_probCI.pdf}
+\includegraphics[width=0.45\textwidth]{figures/buy_Left2decrease_yest_probCI.pdf}
 	}
 		\subfigure[Price on $t$ != Price on $t-1$ \& Second digit change on $t$]{
-		\includegraphics[width=0.45\textwidth]{figures/all_cond_yest_change.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/all_cond_yest_change_buy.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/sell_Left2_probCI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/buy_Left2_probCI.pdf}
 	}
 	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
 \end{figure}
 
 
 \begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ New Sample Criteria \\ \textbf{Days with Changes in Prices and Unchanged Second Digits}}%
+	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ \textcolor{blue}{New Sample Criteria} \\ \textbf{Days with Changes in Prices and Unchanged Second Digits}}%
 	\label{fig:new_change_p}%
 	\centering%	
 	\bigskip
 	\subfigure[Price on $t$ > Price on $t-1$ \& Second digit constant on $t$]{
-		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_nochange.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_nochange_buy.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/sell_Left2increase_yest_ND_probCI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/buy_Left2increase_yest_ND_probCI.pdf}
 	}
 	\subfigure[Price on $t$ < Price on $t-1$ \& Second digit constant on $t$]{
-		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_nochange.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_nochange_buy.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/sell_Left2decrease_yest_ND_probCI.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/buy_Left2increase_yest_ND_probCI.pdf}
 	}
 	\subfigure[Price on $t$ != Price on $t-1$ \& Second digit constant on $t$]{
-	\includegraphics[width=0.45\textwidth]{figures/all_cond_yest_nochange.pdf}
-	\includegraphics[width=0.45\textwidth]{figures/all_cond_yest_nochange_buy.pdf}
+	\includegraphics[width=0.45\textwidth]{figures/sell_Left2_ND_probCI.pdf}
+	\includegraphics[width=0.45\textwidth]{figures/buy_Left2_ND_probCI.pdf}
 }
 
 	
@@ -123,8 +131,37 @@ In our last talk we discussed a weird pattern showing a reduction in the probabi
 \end{figure}
 
 
+
+
+
 \begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ New Sample Criteria \\ \textbf{All days}}%
+	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ \textcolor{blue}{New Sample Criteria} \\ \textbf{Days After a Change in Second Digits \\ (unconditional on changes in prices)}}%
+	\label{fig:days}%
+	\centering%	
+	\bigskip
+	\subfigure[Day 2]{
+		\includegraphics[width=0.45\textwidth]{figures/sell_Left2day2.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/buy_Left2day2.pdf}
+	}
+	\subfigure[Day 3]{
+		\includegraphics[width=0.45\textwidth]{figures/sell_Left2day3.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/buy_Left2day3.pdf}
+	}
+	\subfigure[Day 10]{
+		\includegraphics[width=0.45\textwidth]{figures/sell_Left2day10.pdf}
+		\includegraphics[width=0.45\textwidth]{figures/buy_Left2day10.pdf}
+	}
+	
+	
+	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
+\end{figure}
+
+
+
+
+
+\begin{figure}[hbt!]
+	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ \textcolor{blue}{New Sample Criteria} \\ \textbf{All days}}%
 	\label{fig:new_all}%
 	\centering%	
 	\bigskip
@@ -141,7 +178,7 @@ In our last talk we discussed a weird pattern showing a reduction in the probabi
 
 
 \begin{figure}[hbt!]
-	\caption{Histograms of Leftmost Stock Price Digit \\ New Sample Criteria} %
+	\caption{Histograms of Leftmost Stock Price Digit \\ \textcolor{blue}{New Sample Criteria} \\} %
 	\label{fig:hist}%
 	\centering%	
 	\bigskip
@@ -159,20 +196,20 @@ In our last talk we discussed a weird pattern showing a reduction in the probabi
 \end{figure}
 
 \clearpage
-\begin{figure}[hbt!]
-	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ New criteria (salient changes in price)}%
-	\label{fig:salient}%
-	\centering%	
-	\bigskip
-	\subfigure[Price on $t$ > Price on $t-1$ \& Second digit change on $t$ \& Month return > 5\%]{
-		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_salient.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_buy_salient.pdf}
-	}
-	\subfigure[Price on $t$ < Price on $t-1$ \& Second digit change on $t$ \& Month return < -5\%]{
-		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_salient.pdf}
-		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_buy_salient.pdf}
-	}
-	
-	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
-\end{figure}
+%\begin{figure}[hbt!]
+%	\caption{Leftmost Stock Price Digit and Probability of Sale/Buy \\ New criteria (salient changes in price)}%
+%	\label{fig:salient}%
+%	\centering%	
+%	\bigskip
+%	\subfigure[Price on $t$ > Price on $t-1$ \& Second digit change on $t$ \& Month return > 5\%]{
+%		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_salient.pdf}
+%		\includegraphics[width=0.45\textwidth]{figures/inc_cond_yest_buy_salient.pdf}
+%	}
+%	\subfigure[Price on $t$ < Price on $t-1$ \& Second digit change on $t$ \& Month return < -5\%]{
+%		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_salient.pdf}
+%		\includegraphics[width=0.45\textwidth]{figures/dec_cond_yest_buy_salient.pdf}
+%	}
+%	
+%	\fignote{£$Y$ in the X-axes is equivalent to £$X+1$ (e.g., £X9 could include £0.19, £1.9, £19, etc., while £Y0 could include £0.20, £2.0, £20, etc.). }
+%\end{figure}
 \end{document}
